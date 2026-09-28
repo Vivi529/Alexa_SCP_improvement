@@ -1,0 +1,3471 @@
+{
+  "workflow": "H_prospective_v2_audited",
+  "workflow_id": "H-2025-09-2025-10-product-94af224ada",
+  "status": "COMPLETED",
+  "selection_context": {
+    "priority_rank": 2,
+    "selection_method": "risk_chain_coverage_objective",
+    "selection_score": 18.469139390119565,
+    "risk_score": null,
+    "selection_metrics": {
+      "marginal_chain_value": 18.469139390119565,
+      "captured_chain_count": 23,
+      "captured_chain_weight_raw": 19.711519977922503
+    },
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "prospective_config": {
+    "max_observed_cards": 6,
+    "statements_per_card": 3,
+    "max_relations": 5,
+    "max_api_cards": 5,
+    "max_chains": 4,
+    "max_standalone_chains": 1,
+    "chain_selection_mode": "dimension_diverse",
+    "hybrid_max_promotions": 0,
+    "hybrid_max_dynamic_rank": 3
+  },
+  "requested_case": {
+    "product_category": "智能温控器",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "stage_outputs": {
+    "dimension_anchor": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Setup and Onboarding\",\n    \"Connectivity and Coverage\",\n    \"Capability and Feature Gaps\",\n    \"Sensors\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-ABFF43C460\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-773E4A2170\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Capability and Feature Gaps\",\n      \"source_refs\": [\"OBS-C0BB46A662\"],\n      \"confidence\": 0.88\n    },\n    {\n      \"dimension\": \"Sensors\",\n      \"source_refs\": [\"OBS-4857306C3F\"],\n      \"confidence\": 0.85\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-1CB961C8B0",
+        "product_category": "智能温控器",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Setup and Onboarding",
+          "Connectivity and Coverage",
+          "Capability and Feature Gaps",
+          "Sensors"
+        ],
+        "dimension_support": [
+          {
+            "dimension": "Reliability and Stability",
+            "source_refs": [
+              "OBS-ABFF43C460"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "dimension": "Setup and Onboarding",
+            "source_refs": [
+              "OBS-F1D4EFEAAC"
+            ],
+            "confidence": 0.92
+          },
+          {
+            "dimension": "Connectivity and Coverage",
+            "source_refs": [
+              "OBS-773E4A2170"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "dimension": "Capability and Feature Gaps",
+            "source_refs": [
+              "OBS-C0BB46A662"
+            ],
+            "confidence": 0.88
+          },
+          {
+            "dimension": "Sensors",
+            "source_refs": [
+              "OBS-4857306C3F"
+            ],
+            "confidence": 0.85
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 2094,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 292,
+        "total_tokens": 2386,
+        "system_prompt_chars": 1177,
+        "user_payload_chars": 5815
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Setup and Onboarding\",\n    \"Connectivity and Coverage\",\n    \"Capability and Feature Gaps\",\n    \"Sensors\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-ABFF43C460\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-773E4A2170\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Capability and Feature Gaps\",\n      \"source_refs\": [\"OBS-C0BB46A662\"],\n      \"confidence\": 0.88\n    },\n    {\n      \"dimension\": \"Sensors\",\n      \"source_refs\": [\"OBS-4857306C3F\"],\n      \"confidence\": 0.85\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-1CB961C8B0",
+              "product_category": "智能温控器",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Setup and Onboarding",
+                "Connectivity and Coverage",
+                "Capability and Feature Gaps",
+                "Sensors"
+              ],
+              "dimension_support": [
+                {
+                  "dimension": "Reliability and Stability",
+                  "source_refs": [
+                    "OBS-ABFF43C460"
+                  ],
+                  "confidence": 0.95
+                },
+                {
+                  "dimension": "Setup and Onboarding",
+                  "source_refs": [
+                    "OBS-F1D4EFEAAC"
+                  ],
+                  "confidence": 0.92
+                },
+                {
+                  "dimension": "Connectivity and Coverage",
+                  "source_refs": [
+                    "OBS-773E4A2170"
+                  ],
+                  "confidence": 0.9
+                },
+                {
+                  "dimension": "Capability and Feature Gaps",
+                  "source_refs": [
+                    "OBS-C0BB46A662"
+                  ],
+                  "confidence": 0.88
+                },
+                {
+                  "dimension": "Sensors",
+                  "source_refs": [
+                    "OBS-4857306C3F"
+                  ],
+                  "confidence": 0.85
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 2094,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 292,
+              "total_tokens": 2386,
+              "system_prompt_chars": 1177,
+              "user_payload_chars": 5815
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "diagnosis": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Setup and Onboarding\", \"Connectivity and Coverage\", \"Capability and Feature Gaps\", \"Sensors\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"setup_failure\", \"connectivity_failure\", \"capability_or_compatibility\", \"sensor_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.\",\n      \"source_refs\": [\"OBS-ABFF43C460\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.\",\n      \"source_refs\": [\"OBS-4857306C3F\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.\",\n      \"source_refs\": [\"OBS-C0BB46A662\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.85,\n      \"main_uncertainty\": \"Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"privacy_or_security\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.7,\n      \"main_uncertainty\": \"Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"capability_or_compatibility\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.\",\n      \"required_data\": [\"Wi-Fi association logs during setup\", \"Router band configuration during failed setups\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.\",\n      \"required_data\": [\"Device-side temperature scale setting\", \"Alexa StateReport payloads for temperature\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.\",\n      \"required_data\": [\"Firmware telemetry on HVAC system state\", \"Alexa discovery response properties\", \"Local UI source code or behavior logs\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems).\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-1CB961C8B0",
+        "product_category": "智能温控器",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Setup and Onboarding",
+          "Connectivity and Coverage",
+          "Capability and Feature Gaps",
+          "Sensors"
+        ],
+        "symptom_families": [
+          "unresponsive_or_outage",
+          "setup_failure",
+          "connectivity_failure",
+          "capability_or_compatibility",
+          "sensor_failure"
+        ],
+        "claims": [
+          {
+            "claim_id": "CL1",
+            "claim_type": "observed",
+            "statement": "Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.",
+            "source_refs": [
+              "OBS-ABFF43C460"
+            ]
+          },
+          {
+            "claim_id": "CL2",
+            "claim_type": "observed",
+            "statement": "Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.",
+            "source_refs": [
+              "OBS-F1D4EFEAAC",
+              "OBS-773E4A2170"
+            ]
+          },
+          {
+            "claim_id": "CL3",
+            "claim_type": "observed",
+            "statement": "Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.",
+            "source_refs": [
+              "OBS-4857306C3F"
+            ]
+          },
+          {
+            "claim_id": "CL4",
+            "claim_type": "observed",
+            "statement": "Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.",
+            "source_refs": [
+              "OBS-C0BB46A662"
+            ]
+          }
+        ],
+        "mechanisms": [
+          {
+            "mechanism_id": "M1",
+            "mechanism_family": "connectivity_or_state_sync",
+            "mechanism_scope": "local",
+            "statement": "Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.",
+            "supporting_claim_ids": [
+              "CL2"
+            ],
+            "source_refs": [
+              "OBS-F1D4EFEAAC",
+              "OBS-773E4A2170"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.85,
+            "main_uncertainty": "Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary."
+          },
+          {
+            "mechanism_id": "M2",
+            "mechanism_family": "privacy_or_security",
+            "mechanism_scope": "interface",
+            "statement": "Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.",
+            "supporting_claim_ids": [
+              "CL3"
+            ],
+            "source_refs": [
+              "OBS-4857306C3F",
+              "KB-FB75A9E876"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.7,
+            "main_uncertainty": "Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration."
+          },
+          {
+            "mechanism_id": "M3",
+            "mechanism_family": "capability_or_compatibility",
+            "mechanism_scope": "local",
+            "statement": "Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.",
+            "supporting_claim_ids": [
+              "CL4"
+            ],
+            "source_refs": [
+              "OBS-C0BB46A662",
+              "KB-FB75A9E876"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.75,
+            "main_uncertainty": "Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware."
+          }
+        ],
+        "validation_tasks": [
+          {
+            "validation_id": "V1",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "task": "Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.",
+            "required_data": [
+              "Wi-Fi association logs during setup",
+              "Router band configuration during failed setups"
+            ]
+          },
+          {
+            "validation_id": "V2",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "task": "Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.",
+            "required_data": [
+              "Device-side temperature scale setting",
+              "Alexa StateReport payloads for temperature"
+            ]
+          },
+          {
+            "validation_id": "V3",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "task": "Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.",
+            "required_data": [
+              "Firmware telemetry on HVAC system state",
+              "Alexa discovery response properties",
+              "Local UI source code or behavior logs"
+            ]
+          }
+        ],
+        "abstentions": [
+          {
+            "scope": "exact_root_cause",
+            "reason": "Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems)."
+          },
+          {
+            "scope": "implementation_defect",
+            "reason": "While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 3639,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 1225,
+        "total_tokens": 4864,
+        "system_prompt_chars": 3811,
+        "user_payload_chars": 9839
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Setup and Onboarding\", \"Connectivity and Coverage\", \"Capability and Feature Gaps\", \"Sensors\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"setup_failure\", \"connectivity_failure\", \"capability_or_compatibility\", \"sensor_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.\",\n      \"source_refs\": [\"OBS-ABFF43C460\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.\",\n      \"source_refs\": [\"OBS-4857306C3F\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.\",\n      \"source_refs\": [\"OBS-C0BB46A662\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.85,\n      \"main_uncertainty\": \"Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"privacy_or_security\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.7,\n      \"main_uncertainty\": \"Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"capability_or_compatibility\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.\",\n      \"required_data\": [\"Wi-Fi association logs during setup\", \"Router band configuration during failed setups\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.\",\n      \"required_data\": [\"Device-side temperature scale setting\", \"Alexa StateReport payloads for temperature\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.\",\n      \"required_data\": [\"Firmware telemetry on HVAC system state\", \"Alexa discovery response properties\", \"Local UI source code or behavior logs\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems).\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-1CB961C8B0",
+              "product_category": "智能温控器",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Setup and Onboarding",
+                "Connectivity and Coverage",
+                "Capability and Feature Gaps",
+                "Sensors"
+              ],
+              "symptom_families": [
+                "unresponsive_or_outage",
+                "setup_failure",
+                "connectivity_failure",
+                "capability_or_compatibility",
+                "sensor_failure"
+              ],
+              "claims": [
+                {
+                  "claim_id": "CL1",
+                  "claim_type": "observed",
+                  "statement": "Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.",
+                  "source_refs": [
+                    "OBS-ABFF43C460"
+                  ]
+                },
+                {
+                  "claim_id": "CL2",
+                  "claim_type": "observed",
+                  "statement": "Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.",
+                  "source_refs": [
+                    "OBS-F1D4EFEAAC",
+                    "OBS-773E4A2170"
+                  ]
+                },
+                {
+                  "claim_id": "CL3",
+                  "claim_type": "observed",
+                  "statement": "Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.",
+                  "source_refs": [
+                    "OBS-4857306C3F"
+                  ]
+                },
+                {
+                  "claim_id": "CL4",
+                  "claim_type": "observed",
+                  "statement": "Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.",
+                  "source_refs": [
+                    "OBS-C0BB46A662"
+                  ]
+                }
+              ],
+              "mechanisms": [
+                {
+                  "mechanism_id": "M1",
+                  "mechanism_family": "connectivity_or_state_sync",
+                  "mechanism_scope": "local",
+                  "statement": "Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.",
+                  "supporting_claim_ids": [
+                    "CL2"
+                  ],
+                  "source_refs": [
+                    "OBS-F1D4EFEAAC",
+                    "OBS-773E4A2170"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.85,
+                  "main_uncertainty": "Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary."
+                },
+                {
+                  "mechanism_id": "M2",
+                  "mechanism_family": "privacy_or_security",
+                  "mechanism_scope": "interface",
+                  "statement": "Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.",
+                  "supporting_claim_ids": [
+                    "CL3"
+                  ],
+                  "source_refs": [
+                    "OBS-4857306C3F",
+                    "KB-FB75A9E876"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.7,
+                  "main_uncertainty": "Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration."
+                },
+                {
+                  "mechanism_id": "M3",
+                  "mechanism_family": "capability_or_compatibility",
+                  "mechanism_scope": "local",
+                  "statement": "Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.",
+                  "supporting_claim_ids": [
+                    "CL4"
+                  ],
+                  "source_refs": [
+                    "OBS-C0BB46A662",
+                    "KB-FB75A9E876"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.75,
+                  "main_uncertainty": "Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware."
+                }
+              ],
+              "validation_tasks": [
+                {
+                  "validation_id": "V1",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "task": "Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.",
+                  "required_data": [
+                    "Wi-Fi association logs during setup",
+                    "Router band configuration during failed setups"
+                  ]
+                },
+                {
+                  "validation_id": "V2",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "task": "Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.",
+                  "required_data": [
+                    "Device-side temperature scale setting",
+                    "Alexa StateReport payloads for temperature"
+                  ]
+                },
+                {
+                  "validation_id": "V3",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "task": "Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.",
+                  "required_data": [
+                    "Firmware telemetry on HVAC system state",
+                    "Alexa discovery response properties",
+                    "Local UI source code or behavior logs"
+                  ]
+                }
+              ],
+              "abstentions": [
+                {
+                  "scope": "exact_root_cause",
+                  "reason": "Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems)."
+                },
+                {
+                  "scope": "implementation_defect",
+                  "reason": "While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 3639,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 1225,
+              "total_tokens": 4864,
+              "system_prompt_chars": 3811,
+              "user_payload_chars": 9839
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "action": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations\",\n      \"action\": \"Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.\",\n      \"intervention_logic\": \"Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"app_or_configuration\", \"support_or_user_guidance\"],\n      \"validation_metric\": \"Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Expose AC operational state visibly in local UI and Alexa API responses\",\n      \"action\": \"Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.\",\n      \"intervention_logic\": \"M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Confirm whether temperature scale mismatch contributes to sensor discrepancy reports\",\n      \"action\": \"Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.\",\n      \"intervention_logic\": \"M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-1CB961C8B0",
+        "product_category": "智能温控器",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+            "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+            "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-F1D4EFEAAC",
+              "OBS-773E4A2170"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "app_or_configuration",
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+            "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+            "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-C0BB46A662",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+            "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+            "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-4857306C3F",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 12208,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 827,
+        "total_tokens": 13035,
+        "system_prompt_chars": 4075,
+        "user_payload_chars": 37098
+      },
+      "request_meta": {},
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations\",\n      \"action\": \"Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.\",\n      \"intervention_logic\": \"Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"app_or_configuration\", \"support_or_user_guidance\"],\n      \"validation_metric\": \"Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Expose AC operational state visibly in local UI and Alexa API responses\",\n      \"action\": \"Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.\",\n      \"intervention_logic\": \"M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Confirm whether temperature scale mismatch contributes to sensor discrepancy reports\",\n      \"action\": \"Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.\",\n      \"intervention_logic\": \"M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-1CB961C8B0",
+              "product_category": "智能温控器",
+              "actions": [
+                {
+                  "action_id": "A1",
+                  "priority_rank": 1,
+                  "action_subfamily": "user_guidance_or_notification",
+                  "action_level": "product",
+                  "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+                  "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+                  "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "source_refs": [
+                    "OBS-F1D4EFEAAC",
+                    "OBS-773E4A2170"
+                  ],
+                  "target_products": [
+                    "智能温控器"
+                  ],
+                  "target_layers": [
+                    "app_or_configuration",
+                    "support_or_user_guidance"
+                  ],
+                  "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+                },
+                {
+                  "action_id": "A2",
+                  "priority_rank": 2,
+                  "action_subfamily": "software_or_firmware_remediation",
+                  "action_level": "product",
+                  "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+                  "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+                  "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "source_refs": [
+                    "OBS-C0BB46A662",
+                    "KB-FB75A9E876"
+                  ],
+                  "target_products": [
+                    "智能温控器"
+                  ],
+                  "target_layers": [
+                    "firmware",
+                    "alexa_skill_or_api_implementation"
+                  ],
+                  "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+                },
+                {
+                  "action_id": "A3",
+                  "priority_rank": 3,
+                  "action_subfamily": "observability_or_validation",
+                  "action_level": "product",
+                  "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+                  "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+                  "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "source_refs": [
+                    "OBS-4857306C3F",
+                    "KB-FB75A9E876"
+                  ],
+                  "target_products": [
+                    "智能温控器"
+                  ],
+                  "target_layers": [
+                    "firmware",
+                    "cloud_service"
+                  ],
+                  "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 12208,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 827,
+              "total_tokens": 13035,
+              "system_prompt_chars": 4075,
+              "user_payload_chars": 37098
+            }
+          }
+        ]
+      },
+      "generation_status": "generated",
+      "original_parsed_output": {
+        "case_id": "CASE-1CB961C8B0",
+        "product_category": "智能温控器",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+            "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+            "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-F1D4EFEAAC",
+              "OBS-773E4A2170"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "app_or_configuration",
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+            "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+            "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-C0BB46A662",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+            "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+            "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-4857306C3F",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+          }
+        ]
+      },
+      "accepted_output": {
+        "case_id": "CASE-1CB961C8B0",
+        "product_category": "智能温控器",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+            "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+            "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-F1D4EFEAAC",
+              "OBS-773E4A2170"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "app_or_configuration",
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+            "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+            "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-C0BB46A662",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+            "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+            "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-4857306C3F",
+              "KB-FB75A9E876"
+            ],
+            "target_products": [
+              "智能温控器"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+          }
+        ]
+      },
+      "discarded_actions": [],
+      "action_id_map": [
+        {
+          "original_action_id": "A1",
+          "original_priority_rank": 1,
+          "final_action_id": "A1",
+          "final_priority_rank": 1
+        },
+        {
+          "original_action_id": "A2",
+          "original_priority_rank": 2,
+          "final_action_id": "A2",
+          "final_priority_rank": 2
+        },
+        {
+          "original_action_id": "A3",
+          "original_priority_rank": 3,
+          "final_action_id": "A3",
+          "final_priority_rank": 3
+        }
+      ],
+      "normalization_notes": [],
+      "n_generated": 3,
+      "n_valid": 3,
+      "n_discarded": 0
+    }
+  },
+  "created_at": "2026-09-02T03:10:39.557180+00:00",
+  "core_dimension_anchor": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Setup and Onboarding",
+      "Connectivity and Coverage",
+      "Capability and Feature Gaps",
+      "Sensors"
+    ],
+    "dimension_support": [
+      {
+        "dimension": "Reliability and Stability",
+        "source_refs": [
+          "OBS-ABFF43C460"
+        ],
+        "confidence": 0.95
+      },
+      {
+        "dimension": "Setup and Onboarding",
+        "source_refs": [
+          "OBS-F1D4EFEAAC"
+        ],
+        "confidence": 0.92
+      },
+      {
+        "dimension": "Connectivity and Coverage",
+        "source_refs": [
+          "OBS-773E4A2170"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "dimension": "Capability and Feature Gaps",
+        "source_refs": [
+          "OBS-C0BB46A662"
+        ],
+        "confidence": 0.88
+      },
+      {
+        "dimension": "Sensors",
+        "source_refs": [
+          "OBS-4857306C3F"
+        ],
+        "confidence": 0.85
+      }
+    ]
+  },
+  "case_meta": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10",
+    "case_version": "abc_information_ablation_v1",
+    "condition": "H_hierarchical",
+    "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+  },
+  "final_dimension_anchor": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "source": "A_core_hard_anchor",
+    "core_risk_dimensions": [
+      "Reliability and Stability",
+      "Setup and Onboarding",
+      "Connectivity and Coverage",
+      "Capability and Feature Gaps",
+      "Sensors"
+    ],
+    "promoted_risk_dimensions": [],
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Setup and Onboarding",
+      "Connectivity and Coverage",
+      "Capability and Feature Gaps",
+      "Sensors"
+    ],
+    "promotion_rule": {
+      "max_promotions": 0,
+      "max_dynamic_rank": 3,
+      "must_be_observed_dimension": true
+    }
+  },
+  "case_package": {
+    "case_meta": {
+      "case_id": "CASE-1CB961C8B0",
+      "product_category": "智能温控器",
+      "analysis_cutoff": "2025-09",
+      "target_month": "2025-10",
+      "case_version": "abc_information_ablation_v1",
+      "condition": "H_hierarchical",
+      "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+    },
+    "observed_dimension_catalog": [
+      {
+        "evidence_id": "OBS-4C8A3A0DAB",
+        "product_category": "智能温控器",
+        "dimension": "App and Configuration UX",
+        "n_review": 217,
+        "mean_sentiment": -0.6688560885608855,
+        "recent_review_count": 37,
+        "review_share_in_product": 0.08803245436105477,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-4157AAF2CE",
+        "product_category": "智能温控器",
+        "dimension": "Automation and Routine",
+        "n_review": 208,
+        "mean_sentiment": -0.7242068965517241,
+        "recent_review_count": 31,
+        "review_share_in_product": 0.08438133874239351,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-C0BB46A662",
+        "product_category": "智能温控器",
+        "dimension": "Capability and Feature Gaps",
+        "n_review": 995,
+        "mean_sentiment": -0.6868904788112272,
+        "recent_review_count": 140,
+        "review_share_in_product": 0.40365111561866124,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-93F4C36835",
+        "product_category": "智能温控器",
+        "dimension": "Compatibility",
+        "n_review": 492,
+        "mean_sentiment": -0.6982792665726376,
+        "recent_review_count": 84,
+        "review_share_in_product": 0.1995943204868154,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-773E4A2170",
+        "product_category": "智能温控器",
+        "dimension": "Connectivity and Coverage",
+        "n_review": 506,
+        "mean_sentiment": -0.7856451612903225,
+        "recent_review_count": 84,
+        "review_share_in_product": 0.2052738336713996,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-DB0E6A1FCD",
+        "product_category": "智能温控器",
+        "dimension": "Control and Interaction",
+        "n_review": 206,
+        "mean_sentiment": -0.6406309148264984,
+        "recent_review_count": 35,
+        "review_share_in_product": 0.08356997971602434,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-1E8D81E0C7",
+        "product_category": "智能温控器",
+        "dimension": "Cost and Value",
+        "n_review": 152,
+        "mean_sentiment": -0.6984146341463414,
+        "recent_review_count": 23,
+        "review_share_in_product": 0.061663286004056794,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-EC88D8D56D",
+        "product_category": "智能温控器",
+        "dimension": "Delivery & Packaging",
+        "n_review": 198,
+        "mean_sentiment": -0.7561471861471861,
+        "recent_review_count": 29,
+        "review_share_in_product": 0.08032454361054767,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-EF7406372F",
+        "product_category": "智能温控器",
+        "dimension": "Ease of use",
+        "n_review": 48,
+        "mean_sentiment": -0.6307843137254903,
+        "recent_review_count": 6,
+        "review_share_in_product": 0.01947261663286004,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-2A87E44764",
+        "product_category": "智能温控器",
+        "dimension": "Hardware",
+        "n_review": 223,
+        "mean_sentiment": -0.6969642857142857,
+        "recent_review_count": 37,
+        "review_share_in_product": 0.09046653144016227,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-7DA3FA45B9",
+        "product_category": "智能温控器",
+        "dimension": "Media",
+        "n_review": 33,
+        "mean_sentiment": -0.6375,
+        "recent_review_count": 6,
+        "review_share_in_product": 0.013387423935091278,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-ABFF43C460",
+        "product_category": "智能温控器",
+        "dimension": "Reliability and Stability",
+        "n_review": 987,
+        "mean_sentiment": -0.803731448763251,
+        "recent_review_count": 156,
+        "review_share_in_product": 0.40040567951318456,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-DAE5FE2418",
+        "product_category": "智能温控器",
+        "dimension": "Responsiveness",
+        "n_review": 41,
+        "mean_sentiment": -0.6712244897959184,
+        "recent_review_count": 2,
+        "review_share_in_product": 0.01663286004056795,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-7FE239680E",
+        "product_category": "智能温控器",
+        "dimension": "Security and Privacy",
+        "n_review": 230,
+        "mean_sentiment": -0.7643165467625899,
+        "recent_review_count": 36,
+        "review_share_in_product": 0.09330628803245436,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-4857306C3F",
+        "product_category": "智能温控器",
+        "dimension": "Sensors",
+        "n_review": 184,
+        "mean_sentiment": -0.7288628762541807,
+        "recent_review_count": 34,
+        "review_share_in_product": 0.07464503042596349,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-F1D4EFEAAC",
+        "product_category": "智能温控器",
+        "dimension": "Setup and Onboarding",
+        "n_review": 749,
+        "mean_sentiment": -0.716681338028169,
+        "recent_review_count": 117,
+        "review_share_in_product": 0.30385395537525356,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "observed_evidence": [
+      {
+        "evidence_id": "OBS-C0BB46A662",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Capability and Feature Gaps",
+        "evidence_selection": {
+          "rank": 1,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.935179,
+          "severity_component": 1.0,
+          "recency_component": 0.675894,
+          "prevalence_component": 1.0,
+          "breadth_component": 1.0
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "capability_gap",
+            "count": 1174,
+            "share": 0.6461199779856907
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 157,
+            "share": 0.0864061640066043
+          },
+          {
+            "failure_type": "feature_gap",
+            "count": 122,
+            "share": 0.06714364336818933
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 1406,
+            "share": 0.7307692307692307
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 100,
+            "share": 0.05197505197505198
+          },
+          {
+            "scenario": "energy_saving",
+            "count": 95,
+            "share": 0.04937629937629938
+          }
+        ],
+        "severity": {
+          "n_stmt": 1817,
+          "n_review": 995,
+          "mean_sentiment": -0.6868904788112272,
+          "recent_count": 357,
+          "recent_review_count": 140,
+          "share_in_product": 0.22630464565948438,
+          "review_share_in_product": 0.40365111561866124
+        },
+        "representative_statements": [
+          "users cannot see AC state at a glance",
+          "temperature reading is off by 23 degrees",
+          "Honeywell thermostat fails with two-wire setup"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-ABFF43C460",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Reliability and Stability",
+        "evidence_selection": {
+          "rank": 2,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.869897,
+          "severity_component": 0.909372,
+          "recency_component": 0.803474,
+          "prevalence_component": 0.773776,
+          "breadth_component": 0.997612
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "device_unresponsive",
+            "count": 986,
+            "share": 0.6968197879858657
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 152,
+            "share": 0.10742049469964664
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 95,
+            "share": 0.06713780918727916
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 1076,
+            "share": 0.7111698612029081
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 127,
+            "share": 0.08393919365499009
+          },
+          {
+            "scenario": "energy_saving",
+            "count": 68,
+            "share": 0.0449438202247191
+          }
+        ],
+        "severity": {
+          "n_stmt": 1415,
+          "n_review": 987,
+          "mean_sentiment": -0.803731448763251,
+          "recent_count": 217,
+          "recent_review_count": 156,
+          "share_in_product": 0.17623614397807946,
+          "review_share_in_product": 0.40040567951318456
+        },
+        "representative_statements": [
+          "thermostat fails to maintain set temperature",
+          "thermostat becomes totally shut off and unfixable",
+          "thermostat requires shutdown and recharge to function"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-F1D4EFEAAC",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Setup and Onboarding",
+        "evidence_selection": {
+          "rank": 3,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.695469,
+          "severity_component": 0.64507,
+          "recency_component": 0.789898,
+          "prevalence_component": 0.61677,
+          "breadth_component": 0.916008
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "setup_failure",
+            "count": 1111,
+            "share": 0.9779929577464789
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 5,
+            "share": 0.0044014084507042256
+          },
+          {
+            "failure_type": "device_unresponsive",
+            "count": 4,
+            "share": 0.0035211267605633804
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 1040,
+            "share": 0.8919382504288165
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 29,
+            "share": 0.024871355060034305
+          },
+          {
+            "scenario": "home_routine",
+            "count": 28,
+            "share": 0.024013722126929673
+          }
+        ],
+        "severity": {
+          "n_stmt": 1136,
+          "n_review": 749,
+          "mean_sentiment": -0.716681338028169,
+          "recent_count": 220,
+          "recent_review_count": 117,
+          "share_in_product": 0.1414871092290447,
+          "review_share_in_product": 0.30385395537525356
+        },
+        "representative_statements": [
+          "setup fails due to 5ghz wifi incompatibility with thermostat",
+          "setup fails due to AC system age and technician refusal",
+          "setup fails if 5ghz and 2.4ghz wifi names don't match"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-773E4A2170",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Connectivity and Coverage",
+        "evidence_selection": {
+          "rank": 4,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.533356,
+          "severity_component": 0.417404,
+          "recency_component": 0.861953,
+          "prevalence_component": 0.361283,
+          "breadth_component": 0.800071
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "connection_failure",
+            "count": 592,
+            "share": 0.8680351906158358
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 63,
+            "share": 0.09237536656891496
+          },
+          {
+            "failure_type": "sync_delay",
+            "count": 5,
+            "share": 0.007331378299120235
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 599,
+            "share": 0.8520625889046942
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 33,
+            "share": 0.04694167852062589
+          },
+          {
+            "scenario": "home_routine",
+            "count": 23,
+            "share": 0.032716927453769556
+          }
+        ],
+        "severity": {
+          "n_stmt": 682,
+          "n_review": 506,
+          "mean_sentiment": -0.7856451612903225,
+          "recent_count": 144,
+          "recent_review_count": 84,
+          "share_in_product": 0.08494208494208494,
+          "review_share_in_product": 0.2052738336713996
+        },
+        "representative_statements": [
+          "setup fails due to 5ghz wifi incompatibility",
+          "router 2.4ghz wifi disables thermostat connectivity",
+          "thermostat fails to connect to WiFi"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-93F4C36835",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Compatibility",
+        "evidence_selection": {
+          "rank": 5,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.525855,
+          "severity_component": 0.384089,
+          "recency_component": 0.896686,
+          "prevalence_component": 0.376477,
+          "breadth_component": 0.79178
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "setup_failure",
+            "count": 197,
+            "share": 0.2778561354019746
+          },
+          {
+            "failure_type": "compatibility",
+            "count": 176,
+            "share": 0.24823695345557123
+          },
+          {
+            "failure_type": "permission_issue",
+            "count": 117,
+            "share": 0.16502115655853314
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 598,
+            "share": 0.7973333333333333
+          },
+          {
+            "scenario": "home_routine",
+            "count": 40,
+            "share": 0.05333333333333334
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 37,
+            "share": 0.04933333333333333
+          }
+        ],
+        "severity": {
+          "n_stmt": 709,
+          "n_review": 492,
+          "mean_sentiment": -0.6982792665726376,
+          "recent_count": 158,
+          "recent_review_count": 84,
+          "share_in_product": 0.08830489475650766,
+          "review_share_in_product": 0.1995943204868154
+        },
+        "representative_statements": [
+          "installation requires professional AC technician involvement",
+          "control sharing requires Google Home app configuration",
+          "requires router 5ghz wifi to be renamed to original name for setup"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-4857306C3F",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能温控器",
+        "dimension": "Sensors",
+        "evidence_selection": {
+          "rank": 6,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.358006,
+          "severity_component": 0.157397,
+          "recency_component": 1.0,
+          "prevalence_component": 0.145751,
+          "breadth_component": 0.50157
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "sensor_detection_error",
+            "count": 97,
+            "share": 0.32441471571906355
+          },
+          {
+            "failure_type": "sensor_failure",
+            "count": 52,
+            "share": 0.17391304347826086
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 51,
+            "share": 0.1705685618729097
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 233,
+            "share": 0.7396825396825397
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 32,
+            "share": 0.10158730158730159
+          },
+          {
+            "scenario": "evening_routine",
+            "count": 12,
+            "share": 0.0380952380952381
+          }
+        ],
+        "severity": {
+          "n_stmt": 299,
+          "n_review": 184,
+          "mean_sentiment": -0.7288628762541807,
+          "recent_count": 47,
+          "recent_review_count": 34,
+          "share_in_product": 0.03724000498194047,
+          "review_share_in_product": 0.07464503042596349
+        },
+        "representative_statements": [
+          "Nest thermostat shows current temp that mismatches actual room temperature",
+          "Nest read temp fails to match actual ambient temperature initially",
+          "red wiring issues cause thermostat to malfunction"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "ecosystem_relations": [
+      {
+        "relation_id": "REL-780DAA5FCA6C",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能温控器",
+        "related_product": "空气质量监测器",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.261227548122406,
+            "other_to_focal": 0.261227548122406,
+            "undirected_strength": 0.261227548122406
+          },
+          "coo": {
+            "focal_to_other": 0.3784080445766449,
+            "other_to_focal": 0.3784080445766449,
+            "undirected_strength": 0.3784080445766449
+          },
+          "user": {
+            "focal_to_other": 0.010469416156411171,
+            "other_to_focal": 0.010469416156411171,
+            "undirected_strength": 0.010469416156411171
+          }
+        },
+        "overall_relation_strength": 0.3784080445766449,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-0C5B54714789",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能温控器",
+        "related_product": "智能屏/家庭中控",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "coo": {
+            "focal_to_other": 0.09524360299110413,
+            "other_to_focal": 0.09524360299110413,
+            "undirected_strength": 0.09524360299110413
+          },
+          "user": {
+            "focal_to_other": 0.004263780545443296,
+            "other_to_focal": 0.004263780545443296,
+            "undirected_strength": 0.004263780545443296
+          }
+        },
+        "overall_relation_strength": 0.09524360299110413,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-4BB48A986EDE",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能温控器",
+        "related_product": "智能排插/插头/插座",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.013414323329925537,
+            "other_to_focal": 0.013414323329925537,
+            "undirected_strength": 0.013414323329925537
+          }
+        },
+        "overall_relation_strength": 0.013414323329925537,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-A708AD80BF75",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能温控器",
+        "related_product": "汽车智能配件",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.006350472569465637,
+            "other_to_focal": 0.0063504730351269245,
+            "undirected_strength": 0.0063504730351269245
+          }
+        },
+        "overall_relation_strength": 0.0063504730351269245,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-ABA3655ABFD7",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能温控器",
+        "related_product": "智能门锁",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.006179689895361662,
+            "other_to_focal": 0.006179689895361662,
+            "undirected_strength": 0.006179689895361662
+          }
+        },
+        "overall_relation_strength": 0.006179689895361662,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      }
+    ],
+    "api_knowledge": [
+      {
+        "knowledge_id": "KB-FB75A9E876",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.ThermostatController",
+        "functionality": "Enables Alexa skills to control thermostats and thermostat-like devices: set and adjust target temperatures (single or dual setpoint), change thermostat modes (e.g., HEAT, COOL, AUTO, ECO, EM_HEAT, OFF), support scheduling/hold durations, report current thermostat state and temperature-related properties, and support adaptive recovery reporting (pre-heating/pre-cooling).",
+        "device_context": "Applies to thermostats and thermostat-like devices (examples explicitly listed: furnaces, air conditioners, water heaters). Air conditioners are treated specially (typically single-setpoint and recommended to sync with PowerController).",
+        "dependencies": [
+          {
+            "api_name": "Alexa.TemperatureSensor",
+            "relation_type": "recommended",
+            "trigger_condition": "Typically used together to provide ambient or sensed temperature values in responses and ChangeReport/StateReport context properties."
+          },
+          {
+            "api_name": "Alexa.ThermostatController.Configuration",
+            "relation_type": "optional / complementary",
+            "trigger_condition": "Implement when you want to download HVAC system configuration from the Alexa app to the thermostat (feature-based)."
+          },
+          {
+            "api_name": "Alexa.ThermostatController.Schedule",
+            "relation_type": "required (for scheduling features)",
+            "trigger_condition": "Implement this interface when the device supports user requests to set weekly schedules or advanced scheduling; also required for enabling Alexa-side schedule management and adaptive recovery interactions."
+          },
+          {
+            "api_name": "Alexa.ThermostatController.HVAC.Components",
+            "relation_type": "optional",
+            "trigger_condition": "Implement when you want Alexa to estimate energy use of a thermostat or HVAC system."
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "Implement to let Alexa know the health (connectivity) of the thermostat endpoint and include connectivity in StateReport/ChangeReport context."
+          },
+          {
+            "api_name": "Alexa.PowerController",
+            "relation_type": "recommended (for air conditioners)",
+            "trigger_condition": "For air conditioners, Amazon recommends also implementing PowerController and keeping power state synchronized with thermostat mode (e.g., COOL -> Power ON, OFF -> Power OFF)."
+          }
+        ],
+        "design_constraints": [
+          "supportedModes array must include at least one of HEAT or COOL (required).",
+          "adaptiveRecoveryStatus valid values: PREHEATING, PRECOOLING, INACTIVE (enumerated).",
+          "When reporting temperatures, use same temperature scale (Celsius or Fahrenheit) as thermostat display (required practice).",
+          "Include supportsScheduling in discovery response if the device supports hold durations (optional flag; default false).",
+          "ResumeSchedule support is limited to en-US locale (documented constraint).",
+          "User verification is supported only for ja-JP locale (documented constraint).",
+          "Discovery must set retrievable=true for properties returned to ReportState and proactivelyReported=true for properties sent proactively in change reports."
+        ],
+        "common_root_causes": [
+          "Directive not supported by the skill: skill should respond with Alexa.ThermostatController.ErrorResponse.",
+          "Temperature reported in a different scale than thermostat display (Celsius vs Fahrenheit).",
+          "Discovery response missing retrievable/proactivelyReported flags for properties the device reports.",
+          "Device does not include at least one required mode (must include HEAT or COOL in supportedModes).",
+          "ResumeSchedule directive unsupported in locales other than en-US.",
+          "User verification currently supported only in ja-JP (attempting verification in other locales unsupported).",
+          "Properties declared in discovery that do not match actual device components (only include supported properties)."
+        ],
+        "diagnostic_keywords": [
+          "ThermostatController",
+          "SetTargetTemperature",
+          "AdjustTargetTemperature",
+          "SetThermostatMode",
+          "ResumeSchedule",
+          "adaptiveRecoveryStatus",
+          "targetSetpoint",
+          "dual-setpoint"
+        ],
+        "notes_for_root_cause_mapping": "Documented behaviors and checks useful for root-cause analysis: directives may require locale-specific support (ResumeSchedule supported only in en-US; user verification supported only in ja-JP); if a skill can't handle a directive it must return an Alexa.ThermostatController.ErrorResponse or generic Alexa.ErrorResponse; discovery must declare retrievable and proactivelyReported properties correctly; report temperature properties using the thermostat's configured scale (Celsius or Fahrenheit) to avoid mismatches; adaptive recovery status values are enumerated and reported to indicate pre-heating/pre-cooling; for AC endpoints, lack of PowerController synchronization can cause inconsistent UI/behavior.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 86.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "智能温控器"
+      },
+      {
+        "knowledge_id": "KB-445F91A878",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.TemperatureSensor",
+        "functionality": "Enables Alexa to obtain the current ambient temperature from devices such as thermostats or temperature sensors, allowing users and Alexa routines to monitor or act upon temperature readings.",
+        "device_context": "Applies to temperature-sensing devices such as smart thermostats and standalone temperature sensors that report ambient room temperature.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.ThermostatController",
+            "relation_type": "complementary",
+            "trigger_condition": "used in conjunction with Alexa.TemperatureSensor when implementing thermostats that also control temperature setpoints"
+          },
+          {
+            "api_name": "Alexa.Cooking.TemperatureSensor",
+            "relation_type": "alternative",
+            "trigger_condition": "use when sensing the current temperature of a cooking appliance such as an oven"
+          },
+          {
+            "api_name": "Alexa.Cooking.FoodTemperatureSensor",
+            "relation_type": "alternative",
+            "trigger_condition": "use when sensing the temperature of food that is cooking"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "required",
+            "trigger_condition": "mandatory for sensor devices to report connectivity or operational health status to Alexa"
+          },
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "used for endpoint discovery to declare device capabilities including Alexa.TemperatureSensor support"
+          }
+        ],
+        "design_constraints": [
+          "Only temperature property is supported; no directives defined.",
+          "Must use TEMPERATURE_SENSOR as display category.",
+          "Sensor devices must implement Alexa.EndpointHealth.",
+          "temperature property value must include scale (CELSIUS or FAHRENHEIT) and timeOfSample timestamp.",
+          "Retrievable and proactivelyReported flags must be specified correctly."
+        ],
+        "common_root_causes": [
+          "The device fails to report temperature if 'retrievable' is not set to true.",
+          "Alexa cannot detect the sensor if the endpoint is not declared using the Alexa.Discovery interface.",
+          "Missing Alexa.EndpointHealth implementation may prevent the device from passing certification.",
+          "Incorrect property namespace or name ('temperature') leads to ignored state reports."
+        ],
+        "diagnostic_keywords": [
+          "temperature",
+          "thermostat",
+          "sensor",
+          "StateReport",
+          "ChangeReport",
+          "EndpointHealth",
+          "Discovery",
+          "proactivelyReported"
+        ],
+        "notes_for_root_cause_mapping": "Temperature values not appearing in Alexa app or responses can result from missing 'retrievable' or 'proactivelyReported' property flags, incorrect namespace, or absent EndpointHealth implementation.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 67.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "智能温控器"
+      }
+    ],
+    "retrieval_config": {
+      "max_observed_cards": 6,
+      "statements_per_card": 3,
+      "max_relations": 5,
+      "max_api_cards": 5,
+      "max_chains": 4,
+      "max_standalone_chains": 1,
+      "chain_selection_mode": "dimension_diverse"
+    },
+    "source_notes": [
+      "OBS: observed dimension catalog plus detailed aggregated review evidence.",
+      "REL: static ecosystem associations; not causal propagation.",
+      "KB: candidate mechanism knowledge; not proof of implementation failure.",
+      "MF/CHN, when supplied, are model-inferred and not causal proof."
+    ],
+    "model_facts": [
+      {
+        "fact_id": "MF-C0CD1B1F5B",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Reliability and Stability",
+        "predicted_next_risk": 0.8075438371563333,
+        "max_predicted_next_risk": 0.8075438371563333,
+        "spillover_output": 0.145726288205883,
+        "spillover_exposure": 0.14572628831846687,
+        "rho": 0.1952284425497055,
+        "beta_api": 0.18365482985973358,
+        "beta_coo": 0.17571651935577393,
+        "beta_user": 0.19341765344142914,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-A3D9E96F3C",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Setup and Onboarding",
+        "predicted_next_risk": 0.7568199554301774,
+        "max_predicted_next_risk": 0.7568199554301774,
+        "spillover_output": 0.13622627442302426,
+        "spillover_exposure": 0.13622627452970226,
+        "rho": 0.18600499629974365,
+        "beta_api": 0.1613244116306305,
+        "beta_coo": 0.1695835441350937,
+        "beta_user": 0.1832714080810547,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-A13193DF31",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Connectivity and Coverage",
+        "predicted_next_risk": 0.7849144166729168,
+        "max_predicted_next_risk": 0.7849144166729168,
+        "spillover_output": 0.14197516100785668,
+        "spillover_exposure": 0.1419751611173618,
+        "rho": 0.18983574211597443,
+        "beta_api": 0.1775221824645996,
+        "beta_coo": 0.1720176339149475,
+        "beta_user": 0.18812839686870575,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-13B93A2BBA",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Capability and Feature Gaps",
+        "predicted_next_risk": 0.6928357640331482,
+        "max_predicted_next_risk": 0.6928357640331482,
+        "spillover_output": 0.12558678630242145,
+        "spillover_exposure": 0.1255867864006988,
+        "rho": 0.17108173668384552,
+        "beta_api": 0.15974333882331848,
+        "beta_coo": 0.15028059482574463,
+        "beta_user": 0.1688392460346222,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-913EA139FE",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Sensors",
+        "predicted_next_risk": 0.7456044266509425,
+        "max_predicted_next_risk": 0.7456044266509425,
+        "spillover_output": 0.14407337431959344,
+        "spillover_exposure": 0.14407337442302331,
+        "rho": 0.1853162944316864,
+        "beta_api": 0.1927252560853958,
+        "beta_coo": 0.1697172075510025,
+        "beta_user": 0.17769116163253784,
+        "dominant_driver": "api",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-476E56B96F",
+        "fact_type": "anchored_product_dynamic_context",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "persistence_score": 0.18954261435752218,
+        "persistence": "low",
+        "beta_api": 0.186287340046543,
+        "beta_coo": 0.16869237340758153,
+        "beta_user": 0.1828834719752159,
+        "dominant_driver": "api",
+        "spillover_output_score": 0.14201150315994285,
+        "spillover_exposure_score": 0.14201150326566003,
+        "scope_note": "Product-level context; not a new risk dimension.",
+        "epistemic_status": "model_inferred_product_context"
+      }
+    ],
+    "risk_chains": [
+      {
+        "node_path": [
+          267,
+          148
+        ],
+        "path_length": 1,
+        "log_score": -0.17114232864350093,
+        "chain_score": 0.8427016243566543,
+        "source_node": 267,
+        "target_node": 148,
+        "source_category": "空气质量监测器",
+        "target_category": "智能温控器",
+        "dimension": "Reliability and Stability",
+        "source_risk_raw": 0.8283367908773523,
+        "source_risk_score": 0.8748228692309471,
+        "target_risk_raw": 0.8075438371563333,
+        "target_risk_score": 0.8469278617695335,
+        "edge_product": 0.9134727175573087,
+        "edge_weights": [
+          0.9134727175573087
+        ],
+        "path_text": "空气质量监测器::Reliability and Stability -> 智能温控器::Reliability and Stability",
+        "chain_id": "L0092",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Reliability and Stability"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 1,
+          "selection_order": 1,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Reliability and Stability"
+          ],
+          "new_dimensions_when_selected": [
+            "Reliability and Stability"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Reliability and Stability"
+          ],
+          "cumulative_dimension_coverage": [
+            "Reliability and Stability"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          140,
+          259
+        ],
+        "path_length": 1,
+        "log_score": -0.32641897589261665,
+        "chain_score": 0.7215028318032989,
+        "source_node": 140,
+        "target_node": 259,
+        "source_category": "智能温控器",
+        "target_category": "空气质量监测器",
+        "dimension": "Connectivity and Coverage",
+        "source_risk_raw": 0.7849144166729168,
+        "source_risk_score": 0.8165691228572137,
+        "target_risk_raw": 0.6844144896397606,
+        "target_risk_score": 0.6817423804869136,
+        "edge_product": 0.8895008574252375,
+        "edge_weights": [
+          0.8895008574252375
+        ],
+        "path_text": "智能温控器::Connectivity and Coverage -> 空气质量监测器::Connectivity and Coverage",
+        "chain_id": "L0098",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Connectivity and Coverage"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 2,
+          "selection_order": 2,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_when_selected": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Connectivity and Coverage"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Reliability and Stability"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          151,
+          270
+        ],
+        "path_length": 1,
+        "log_score": -0.34636259509064726,
+        "chain_score": 0.7072559930566571,
+        "source_node": 151,
+        "target_node": 270,
+        "source_category": "智能温控器",
+        "target_category": "空气质量监测器",
+        "dimension": "Sensors",
+        "source_risk_raw": 0.7456044266509425,
+        "source_risk_score": 0.7638323890730863,
+        "target_risk_raw": 0.7264040639403797,
+        "target_risk_score": 0.738073938962577,
+        "edge_product": 0.9129599681390199,
+        "edge_weights": [
+          0.9129599681390199
+        ],
+        "path_text": "智能温控器::Sensors -> 空气质量监测器::Sensors",
+        "chain_id": "L0099",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Sensors"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 3,
+          "selection_order": 3,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Sensors"
+          ],
+          "new_dimensions_when_selected": [
+            "Sensors"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Sensors"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Reliability and Stability",
+            "Sensors"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          152,
+          271
+        ],
+        "path_length": 1,
+        "log_score": -0.3889889088889576,
+        "chain_score": 0.6777417868817023,
+        "source_node": 152,
+        "target_node": 271,
+        "source_category": "智能温控器",
+        "target_category": "空气质量监测器",
+        "dimension": "Setup and Onboarding",
+        "source_risk_raw": 0.7568199554301774,
+        "source_risk_score": 0.7788787005869813,
+        "target_risk_raw": 0.7486750330667586,
+        "target_risk_score": 0.7679517936574224,
+        "edge_product": 0.8487001006480173,
+        "edge_weights": [
+          0.8487001006480173
+        ],
+        "path_text": "智能温控器::Setup and Onboarding -> 空气质量监测器::Setup and Onboarding",
+        "chain_id": "L0100",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Setup and Onboarding"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 4,
+          "selection_order": 4,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Setup and Onboarding"
+          ],
+          "new_dimensions_when_selected": [
+            "Setup and Onboarding"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Setup and Onboarding"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Reliability and Stability",
+            "Sensors",
+            "Setup and Onboarding"
+          ],
+          "max_standalone_cap": 1
+        }
+      }
+    ],
+    "dimension_anchor": {
+      "case_id": "CASE-1CB961C8B0",
+      "product_category": "智能温控器",
+      "source": "A_core_hard_anchor",
+      "core_risk_dimensions": [
+        "Reliability and Stability",
+        "Setup and Onboarding",
+        "Connectivity and Coverage",
+        "Capability and Feature Gaps",
+        "Sensors"
+      ],
+      "promoted_risk_dimensions": [],
+      "risk_dimensions": [
+        "Reliability and Stability",
+        "Setup and Onboarding",
+        "Connectivity and Coverage",
+        "Capability and Feature Gaps",
+        "Sensors"
+      ],
+      "promotion_rule": {
+        "max_promotions": 0,
+        "max_dynamic_rank": 3,
+        "must_be_observed_dimension": true
+      }
+    },
+    "hybrid_routing": {
+      "core_anchor_dimensions": [
+        "Reliability and Stability",
+        "Setup and Onboarding",
+        "Connectivity and Coverage",
+        "Capability and Feature Gaps",
+        "Sensors"
+      ],
+      "eligible_observed_dimensions": [
+        "App and Configuration UX",
+        "Automation and Routine",
+        "Capability and Feature Gaps",
+        "Compatibility",
+        "Connectivity and Coverage",
+        "Control and Interaction",
+        "Cost and Value",
+        "Delivery & Packaging",
+        "Ease of use",
+        "Hardware",
+        "Media",
+        "Reliability and Stability",
+        "Responsiveness",
+        "Security and Privacy",
+        "Sensors",
+        "Setup and Onboarding"
+      ],
+      "promoted_dimensions": [],
+      "final_anchor_dimensions": [
+        "Reliability and Stability",
+        "Setup and Onboarding",
+        "Connectivity and Coverage",
+        "Capability and Feature Gaps",
+        "Sensors"
+      ],
+      "promotion_candidates": [
+        {
+          "dimension": "Security and Privacy",
+          "dynamic_rank": 2,
+          "predicted_next_risk": 0.7987413574798452,
+          "historical_risk_zscore": null,
+          "predicted_risk_change": null
+        }
+      ],
+      "dynamic_matched_dimensions": [
+        "Capability and Feature Gaps",
+        "Connectivity and Coverage",
+        "Reliability and Stability",
+        "Sensors",
+        "Setup and Onboarding"
+      ],
+      "dynamic_missing_dimensions": [],
+      "chain_matched_dimensions": [
+        "Connectivity and Coverage",
+        "Reliability and Stability",
+        "Sensors",
+        "Setup and Onboarding"
+      ],
+      "n_anchor_dimensions": 5,
+      "n_anchor_dynamic_matched": 5,
+      "n_anchor_chains": 4,
+      "n_unique_chain_dimensions": 4,
+      "anchor_chain_dimension_coverage": 0.8,
+      "chain_selection_mode": "dimension_diverse",
+      "general_excluded": true,
+      "promotion_mode": "none",
+      "max_promotions": 0,
+      "max_dynamic_rank": 3
+    }
+  },
+  "diagnosis": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Setup and Onboarding",
+      "Connectivity and Coverage",
+      "Capability and Feature Gaps",
+      "Sensors"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "setup_failure",
+      "connectivity_failure",
+      "capability_or_compatibility",
+      "sensor_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.",
+        "source_refs": [
+          "OBS-ABFF43C460"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.",
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.",
+        "source_refs": [
+          "OBS-4857306C3F"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.",
+        "source_refs": [
+          "OBS-C0BB46A662"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.",
+        "supporting_claim_ids": [
+          "CL2"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.85,
+        "main_uncertainty": "Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "privacy_or_security",
+        "mechanism_scope": "interface",
+        "statement": "Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.",
+        "supporting_claim_ids": [
+          "CL3"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.7,
+        "main_uncertainty": "Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "capability_or_compatibility",
+        "mechanism_scope": "local",
+        "statement": "Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.",
+        "supporting_claim_ids": [
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.75,
+        "main_uncertainty": "Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.",
+        "required_data": [
+          "Wi-Fi association logs during setup",
+          "Router band configuration during failed setups"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.",
+        "required_data": [
+          "Device-side temperature scale setting",
+          "Alexa StateReport payloads for temperature"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.",
+        "required_data": [
+          "Firmware telemetry on HVAC system state",
+          "Alexa discovery response properties",
+          "Local UI source code or behavior logs"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems)."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases."
+      }
+    ]
+  },
+  "llm_trace": {
+    "dimension_anchor": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Setup and Onboarding\",\n    \"Connectivity and Coverage\",\n    \"Capability and Feature Gaps\",\n    \"Sensors\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-ABFF43C460\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-773E4A2170\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Capability and Feature Gaps\",\n      \"source_refs\": [\"OBS-C0BB46A662\"],\n      \"confidence\": 0.88\n    },\n    {\n      \"dimension\": \"Sensors\",\n      \"source_refs\": [\"OBS-4857306C3F\"],\n      \"confidence\": 0.85\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-1CB961C8B0",
+            "product_category": "智能温控器",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Setup and Onboarding",
+              "Connectivity and Coverage",
+              "Capability and Feature Gaps",
+              "Sensors"
+            ],
+            "dimension_support": [
+              {
+                "dimension": "Reliability and Stability",
+                "source_refs": [
+                  "OBS-ABFF43C460"
+                ],
+                "confidence": 0.95
+              },
+              {
+                "dimension": "Setup and Onboarding",
+                "source_refs": [
+                  "OBS-F1D4EFEAAC"
+                ],
+                "confidence": 0.92
+              },
+              {
+                "dimension": "Connectivity and Coverage",
+                "source_refs": [
+                  "OBS-773E4A2170"
+                ],
+                "confidence": 0.9
+              },
+              {
+                "dimension": "Capability and Feature Gaps",
+                "source_refs": [
+                  "OBS-C0BB46A662"
+                ],
+                "confidence": 0.88
+              },
+              {
+                "dimension": "Sensors",
+                "source_refs": [
+                  "OBS-4857306C3F"
+                ],
+                "confidence": 0.85
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 2094,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 292,
+            "total_tokens": 2386,
+            "system_prompt_chars": 1177,
+            "user_payload_chars": 5815
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "diagnosis": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Setup and Onboarding\", \"Connectivity and Coverage\", \"Capability and Feature Gaps\", \"Sensors\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"setup_failure\", \"connectivity_failure\", \"capability_or_compatibility\", \"sensor_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.\",\n      \"source_refs\": [\"OBS-ABFF43C460\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.\",\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.\",\n      \"source_refs\": [\"OBS-4857306C3F\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.\",\n      \"source_refs\": [\"OBS-C0BB46A662\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.85,\n      \"main_uncertainty\": \"Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"privacy_or_security\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.7,\n      \"main_uncertainty\": \"Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"capability_or_compatibility\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.\",\n      \"required_data\": [\"Wi-Fi association logs during setup\", \"Router band configuration during failed setups\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.\",\n      \"required_data\": [\"Device-side temperature scale setting\", \"Alexa StateReport payloads for temperature\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.\",\n      \"required_data\": [\"Firmware telemetry on HVAC system state\", \"Alexa discovery response properties\", \"Local UI source code or behavior logs\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems).\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-1CB961C8B0",
+            "product_category": "智能温控器",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Setup and Onboarding",
+              "Connectivity and Coverage",
+              "Capability and Feature Gaps",
+              "Sensors"
+            ],
+            "symptom_families": [
+              "unresponsive_or_outage",
+              "setup_failure",
+              "connectivity_failure",
+              "capability_or_compatibility",
+              "sensor_failure"
+            ],
+            "claims": [
+              {
+                "claim_id": "CL1",
+                "claim_type": "observed",
+                "statement": "Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.",
+                "source_refs": [
+                  "OBS-ABFF43C460"
+                ]
+              },
+              {
+                "claim_id": "CL2",
+                "claim_type": "observed",
+                "statement": "Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.",
+                "source_refs": [
+                  "OBS-F1D4EFEAAC",
+                  "OBS-773E4A2170"
+                ]
+              },
+              {
+                "claim_id": "CL3",
+                "claim_type": "observed",
+                "statement": "Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.",
+                "source_refs": [
+                  "OBS-4857306C3F"
+                ]
+              },
+              {
+                "claim_id": "CL4",
+                "claim_type": "observed",
+                "statement": "Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.",
+                "source_refs": [
+                  "OBS-C0BB46A662"
+                ]
+              }
+            ],
+            "mechanisms": [
+              {
+                "mechanism_id": "M1",
+                "mechanism_family": "connectivity_or_state_sync",
+                "mechanism_scope": "local",
+                "statement": "Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.",
+                "supporting_claim_ids": [
+                  "CL2"
+                ],
+                "source_refs": [
+                  "OBS-F1D4EFEAAC",
+                  "OBS-773E4A2170"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.85,
+                "main_uncertainty": "Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary."
+              },
+              {
+                "mechanism_id": "M2",
+                "mechanism_family": "privacy_or_security",
+                "mechanism_scope": "interface",
+                "statement": "Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.",
+                "supporting_claim_ids": [
+                  "CL3"
+                ],
+                "source_refs": [
+                  "OBS-4857306C3F",
+                  "KB-FB75A9E876"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.7,
+                "main_uncertainty": "Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration."
+              },
+              {
+                "mechanism_id": "M3",
+                "mechanism_family": "capability_or_compatibility",
+                "mechanism_scope": "local",
+                "statement": "Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.",
+                "supporting_claim_ids": [
+                  "CL4"
+                ],
+                "source_refs": [
+                  "OBS-C0BB46A662",
+                  "KB-FB75A9E876"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.75,
+                "main_uncertainty": "Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware."
+              }
+            ],
+            "validation_tasks": [
+              {
+                "validation_id": "V1",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "task": "Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.",
+                "required_data": [
+                  "Wi-Fi association logs during setup",
+                  "Router band configuration during failed setups"
+                ]
+              },
+              {
+                "validation_id": "V2",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "task": "Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.",
+                "required_data": [
+                  "Device-side temperature scale setting",
+                  "Alexa StateReport payloads for temperature"
+                ]
+              },
+              {
+                "validation_id": "V3",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "task": "Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.",
+                "required_data": [
+                  "Firmware telemetry on HVAC system state",
+                  "Alexa discovery response properties",
+                  "Local UI source code or behavior logs"
+                ]
+              }
+            ],
+            "abstentions": [
+              {
+                "scope": "exact_root_cause",
+                "reason": "Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems)."
+              },
+              {
+                "scope": "implementation_defect",
+                "reason": "While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 3639,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1225,
+            "total_tokens": 4864,
+            "system_prompt_chars": 3811,
+            "user_payload_chars": 9839
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "action": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations\",\n      \"action\": \"Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.\",\n      \"intervention_logic\": \"Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"app_or_configuration\", \"support_or_user_guidance\"],\n      \"validation_metric\": \"Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Expose AC operational state visibly in local UI and Alexa API responses\",\n      \"action\": \"Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.\",\n      \"intervention_logic\": \"M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Confirm whether temperature scale mismatch contributes to sensor discrepancy reports\",\n      \"action\": \"Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.\",\n      \"intervention_logic\": \"M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-1CB961C8B0",
+            "product_category": "智能温控器",
+            "actions": [
+              {
+                "action_id": "A1",
+                "priority_rank": 1,
+                "action_subfamily": "user_guidance_or_notification",
+                "action_level": "product",
+                "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+                "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+                "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "source_refs": [
+                  "OBS-F1D4EFEAAC",
+                  "OBS-773E4A2170"
+                ],
+                "target_products": [
+                  "智能温控器"
+                ],
+                "target_layers": [
+                  "app_or_configuration",
+                  "support_or_user_guidance"
+                ],
+                "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+              },
+              {
+                "action_id": "A2",
+                "priority_rank": 2,
+                "action_subfamily": "software_or_firmware_remediation",
+                "action_level": "product",
+                "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+                "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+                "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "source_refs": [
+                  "OBS-C0BB46A662",
+                  "KB-FB75A9E876"
+                ],
+                "target_products": [
+                  "智能温控器"
+                ],
+                "target_layers": [
+                  "firmware",
+                  "alexa_skill_or_api_implementation"
+                ],
+                "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+              },
+              {
+                "action_id": "A3",
+                "priority_rank": 3,
+                "action_subfamily": "observability_or_validation",
+                "action_level": "product",
+                "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+                "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+                "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "source_refs": [
+                  "OBS-4857306C3F",
+                  "KB-FB75A9E876"
+                ],
+                "target_products": [
+                  "智能温控器"
+                ],
+                "target_layers": [
+                  "firmware",
+                  "cloud_service"
+                ],
+                "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 12208,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 827,
+            "total_tokens": 13035,
+            "system_prompt_chars": 4075,
+            "user_payload_chars": 37098
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "dimension_anchor": {
+      "prompt_tokens": 2094,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 292,
+      "total_tokens": 2386,
+      "system_prompt_chars": 1177,
+      "user_payload_chars": 5815
+    },
+    "diagnosis": {
+      "prompt_tokens": 3639,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 1225,
+      "total_tokens": 4864,
+      "system_prompt_chars": 3811,
+      "user_payload_chars": 9839
+    },
+    "action": {
+      "prompt_tokens": 12208,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 827,
+      "total_tokens": 13035,
+      "system_prompt_chars": 4075,
+      "user_payload_chars": 37098
+    }
+  },
+  "updated_at": "2026-09-03T10:58:50.094193+00:00",
+  "mechanism_feedback": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "respondent_profile": {
+      "respondent_role": "product_practitioner",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "prospective_human_review"
+    },
+    "mechanism_feedback": [
+      {
+        "mechanism_id": "M1",
+        "assessment_status": "supported",
+        "revision": "Thermostat setup and connectivity may fail when the network configuration relies on incompatible 5 GHz Wi-Fi or problematic 2.4/5 GHz band and SSID arrangements, preventing successful network association or provisioning.",
+        "validation_note": "Reproduce setup under 2.4-GHz-only, 5-GHz-only, dual-band shared-SSID, separate-SSID, and band-steering configurations; capture Wi-Fi association, provisioning, authentication, and setup error logs; compare the exact failure stage and success rate across network configurations to determine whether 5-GHz support or 2.4/5-GHz band and SSID handling explains the observed setup failures."
+      },
+      {
+        "mechanism_id": "M2",
+        "assessment_status": "plausible",
+        "revision": "Observed temperature discrepancies may result from sensor measurement or calibration errors, while discrepancies specific to Alexa-reported values may arise from inconsistent Celsius/Fahrenheit handling in the temperature-reporting path.",
+        "validation_note": "Compare the thermostat reading with a calibrated reference thermometer under stable ambient conditions; record raw or device-reported sensor values, local display values, companion-app values, and Alexa-reported values at the same timestamps; determine whether the discrepancy originates in physical sensing or calibration, local processing, cloud/app reporting, or Alexa-side temperature-scale conversion."
+      },
+      {
+        "mechanism_id": "M3",
+        "assessment_status": "supported",
+        "revision": "Absence of an at-a-glance AC state indicator limits users' immediate visibility of the current system state. The visibility gap may result from missing or insufficient UI presentation, incomplete API exposure, or synchronization of the thermostat's operating-state information.",
+        "validation_note": "Examine whether the thermostat internally tracks current HVAC operating state, thermostat mode, and power state; compare how those states are displayed in the device UI, companion app, and Alexa surfaces; review discovery, StateReport, and ChangeReport properties and their synchronization with actual HVAC operation to determine whether the visibility gap results from missing state tracking, missing UI presentation, or incomplete API exposure or synchronization."
+      }
+    ]
+  },
+  "reviewed_diagnosis": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Setup and Onboarding",
+      "Connectivity and Coverage",
+      "Capability and Feature Gaps",
+      "Sensors"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "setup_failure",
+      "connectivity_failure",
+      "capability_or_compatibility",
+      "sensor_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Users report thermostat becoming unresponsive or shutting off completely, indicating severe reliability issues.",
+        "source_refs": [
+          "OBS-ABFF43C460"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Setup frequently fails due to incompatibility with 5GHz Wi-Fi networks, a known limitation for many smart thermostats.",
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Temperature readings from the thermostat often mismatch actual ambient conditions, suggesting sensor calibration or reporting issues.",
+        "source_refs": [
+          "OBS-4857306C3F"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Users cannot view AC operational state at a glance, reflecting a gap in core feature visibility.",
+        "source_refs": [
+          "OBS-C0BB46A662"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "Thermostat loses connectivity or becomes unresponsive when connected to 5GHz Wi-Fi, which it does not support, leading to setup and ongoing operation failures.",
+        "supporting_claim_ids": [
+          "CL2"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.85,
+        "main_uncertainty": "Whether firmware or hardware limitations prevent 5GHz association, or if user misconfiguration is primary.",
+        "human_assessment": "supported",
+        "human_revision": "Thermostat setup and connectivity may fail when the network configuration relies on incompatible 5 GHz Wi-Fi or problematic 2.4/5 GHz band and SSID arrangements, preventing successful network association or provisioning.",
+        "human_validation_note": "Reproduce setup under 2.4-GHz-only, 5-GHz-only, dual-band shared-SSID, separate-SSID, and band-steering configurations; capture Wi-Fi association, provisioning, authentication, and setup error logs; compare the exact failure stage and success rate across network configurations to determine whether 5-GHz support or 2.4/5-GHz band and SSID handling explains the observed setup failures."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "privacy_or_security",
+        "mechanism_scope": "interface",
+        "statement": "Temperature sensor data reported via Alexa.TemperatureSensor may use a different scale (Celsius vs Fahrenheit) than the device display, causing user-perceived inaccuracies.",
+        "supporting_claim_ids": [
+          "CL3"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.7,
+        "main_uncertainty": "Lack of direct evidence linking scale mismatch to observed temperature discrepancies; could also stem from hardware calibration.",
+        "human_assessment": "plausible",
+        "human_revision": "Observed temperature discrepancies may result from sensor measurement or calibration errors, while discrepancies specific to Alexa-reported values may arise from inconsistent Celsius/Fahrenheit handling in the temperature-reporting path.",
+        "human_validation_note": "Compare the thermostat reading with a calibrated reference thermometer under stable ambient conditions; record raw or device-reported sensor values, local display values, companion-app values, and Alexa-reported values at the same timestamps; determine whether the discrepancy originates in physical sensing or calibration, local processing, cloud/app reporting, or Alexa-side temperature-scale conversion."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "capability_or_compatibility",
+        "mechanism_scope": "local",
+        "statement": "Absence of an at-a-glance AC state indicator reflects a missing UI or API-exposed property, limiting user awareness of system mode.",
+        "supporting_claim_ids": [
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.75,
+        "main_uncertainty": "Whether the capability exists but is not exposed in the UI, or is fundamentally unsupported by the device firmware.",
+        "human_assessment": "supported",
+        "human_revision": "Absence of an at-a-glance AC state indicator limits users' immediate visibility of the current system state. The visibility gap may result from missing or insufficient UI presentation, incomplete API exposure, or synchronization of the thermostat's operating-state information.",
+        "human_validation_note": "Examine whether the thermostat internally tracks current HVAC operating state, thermostat mode, and power state; compare how those states are displayed in the device UI, companion app, and Alexa surfaces; review discovery, StateReport, and ChangeReport properties and their synchronization with actual HVAC operation to determine whether the visibility gap results from missing state tracking, missing UI presentation, or incomplete API exposure or synchronization."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Verify whether the thermostat attempts to connect to 5GHz SSIDs and fails silently or explicitly rejects them during setup.",
+        "required_data": [
+          "Wi-Fi association logs during setup",
+          "Router band configuration during failed setups"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Check if temperature reports sent to Alexa use the same scale as the local thermostat display in affected units.",
+        "required_data": [
+          "Device-side temperature scale setting",
+          "Alexa StateReport payloads for temperature"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Determine if the thermostat firmware internally tracks AC operational state and whether it is exposed via local UI or Alexa APIs.",
+        "required_data": [
+          "Firmware telemetry on HVAC system state",
+          "Alexa discovery response properties",
+          "Local UI source code or behavior logs"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence indicates symptoms but does not isolate whether issues stem from hardware defects, firmware bugs, or user environment factors (e.g., legacy HVAC systems)."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "While API knowledge suggests possible implementation pitfalls (e.g., temperature scale mismatch), no diagnostic logs confirm these occurred in the observed cases."
+      }
+    ],
+    "respondent_profile": {
+      "respondent_role": "product_practitioner",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "prospective_human_review"
+    }
+  },
+  "mechanism_reviewed_at": "2026-09-03T03:11:48.991310+00:00",
+  "decision_context": {
+    "context_source": "product_team_input",
+    "product_category": "智能温控器",
+    "objective": "reduce prospective user-experience risk and ecosystem propagation risk",
+    "allowed_layers": [
+      "app_or_configuration",
+      "cloud_service",
+      "firmware",
+      "alexa_skill_or_api_implementation",
+      "support_or_user_guidance",
+      "ecosystem_governance"
+    ],
+    "allow_hardware_change": false,
+    "allow_third_party_change": false
+  },
+  "action_output": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+        "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+        "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "app_or_configuration",
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+        "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+        "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+        "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+        "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+      }
+    ]
+  },
+  "action_raw_output": "{\n  \"case_id\": \"CASE-1CB961C8B0\",\n  \"product_category\": \"智能温控器\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations\",\n      \"action\": \"Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.\",\n      \"intervention_logic\": \"Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-F1D4EFEAAC\", \"OBS-773E4A2170\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"app_or_configuration\", \"support_or_user_guidance\"],\n      \"validation_metric\": \"Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Expose AC operational state visibly in local UI and Alexa API responses\",\n      \"action\": \"Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.\",\n      \"intervention_logic\": \"M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-C0BB46A662\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Confirm whether temperature scale mismatch contributes to sensor discrepancy reports\",\n      \"action\": \"Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.\",\n      \"intervention_logic\": \"M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-4857306C3F\", \"KB-FB75A9E876\"],\n      \"target_products\": [\"智能温控器\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.\"\n    }\n  ]\n}",
+  "action_original_parsed_output": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+        "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+        "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "app_or_configuration",
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+        "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+        "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+        "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+        "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic."
+      }
+    ]
+  },
+  "action_normalization_notes": [],
+  "action_discarded_actions": [],
+  "action_id_map": [
+    {
+      "original_action_id": "A1",
+      "original_priority_rank": 1,
+      "final_action_id": "A1",
+      "final_priority_rank": 1
+    },
+    {
+      "original_action_id": "A2",
+      "original_priority_rank": 2,
+      "final_action_id": "A2",
+      "final_priority_rank": 2
+    },
+    {
+      "original_action_id": "A3",
+      "original_priority_rank": 3,
+      "final_action_id": "A3",
+      "final_priority_rank": 3
+    }
+  ],
+  "action_n_generated": 3,
+  "action_n_valid": 3,
+  "action_n_discarded": 0,
+  "action_generation_status": "generated",
+  "action_context_mode": "h_ab",
+  "action_context_stats": {
+    "n_action_catalog_rows": 16,
+    "n_action_observed_evidence": 6,
+    "n_action_relations": 5,
+    "n_action_api_knowledge": 2,
+    "n_action_model_facts": 6,
+    "n_action_risk_chains": 0,
+    "n_action_unique_reference_ids": 29,
+    "action_context_chars": 30831
+  },
+  "action_generated_at": "2026-09-03T10:39:36.991010+00:00",
+  "action_feedback": {
+    "case_id": "CASE-1CB961C8B0",
+    "action_feedback": [
+      {
+        "action_id": "A1",
+        "decision": "accept",
+        "management_value": "medium",
+        "revision": "Update the mobile app and in-box setup instructions to warn against 5-GHz-only or 2.4/5-GHz SSID configurations that are confirmed by the product's current WiFi support matrix to be unsupported or provisioning-prone, and provide the recommended network configuration before setup begins."
+      },
+      {
+        "action_id": "A2",
+        "decision": "accept",
+        "management_value": "medium",
+        "revision": "Modify firmware to render the thermostat's available HVAC operating state clearly on the local display; where the corresponding state is supported by the Alexa interface, expose and report it through the appropriate property, while using thermostatMode specifically for the configured thermostat mode rather than as a substitute for active heating/cooling/idle state."
+      },
+      {
+        "action_id": "A3",
+        "decision": "accept",
+        "management_value": "high",
+        "revision": "Instrument firmware to log the local temperature value and scale setting alongside the corresponding outbound Alexa temperature value, scale, and timestamp, and correlate these records with reported discrepancy cases."
+      }
+    ]
+  },
+  "reviewed_action_output": {
+    "case_id": "CASE-1CB961C8B0",
+    "product_category": "智能温控器",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+        "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+        "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "app_or_configuration",
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Update the mobile app and in-box setup instructions to warn against 5-GHz-only or 2.4/5-GHz SSID configurations that are confirmed by the product's current WiFi support matrix to be unsupported or provisioning-prone, and provide the recommended network configuration before setup begins.",
+        "human_decision_note": "",
+        "final_action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+        "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+        "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Modify firmware to render the thermostat's available HVAC operating state clearly on the local display; where the corresponding state is supported by the Alexa interface, expose and report it through the appropriate property, while using thermostatMode specifically for the configured thermostat mode rather than as a substitute for active heating/cooling/idle state.",
+        "human_decision_note": "",
+        "final_action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+        "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+        "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Instrument firmware to log the local temperature value and scale setting alongside the corresponding outbound Alexa temperature value, scale, and timestamp, and correlate these records with reported discrepancy cases.",
+        "human_decision_note": "",
+        "final_action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies."
+      }
+    ],
+    "approved_actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+        "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+        "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-F1D4EFEAAC",
+          "OBS-773E4A2170"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "app_or_configuration",
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Update the mobile app and in-box setup instructions to warn against 5-GHz-only or 2.4/5-GHz SSID configurations that are confirmed by the product's current WiFi support matrix to be unsupported or provisioning-prone, and provide the recommended network configuration before setup begins.",
+        "human_decision_note": "",
+        "final_action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+        "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+        "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-C0BB46A662",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Modify firmware to render the thermostat's available HVAC operating state clearly on the local display; where the corresponding state is supported by the Alexa interface, expose and report it through the appropriate property, while using thermostatMode specifically for the configured thermostat mode rather than as a substitute for active heating/cooling/idle state.",
+        "human_decision_note": "",
+        "final_action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+        "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+        "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-4857306C3F",
+          "KB-FB75A9E876"
+        ],
+        "target_products": [
+          "智能温控器"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Instrument firmware to log the local temperature value and scale setting alongside the corresponding outbound Alexa temperature value, scale, and timestamp, and correlate these records with reported discrepancy cases.",
+        "human_decision_note": "",
+        "final_action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies."
+      }
+    ],
+    "deferred_actions": [],
+    "rejected_actions": [],
+    "respondent_profile": null
+  },
+  "approved_actions": [
+    {
+      "action_id": "A1",
+      "priority_rank": 1,
+      "action_subfamily": "user_guidance_or_notification",
+      "action_level": "product",
+      "improvement_direction": "Prevent setup failures by guiding users away from incompatible 5GHz Wi-Fi configurations",
+      "action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning.",
+      "intervention_logic": "Since M1 is supported and identifies 5GHz incompatibility as a cause of setup/connectivity failure, proactive user guidance can prevent misconfiguration without requiring hardware or third-party changes.",
+      "linked_mechanism_ids": [
+        "M1"
+      ],
+      "source_refs": [
+        "OBS-F1D4EFEAAC",
+        "OBS-773E4A2170"
+      ],
+      "target_products": [
+        "智能温控器"
+      ],
+      "target_layers": [
+        "app_or_configuration",
+        "support_or_user_guidance"
+      ],
+      "validation_metric": "Reduction in support tickets citing 'setup fails due to 5GHz Wi-Fi' within 60 days post-deployment.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Update the mobile app and in-box setup instructions to warn against 5-GHz-only or 2.4/5-GHz SSID configurations that are confirmed by the product's current WiFi support matrix to be unsupported or provisioning-prone, and provide the recommended network configuration before setup begins.",
+      "human_decision_note": "",
+      "final_action": "Update mobile app and in-box setup instructions to explicitly warn against using 5GHz-only networks and recommend matching SSIDs for 2.4GHz/5GHz bands during thermostat provisioning."
+    },
+    {
+      "action_id": "A2",
+      "priority_rank": 2,
+      "action_subfamily": "software_or_firmware_remediation",
+      "action_level": "product",
+      "improvement_direction": "Expose AC operational state visibly in local UI and Alexa API responses",
+      "action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property.",
+      "intervention_logic": "M3 is supported and attributes the missing at-a-glance AC state to insufficient UI/API exposure. This firmware and Alexa skill update directly addresses that gap using existing internal state if available.",
+      "linked_mechanism_ids": [
+        "M3"
+      ],
+      "source_refs": [
+        "OBS-C0BB46A662",
+        "KB-FB75A9E876"
+      ],
+      "target_products": [
+        "智能温控器"
+      ],
+      "target_layers": [
+        "firmware",
+        "alexa_skill_or_api_implementation"
+      ],
+      "validation_metric": "Percentage of devices whose Alexa discovery responses include thermostatMode with retrievable=true and proactivelyReported=true increases to ≥95%; user reviews mentioning 'can’t see AC state' decrease by ≥30% in next quarter.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Modify firmware to render the thermostat's available HVAC operating state clearly on the local display; where the corresponding state is supported by the Alexa interface, expose and report it through the appropriate property, while using thermostatMode specifically for the configured thermostat mode rather than as a substitute for active heating/cooling/idle state.",
+      "human_decision_note": "",
+      "final_action": "Modify firmware to ensure HVAC system mode (e.g., heating, cooling, idle) is consistently tracked and rendered on the thermostat display; update Alexa skill discovery response to include retrievable and proactivelyReported thermostatMode property."
+    },
+    {
+      "action_id": "A3",
+      "priority_rank": 3,
+      "action_subfamily": "observability_or_validation",
+      "action_level": "product",
+      "improvement_direction": "Confirm whether temperature scale mismatch contributes to sensor discrepancy reports",
+      "action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies.",
+      "intervention_logic": "M2 is plausible and suggests inconsistent Celsius/Fahrenheit handling may cause Alexa-reported inaccuracies. This validation action tests that hypothesis without assuming it is true, supporting future remediation if confirmed.",
+      "linked_mechanism_ids": [
+        "M2"
+      ],
+      "source_refs": [
+        "OBS-4857306C3F",
+        "KB-FB75A9E876"
+      ],
+      "target_products": [
+        "智能温控器"
+      ],
+      "target_layers": [
+        "firmware",
+        "cloud_service"
+      ],
+      "validation_metric": "Within 45 days, telemetry shows ≥90% of sampled devices report temperature in the same scale as their local display; if mismatches are found, root cause is isolated to scale conversion logic.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Instrument firmware to log the local temperature value and scale setting alongside the corresponding outbound Alexa temperature value, scale, and timestamp, and correlate these records with reported discrepancy cases.",
+      "human_decision_note": "",
+      "final_action": "Instrument firmware to log local temperature scale setting alongside outbound Alexa StateReport payloads for temperature; correlate logs with user reports of discrepancies."
+    }
+  ],
+  "deferred_actions": [],
+  "rejected_actions": []
+}

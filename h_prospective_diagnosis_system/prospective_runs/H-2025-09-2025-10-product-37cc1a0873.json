@@ -1,0 +1,3526 @@
+{
+  "workflow": "H_prospective_v2_audited",
+  "workflow_id": "H-2025-09-2025-10-product-37cc1a0873",
+  "status": "COMPLETED",
+  "selection_context": {
+    "priority_rank": 5,
+    "selection_method": "risk_chain_coverage_objective",
+    "selection_score": 11.916867060298017,
+    "risk_score": null,
+    "selection_metrics": {
+      "marginal_chain_value": 11.916867060298017,
+      "captured_chain_count": 19,
+      "captured_chain_weight_raw": 12.278342599822512
+    },
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "prospective_config": {
+    "max_observed_cards": 6,
+    "statements_per_card": 3,
+    "max_relations": 5,
+    "max_api_cards": 5,
+    "max_chains": 4,
+    "max_standalone_chains": 1,
+    "chain_selection_mode": "dimension_diverse",
+    "hybrid_max_promotions": 0,
+    "hybrid_max_dynamic_rank": 3
+  },
+  "requested_case": {
+    "product_category": "智能排插/插头/插座",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "stage_outputs": {
+    "dimension_anchor": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Setup and Onboarding\",\n    \"Compatibility\",\n    \"Automation and Routine\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-72C888DB6B\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\"],\n      \"confidence\": 0.94\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-BCCB5B1877\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Automation and Routine\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"],\n      \"confidence\": 0.89\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-6B37B6A6B8",
+        "product_category": "智能排插/插头/插座",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Connectivity and Coverage",
+          "Setup and Onboarding",
+          "Compatibility",
+          "Automation and Routine"
+        ],
+        "dimension_support": [
+          {
+            "dimension": "Reliability and Stability",
+            "source_refs": [
+              "OBS-72C888DB6B"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "dimension": "Connectivity and Coverage",
+            "source_refs": [
+              "OBS-AF5CEF5D6B"
+            ],
+            "confidence": 0.94
+          },
+          {
+            "dimension": "Setup and Onboarding",
+            "source_refs": [
+              "OBS-BCCB5B1877"
+            ],
+            "confidence": 0.92
+          },
+          {
+            "dimension": "Compatibility",
+            "source_refs": [
+              "OBS-66FB54F4E1"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "dimension": "Automation and Routine",
+            "source_refs": [
+              "OBS-A33FFCBC19"
+            ],
+            "confidence": 0.89
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 2091,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 288,
+        "total_tokens": 2379,
+        "system_prompt_chars": 1177,
+        "user_payload_chars": 5674
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Setup and Onboarding\",\n    \"Compatibility\",\n    \"Automation and Routine\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-72C888DB6B\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\"],\n      \"confidence\": 0.94\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-BCCB5B1877\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Automation and Routine\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"],\n      \"confidence\": 0.89\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-6B37B6A6B8",
+              "product_category": "智能排插/插头/插座",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Connectivity and Coverage",
+                "Setup and Onboarding",
+                "Compatibility",
+                "Automation and Routine"
+              ],
+              "dimension_support": [
+                {
+                  "dimension": "Reliability and Stability",
+                  "source_refs": [
+                    "OBS-72C888DB6B"
+                  ],
+                  "confidence": 0.95
+                },
+                {
+                  "dimension": "Connectivity and Coverage",
+                  "source_refs": [
+                    "OBS-AF5CEF5D6B"
+                  ],
+                  "confidence": 0.94
+                },
+                {
+                  "dimension": "Setup and Onboarding",
+                  "source_refs": [
+                    "OBS-BCCB5B1877"
+                  ],
+                  "confidence": 0.92
+                },
+                {
+                  "dimension": "Compatibility",
+                  "source_refs": [
+                    "OBS-66FB54F4E1"
+                  ],
+                  "confidence": 0.9
+                },
+                {
+                  "dimension": "Automation and Routine",
+                  "source_refs": [
+                    "OBS-A33FFCBC19"
+                  ],
+                  "confidence": 0.89
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 2091,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 288,
+              "total_tokens": 2379,
+              "system_prompt_chars": 1177,
+              "user_payload_chars": 5674
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "diagnosis": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Setup and Onboarding\", \"Compatibility\", \"Automation and Routine\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"setup_failure\", \"compatibility_failure\", \"automation_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.\",\n      \"source_refs\": [\"OBS-72C888DB6B\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.\",\n      \"supporting_claim_ids\": [\"CL1\", \"CL2\", \"CL4\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.78,\n      \"main_uncertainty\": \"Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"api_or_interface\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.\",\n      \"supporting_claim_ids\": [\"CL3\", \"CL4\"],\n      \"source_refs\": [\"OBS-66FB54F4E1\", \"OBS-A33FFCBC19\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.69,\n      \"main_uncertainty\": \"Insufficient data on user network environments and setup error codes to confirm root configuration failure modes.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.\",\n      \"required_data\": [\"device connectivity logs\", \"firmware heartbeat timestamps\", \"network environment metadata\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.\",\n      \"required_data\": [\"Alexa interaction logs\", \"device-side API handler timestamps\", \"directive success/failure codes\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).\",\n      \"required_data\": [\"setup session recordings\", \"error code mappings\", \"user-reported network types\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-6B37B6A6B8",
+        "product_category": "智能排插/插头/插座",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Connectivity and Coverage",
+          "Setup and Onboarding",
+          "Compatibility",
+          "Automation and Routine"
+        ],
+        "symptom_families": [
+          "unresponsive_or_outage",
+          "connectivity_failure",
+          "setup_failure",
+          "compatibility_failure",
+          "automation_failure"
+        ],
+        "claims": [
+          {
+            "claim_id": "CL1",
+            "claim_type": "observed",
+            "statement": "Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.",
+            "source_refs": [
+              "OBS-72C888DB6B"
+            ]
+          },
+          {
+            "claim_id": "CL2",
+            "claim_type": "observed",
+            "statement": "Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.",
+            "source_refs": [
+              "OBS-AF5CEF5D6B",
+              "OBS-BCCB5B1877"
+            ]
+          },
+          {
+            "claim_id": "CL3",
+            "claim_type": "observed",
+            "statement": "Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.",
+            "source_refs": [
+              "OBS-66FB54F4E1"
+            ]
+          },
+          {
+            "claim_id": "CL4",
+            "claim_type": "observed",
+            "statement": "Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.",
+            "source_refs": [
+              "OBS-A33FFCBC19"
+            ]
+          }
+        ],
+        "mechanisms": [
+          {
+            "mechanism_id": "M1",
+            "mechanism_family": "connectivity_or_state_sync",
+            "mechanism_scope": "local",
+            "statement": "WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.",
+            "supporting_claim_ids": [
+              "CL1",
+              "CL2",
+              "CL4"
+            ],
+            "source_refs": [
+              "OBS-AF5CEF5D6B",
+              "OBS-BCCB5B1877",
+              "OBS-72C888DB6B"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.78,
+            "main_uncertainty": "Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference."
+          },
+          {
+            "mechanism_id": "M2",
+            "mechanism_family": "api_or_interface",
+            "mechanism_scope": "interface",
+            "statement": "Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.",
+            "supporting_claim_ids": [
+              "CL3",
+              "CL4"
+            ],
+            "source_refs": [
+              "OBS-66FB54F4E1",
+              "OBS-A33FFCBC19",
+              "KB-EDF6E4948D"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.72,
+            "main_uncertainty": "Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds."
+          },
+          {
+            "mechanism_id": "M3",
+            "mechanism_family": "setup_or_configuration",
+            "mechanism_scope": "local",
+            "statement": "Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.",
+            "supporting_claim_ids": [
+              "CL2"
+            ],
+            "source_refs": [
+              "OBS-BCCB5B1877",
+              "OBS-AF5CEF5D6B"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.69,
+            "main_uncertainty": "Insufficient data on user network environments and setup error codes to confirm root configuration failure modes."
+          }
+        ],
+        "validation_tasks": [
+          {
+            "validation_id": "V1",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "task": "Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.",
+            "required_data": [
+              "device connectivity logs",
+              "firmware heartbeat timestamps",
+              "network environment metadata"
+            ]
+          },
+          {
+            "validation_id": "V2",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "task": "Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.",
+            "required_data": [
+              "Alexa interaction logs",
+              "device-side API handler timestamps",
+              "directive success/failure codes"
+            ]
+          },
+          {
+            "validation_id": "V3",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "task": "Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).",
+            "required_data": [
+              "setup session recordings",
+              "error code mappings",
+              "user-reported network types"
+            ]
+          }
+        ],
+        "abstentions": [
+          {
+            "scope": "exact_root_cause",
+            "reason": "Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs."
+          },
+          {
+            "scope": "implementation_defect",
+            "reason": "While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 3005,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 1257,
+        "total_tokens": 4262,
+        "system_prompt_chars": 3811,
+        "user_payload_chars": 7064
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Setup and Onboarding\", \"Compatibility\", \"Automation and Routine\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"setup_failure\", \"compatibility_failure\", \"automation_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.\",\n      \"source_refs\": [\"OBS-72C888DB6B\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.\",\n      \"supporting_claim_ids\": [\"CL1\", \"CL2\", \"CL4\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.78,\n      \"main_uncertainty\": \"Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"api_or_interface\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.\",\n      \"supporting_claim_ids\": [\"CL3\", \"CL4\"],\n      \"source_refs\": [\"OBS-66FB54F4E1\", \"OBS-A33FFCBC19\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.69,\n      \"main_uncertainty\": \"Insufficient data on user network environments and setup error codes to confirm root configuration failure modes.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.\",\n      \"required_data\": [\"device connectivity logs\", \"firmware heartbeat timestamps\", \"network environment metadata\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.\",\n      \"required_data\": [\"Alexa interaction logs\", \"device-side API handler timestamps\", \"directive success/failure codes\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).\",\n      \"required_data\": [\"setup session recordings\", \"error code mappings\", \"user-reported network types\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-6B37B6A6B8",
+              "product_category": "智能排插/插头/插座",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Connectivity and Coverage",
+                "Setup and Onboarding",
+                "Compatibility",
+                "Automation and Routine"
+              ],
+              "symptom_families": [
+                "unresponsive_or_outage",
+                "connectivity_failure",
+                "setup_failure",
+                "compatibility_failure",
+                "automation_failure"
+              ],
+              "claims": [
+                {
+                  "claim_id": "CL1",
+                  "claim_type": "observed",
+                  "statement": "Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.",
+                  "source_refs": [
+                    "OBS-72C888DB6B"
+                  ]
+                },
+                {
+                  "claim_id": "CL2",
+                  "claim_type": "observed",
+                  "statement": "Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.",
+                  "source_refs": [
+                    "OBS-AF5CEF5D6B",
+                    "OBS-BCCB5B1877"
+                  ]
+                },
+                {
+                  "claim_id": "CL3",
+                  "claim_type": "observed",
+                  "statement": "Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.",
+                  "source_refs": [
+                    "OBS-66FB54F4E1"
+                  ]
+                },
+                {
+                  "claim_id": "CL4",
+                  "claim_type": "observed",
+                  "statement": "Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.",
+                  "source_refs": [
+                    "OBS-A33FFCBC19"
+                  ]
+                }
+              ],
+              "mechanisms": [
+                {
+                  "mechanism_id": "M1",
+                  "mechanism_family": "connectivity_or_state_sync",
+                  "mechanism_scope": "local",
+                  "statement": "WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.",
+                  "supporting_claim_ids": [
+                    "CL1",
+                    "CL2",
+                    "CL4"
+                  ],
+                  "source_refs": [
+                    "OBS-AF5CEF5D6B",
+                    "OBS-BCCB5B1877",
+                    "OBS-72C888DB6B"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.78,
+                  "main_uncertainty": "Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference."
+                },
+                {
+                  "mechanism_id": "M2",
+                  "mechanism_family": "api_or_interface",
+                  "mechanism_scope": "interface",
+                  "statement": "Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.",
+                  "supporting_claim_ids": [
+                    "CL3",
+                    "CL4"
+                  ],
+                  "source_refs": [
+                    "OBS-66FB54F4E1",
+                    "OBS-A33FFCBC19",
+                    "KB-EDF6E4948D"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.72,
+                  "main_uncertainty": "Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds."
+                },
+                {
+                  "mechanism_id": "M3",
+                  "mechanism_family": "setup_or_configuration",
+                  "mechanism_scope": "local",
+                  "statement": "Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.",
+                  "supporting_claim_ids": [
+                    "CL2"
+                  ],
+                  "source_refs": [
+                    "OBS-BCCB5B1877",
+                    "OBS-AF5CEF5D6B"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.69,
+                  "main_uncertainty": "Insufficient data on user network environments and setup error codes to confirm root configuration failure modes."
+                }
+              ],
+              "validation_tasks": [
+                {
+                  "validation_id": "V1",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "task": "Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.",
+                  "required_data": [
+                    "device connectivity logs",
+                    "firmware heartbeat timestamps",
+                    "network environment metadata"
+                  ]
+                },
+                {
+                  "validation_id": "V2",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "task": "Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.",
+                  "required_data": [
+                    "Alexa interaction logs",
+                    "device-side API handler timestamps",
+                    "directive success/failure codes"
+                  ]
+                },
+                {
+                  "validation_id": "V3",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "task": "Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).",
+                  "required_data": [
+                    "setup session recordings",
+                    "error code mappings",
+                    "user-reported network types"
+                  ]
+                }
+              ],
+              "abstentions": [
+                {
+                  "scope": "exact_root_cause",
+                  "reason": "Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs."
+                },
+                {
+                  "scope": "implementation_defect",
+                  "reason": "While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 3005,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 1257,
+              "total_tokens": 4262,
+              "system_prompt_chars": 3811,
+              "user_payload_chars": 7064
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "action": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.\",\n      \"action\": \"Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.\",\n      \"intervention_logic\": \"Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"interface_or_dependency_resilience\",\n      \"action_level\": \"interface\",\n      \"improvement_direction\": \"Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.\",\n      \"action\": \"Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.\",\n      \"intervention_logic\": \"Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"KB-EDF6E4948D\", \"OBS-66FB54F4E1\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.\",\n      \"action\": \"Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.\",\n      \"intervention_logic\": \"Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"app_or_configuration\"],\n      \"validation_metric\": \"≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.\"\n    },\n    {\n      \"action_id\": \"A4\",\n      \"priority_rank\": 4,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.\",\n      \"action\": \"Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).\",\n      \"intervention_logic\": \"Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.\",\n      \"linked_mechanism_ids\": [\"M1\", \"M2\"],\n      \"source_refs\": [\"OBS-72C888DB6B\", \"OBS-66FB54F4E1\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-6B37B6A6B8",
+        "product_category": "智能排插/插头/插座",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+            "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+            "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-AF5CEF5D6B",
+              "OBS-BCCB5B1877",
+              "OBS-72C888DB6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "interface_or_dependency_resilience",
+            "action_level": "interface",
+            "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+            "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+            "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "KB-EDF6E4948D",
+              "OBS-66FB54F4E1"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+            "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+            "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-BCCB5B1877",
+              "OBS-AF5CEF5D6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "app_or_configuration"
+            ],
+            "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+          },
+          {
+            "action_id": "A4",
+            "priority_rank": 4,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+            "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+            "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+            "linked_mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-72C888DB6B",
+              "OBS-66FB54F4E1",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 11265,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 1101,
+        "total_tokens": 12366,
+        "system_prompt_chars": 4075,
+        "user_payload_chars": 31149
+      },
+      "request_meta": {},
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.\",\n      \"action\": \"Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.\",\n      \"intervention_logic\": \"Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"interface_or_dependency_resilience\",\n      \"action_level\": \"interface\",\n      \"improvement_direction\": \"Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.\",\n      \"action\": \"Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.\",\n      \"intervention_logic\": \"Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"KB-EDF6E4948D\", \"OBS-66FB54F4E1\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.\",\n      \"action\": \"Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.\",\n      \"intervention_logic\": \"Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"app_or_configuration\"],\n      \"validation_metric\": \"≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.\"\n    },\n    {\n      \"action_id\": \"A4\",\n      \"priority_rank\": 4,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.\",\n      \"action\": \"Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).\",\n      \"intervention_logic\": \"Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.\",\n      \"linked_mechanism_ids\": [\"M1\", \"M2\"],\n      \"source_refs\": [\"OBS-72C888DB6B\", \"OBS-66FB54F4E1\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-6B37B6A6B8",
+              "product_category": "智能排插/插头/插座",
+              "actions": [
+                {
+                  "action_id": "A1",
+                  "priority_rank": 1,
+                  "action_subfamily": "software_or_firmware_remediation",
+                  "action_level": "product",
+                  "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+                  "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+                  "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "source_refs": [
+                    "OBS-AF5CEF5D6B",
+                    "OBS-BCCB5B1877",
+                    "OBS-72C888DB6B"
+                  ],
+                  "target_products": [
+                    "智能排插/插头/插座"
+                  ],
+                  "target_layers": [
+                    "firmware"
+                  ],
+                  "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+                },
+                {
+                  "action_id": "A2",
+                  "priority_rank": 2,
+                  "action_subfamily": "interface_or_dependency_resilience",
+                  "action_level": "interface",
+                  "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+                  "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+                  "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "source_refs": [
+                    "KB-EDF6E4948D",
+                    "OBS-66FB54F4E1"
+                  ],
+                  "target_products": [
+                    "智能排插/插头/插座"
+                  ],
+                  "target_layers": [
+                    "alexa_skill_or_api_implementation"
+                  ],
+                  "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+                },
+                {
+                  "action_id": "A3",
+                  "priority_rank": 3,
+                  "action_subfamily": "user_guidance_or_notification",
+                  "action_level": "product",
+                  "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+                  "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+                  "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "source_refs": [
+                    "OBS-BCCB5B1877",
+                    "OBS-AF5CEF5D6B"
+                  ],
+                  "target_products": [
+                    "智能排插/插头/插座"
+                  ],
+                  "target_layers": [
+                    "app_or_configuration"
+                  ],
+                  "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+                },
+                {
+                  "action_id": "A4",
+                  "priority_rank": 4,
+                  "action_subfamily": "observability_or_validation",
+                  "action_level": "product",
+                  "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+                  "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+                  "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+                  "linked_mechanism_ids": [
+                    "M1",
+                    "M2"
+                  ],
+                  "source_refs": [
+                    "OBS-72C888DB6B",
+                    "OBS-66FB54F4E1",
+                    "KB-EDF6E4948D"
+                  ],
+                  "target_products": [
+                    "智能排插/插头/插座"
+                  ],
+                  "target_layers": [
+                    "firmware",
+                    "cloud_service"
+                  ],
+                  "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 11265,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 1101,
+              "total_tokens": 12366,
+              "system_prompt_chars": 4075,
+              "user_payload_chars": 31149
+            }
+          }
+        ]
+      },
+      "generation_status": "generated",
+      "original_parsed_output": {
+        "case_id": "CASE-6B37B6A6B8",
+        "product_category": "智能排插/插头/插座",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+            "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+            "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-AF5CEF5D6B",
+              "OBS-BCCB5B1877",
+              "OBS-72C888DB6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "interface_or_dependency_resilience",
+            "action_level": "interface",
+            "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+            "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+            "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "KB-EDF6E4948D",
+              "OBS-66FB54F4E1"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+            "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+            "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-BCCB5B1877",
+              "OBS-AF5CEF5D6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "app_or_configuration"
+            ],
+            "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+          },
+          {
+            "action_id": "A4",
+            "priority_rank": 4,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+            "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+            "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+            "linked_mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-72C888DB6B",
+              "OBS-66FB54F4E1",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+          }
+        ]
+      },
+      "accepted_output": {
+        "case_id": "CASE-6B37B6A6B8",
+        "product_category": "智能排插/插头/插座",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+            "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+            "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-AF5CEF5D6B",
+              "OBS-BCCB5B1877",
+              "OBS-72C888DB6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "interface_or_dependency_resilience",
+            "action_level": "interface",
+            "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+            "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+            "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "KB-EDF6E4948D",
+              "OBS-66FB54F4E1"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "alexa_skill_or_api_implementation"
+            ],
+            "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+            "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+            "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-BCCB5B1877",
+              "OBS-AF5CEF5D6B"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "app_or_configuration"
+            ],
+            "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+          },
+          {
+            "action_id": "A4",
+            "priority_rank": 4,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+            "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+            "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+            "linked_mechanism_ids": [
+              "M1",
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-72C888DB6B",
+              "OBS-66FB54F4E1",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "智能排插/插头/插座"
+            ],
+            "target_layers": [
+              "firmware",
+              "cloud_service"
+            ],
+            "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+          }
+        ]
+      },
+      "discarded_actions": [],
+      "action_id_map": [
+        {
+          "original_action_id": "A1",
+          "original_priority_rank": 1,
+          "final_action_id": "A1",
+          "final_priority_rank": 1
+        },
+        {
+          "original_action_id": "A2",
+          "original_priority_rank": 2,
+          "final_action_id": "A2",
+          "final_priority_rank": 2
+        },
+        {
+          "original_action_id": "A3",
+          "original_priority_rank": 3,
+          "final_action_id": "A3",
+          "final_priority_rank": 3
+        },
+        {
+          "original_action_id": "A4",
+          "original_priority_rank": 4,
+          "final_action_id": "A4",
+          "final_priority_rank": 4
+        }
+      ],
+      "normalization_notes": [],
+      "n_generated": 4,
+      "n_valid": 4,
+      "n_discarded": 0
+    }
+  },
+  "created_at": "2026-09-02T03:12:22.525362+00:00",
+  "core_dimension_anchor": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Setup and Onboarding",
+      "Compatibility",
+      "Automation and Routine"
+    ],
+    "dimension_support": [
+      {
+        "dimension": "Reliability and Stability",
+        "source_refs": [
+          "OBS-72C888DB6B"
+        ],
+        "confidence": 0.95
+      },
+      {
+        "dimension": "Connectivity and Coverage",
+        "source_refs": [
+          "OBS-AF5CEF5D6B"
+        ],
+        "confidence": 0.94
+      },
+      {
+        "dimension": "Setup and Onboarding",
+        "source_refs": [
+          "OBS-BCCB5B1877"
+        ],
+        "confidence": 0.92
+      },
+      {
+        "dimension": "Compatibility",
+        "source_refs": [
+          "OBS-66FB54F4E1"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "dimension": "Automation and Routine",
+        "source_refs": [
+          "OBS-A33FFCBC19"
+        ],
+        "confidence": 0.89
+      }
+    ]
+  },
+  "case_meta": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10",
+    "case_version": "abc_information_ablation_v1",
+    "condition": "H_hierarchical",
+    "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+  },
+  "final_dimension_anchor": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "source": "A_core_hard_anchor",
+    "core_risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Setup and Onboarding",
+      "Compatibility",
+      "Automation and Routine"
+    ],
+    "promoted_risk_dimensions": [],
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Setup and Onboarding",
+      "Compatibility",
+      "Automation and Routine"
+    ],
+    "promotion_rule": {
+      "max_promotions": 0,
+      "max_dynamic_rank": 3,
+      "must_be_observed_dimension": true
+    }
+  },
+  "case_package": {
+    "case_meta": {
+      "case_id": "CASE-6B37B6A6B8",
+      "product_category": "智能排插/插头/插座",
+      "analysis_cutoff": "2025-09",
+      "target_month": "2025-10",
+      "case_version": "abc_information_ablation_v1",
+      "condition": "H_hierarchical",
+      "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+    },
+    "observed_dimension_catalog": [
+      {
+        "evidence_id": "OBS-93A05662AB",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "App and Configuration UX",
+        "n_review": 975,
+        "mean_sentiment": -0.6574436741767765,
+        "recent_review_count": 64,
+        "review_share_in_product": 0.09423931954378503,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-A33FFCBC19",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Automation and Routine",
+        "n_review": 1083,
+        "mean_sentiment": -0.7366110689916603,
+        "recent_review_count": 97,
+        "review_share_in_product": 0.10467813647786584,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-54D64B4C4D",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Capability and Feature Gaps",
+        "n_review": 2771,
+        "mean_sentiment": -0.6762837660634671,
+        "recent_review_count": 254,
+        "review_share_in_product": 0.2678329789290547,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-66FB54F4E1",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Compatibility",
+        "n_review": 2350,
+        "mean_sentiment": -0.7267790132036136,
+        "recent_review_count": 207,
+        "review_share_in_product": 0.22714092402861008,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-AF5CEF5D6B",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Connectivity and Coverage",
+        "n_review": 3007,
+        "mean_sentiment": -0.789195710455764,
+        "recent_review_count": 272,
+        "review_share_in_product": 0.29064372704426833,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-5E4A1DB3C7",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Control and Interaction",
+        "n_review": 662,
+        "mean_sentiment": -0.6701424870466322,
+        "recent_review_count": 69,
+        "review_share_in_product": 0.06398608157742122,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-F172A75549",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Cost and Value",
+        "n_review": 464,
+        "mean_sentiment": -0.7122862823061631,
+        "recent_review_count": 62,
+        "review_share_in_product": 0.04484825053160642,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-1E83D61650",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Delivery & Packaging",
+        "n_review": 585,
+        "mean_sentiment": -0.744485294117647,
+        "recent_review_count": 40,
+        "review_share_in_product": 0.05654359172627102,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-751E208E33",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Ease of use",
+        "n_review": 212,
+        "mean_sentiment": -0.6460648148148148,
+        "recent_review_count": 14,
+        "review_share_in_product": 0.02049101101875121,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-11E5E8592C",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Hardware",
+        "n_review": 1056,
+        "mean_sentiment": -0.670483870967742,
+        "recent_review_count": 96,
+        "review_share_in_product": 0.10206843224434564,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-15EFED1D41",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Media",
+        "n_review": 42,
+        "mean_sentiment": -0.6245901639344261,
+        "recent_review_count": 6,
+        "review_share_in_product": 0.0040595399188092015,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-72C888DB6B",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Reliability and Stability",
+        "n_review": 3232,
+        "mean_sentiment": -0.796928023744744,
+        "recent_review_count": 329,
+        "review_share_in_product": 0.3123912623236033,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-491B871C21",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Responsiveness",
+        "n_review": 123,
+        "mean_sentiment": -0.6108888888888889,
+        "recent_review_count": 11,
+        "review_share_in_product": 0.011888652619369805,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-FA3AA24743",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Security and Privacy",
+        "n_review": 410,
+        "mean_sentiment": -0.7597583643122676,
+        "recent_review_count": 33,
+        "review_share_in_product": 0.03962884206456602,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-EFB9E1C9E3",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Sensors",
+        "n_review": 147,
+        "mean_sentiment": -0.7018604651162791,
+        "recent_review_count": 21,
+        "review_share_in_product": 0.014208389715832206,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-BCCB5B1877",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Setup and Onboarding",
+        "n_review": 3020,
+        "mean_sentiment": -0.7344157272477315,
+        "recent_review_count": 253,
+        "review_share_in_product": 0.29190025130485214,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "observed_evidence": [
+      {
+        "evidence_id": "OBS-72C888DB6B",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Reliability and Stability",
+        "evidence_selection": {
+          "rank": 1,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.893642,
+          "severity_component": 1.0,
+          "recency_component": 0.468212,
+          "prevalence_component": 1.0,
+          "breadth_component": 1.0
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "device_unresponsive",
+            "count": 2917,
+            "share": 0.7214939401434578
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 575,
+            "share": 0.14222112292851843
+          },
+          {
+            "failure_type": "connection_failure",
+            "count": 245,
+            "share": 0.060598565421716544
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2952,
+            "share": 0.636755823986195
+          },
+          {
+            "scenario": "outdoor",
+            "count": 750,
+            "share": 0.16177739430543572
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 412,
+            "share": 0.08886971527178603
+          }
+        ],
+        "severity": {
+          "n_stmt": 4043,
+          "n_review": 3232,
+          "mean_sentiment": -0.796928023744744,
+          "recent_count": 412,
+          "recent_review_count": 329,
+          "share_in_product": 0.16162302618428942,
+          "review_share_in_product": 0.3123912623236033
+        },
+        "representative_statements": [
+          "power data recording fails after 9 hours of usage",
+          "device shuts off multiple times unexpectedly",
+          "device does not work as expected"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-AF5CEF5D6B",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Connectivity and Coverage",
+        "evidence_selection": {
+          "rank": 2,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.803181,
+          "severity_component": 0.912597,
+          "recency_component": 0.321365,
+          "prevalence_component": 0.921396,
+          "breadth_component": 0.983302
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "connection_failure",
+            "count": 3179,
+            "share": 0.8522788203753351
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 383,
+            "share": 0.10268096514745308
+          },
+          {
+            "failure_type": "device_unresponsive",
+            "count": 98,
+            "share": 0.026273458445040216
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2760,
+            "share": 0.6409660938225732
+          },
+          {
+            "scenario": "outdoor",
+            "count": 715,
+            "share": 0.1660473757547608
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 482,
+            "share": 0.1119368323269856
+          }
+        ],
+        "severity": {
+          "n_stmt": 3730,
+          "n_review": 3007,
+          "mean_sentiment": -0.789195710455764,
+          "recent_count": 332,
+          "recent_review_count": 272,
+          "share_in_product": 0.14911053367979213,
+          "review_share_in_product": 0.29064372704426833
+        },
+        "representative_statements": [
+          "smart plug fails to connect to WiFi",
+          "device fails to connect to WiFi",
+          "fails to connect to WiFi"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-54D64B4C4D",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Capability and Feature Gaps",
+        "evidence_selection": {
+          "rank": 3,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.751263,
+          "severity_component": 0.797948,
+          "recency_component": 0.33701,
+          "prevalence_component": 0.94224,
+          "breadth_component": 0.964388
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "capability_gap",
+            "count": 2045,
+            "share": 0.5363231051665356
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 394,
+            "share": 0.1033307107264621
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 341,
+            "share": 0.08943089430894309
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2654,
+            "share": 0.6120848708487084
+          },
+          {
+            "scenario": "outdoor",
+            "count": 583,
+            "share": 0.13445571955719557
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 286,
+            "share": 0.06595940959409594
+          }
+        ],
+        "severity": {
+          "n_stmt": 3813,
+          "n_review": 2771,
+          "mean_sentiment": -0.6762837660634671,
+          "recent_count": 356,
+          "recent_review_count": 254,
+          "share_in_product": 0.15242854287427543,
+          "review_share_in_product": 0.2678329789290547
+        },
+        "representative_statements": [
+          "Govee Outlet lacks temperature sensing capability",
+          "smart outlets lack advanced features and intelligence",
+          "Govee outlets lack integration with temperature-based automation"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-BCCB5B1877",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Setup and Onboarding",
+        "evidence_selection": {
+          "rank": 4,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.738492,
+          "severity_component": 0.826969,
+          "recency_component": 0.234845,
+          "prevalence_component": 0.898041,
+          "breadth_component": 0.9843
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "setup_failure",
+            "count": 3570,
+            "share": 0.9815782238108332
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 16,
+            "share": 0.004399230134726423
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 10,
+            "share": 0.0027495188342040143
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2933,
+            "share": 0.732334581772784
+          },
+          {
+            "scenario": "outdoor",
+            "count": 546,
+            "share": 0.13632958801498127
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 244,
+            "share": 0.06092384519350812
+          }
+        ],
+        "severity": {
+          "n_stmt": 3637,
+          "n_review": 3020,
+          "mean_sentiment": -0.7344157272477315,
+          "recent_count": 308,
+          "recent_review_count": 253,
+          "share_in_product": 0.14539276434139517,
+          "review_share_in_product": 0.29190025130485214
+        },
+        "representative_statements": [
+          "setup fails to connect to the device",
+          "setup fails to connect to WiFi",
+          "setup fails to complete"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-66FB54F4E1",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Compatibility",
+        "evidence_selection": {
+          "rank": 5,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.61474,
+          "severity_component": 0.64499,
+          "recency_component": 0.290666,
+          "prevalence_component": 0.707433,
+          "breadth_component": 0.926256
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "compatibility",
+            "count": 983,
+            "share": 0.34155663655316193
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 660,
+            "share": 0.2293259207783183
+          },
+          {
+            "failure_type": "permission_issue",
+            "count": 324,
+            "share": 0.11257817929117443
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2314,
+            "share": 0.7438122790099646
+          },
+          {
+            "scenario": "outdoor",
+            "count": 366,
+            "share": 0.11764705882352941
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 150,
+            "share": 0.048216007714561235
+          }
+        ],
+        "severity": {
+          "n_stmt": 2878,
+          "n_review": 2350,
+          "mean_sentiment": -0.7267790132036136,
+          "recent_count": 282,
+          "recent_review_count": 207,
+          "share_in_product": 0.115050969418349,
+          "review_share_in_product": 0.22714092402861008
+        },
+        "representative_statements": [
+          "fails to work with Alexa",
+          "fails to connect to Alexa",
+          "smart plug fails to work with Alexa"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-A33FFCBC19",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "智能排插/插头/插座",
+        "dimension": "Automation and Routine",
+        "evidence_selection": {
+          "rank": 6,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.346454,
+          "severity_component": 0.293193,
+          "recency_component": 0.309845,
+          "prevalence_component": 0.315922,
+          "breadth_component": 0.747046
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "routine_not_triggered",
+            "count": 950,
+            "share": 0.7202426080363912
+          },
+          {
+            "failure_type": "device_unresponsive",
+            "count": 100,
+            "share": 0.0758150113722517
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 69,
+            "share": 0.052312357846853674
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 779,
+            "share": 0.486875
+          },
+          {
+            "scenario": "outdoor",
+            "count": 253,
+            "share": 0.158125
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 181,
+            "share": 0.113125
+          }
+        ],
+        "severity": {
+          "n_stmt": 1319,
+          "n_review": 1083,
+          "mean_sentiment": -0.7366110689916603,
+          "recent_count": 112,
+          "recent_review_count": 97,
+          "share_in_product": 0.052728362982210675,
+          "review_share_in_product": 0.10467813647786584
+        },
+        "representative_statements": [
+          "Govee Outlet cannot trigger other devices based on temperature",
+          "automation functions fail to trigger on schedule",
+          "smart plug only supports sunset/sunrise routines"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "ecosystem_relations": [
+      {
+        "relation_id": "REL-9073AF4C811C",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能排插/插头/插座",
+        "related_product": "打印机",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.12352833896875381,
+            "other_to_focal": 0.12352833896875381,
+            "undirected_strength": 0.12352833896875381
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.003340109484270215,
+            "other_to_focal": 0.003340109484270215,
+            "undirected_strength": 0.003340109484270215
+          }
+        },
+        "overall_relation_strength": 0.12352833896875381,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-537D8F11A4D2",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能排插/插头/插座",
+        "related_product": "空气净化器/香薰机/加湿器",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.12352832406759262,
+            "other_to_focal": 0.12352832406759262,
+            "undirected_strength": 0.12352832406759262
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.007083761040121317,
+            "other_to_focal": 0.007083761040121317,
+            "undirected_strength": 0.007083761040121317
+          }
+        },
+        "overall_relation_strength": 0.12352832406759262,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-64E862EDD804",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能排插/插头/插座",
+        "related_product": "智能开关/运动传感器/墙插",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.09527552872896194,
+            "other_to_focal": 0.09527552872896194,
+            "undirected_strength": 0.09527552872896194
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.03924671187996864,
+            "other_to_focal": 0.03924671187996864,
+            "undirected_strength": 0.03924671187996864
+          }
+        },
+        "overall_relation_strength": 0.09527552872896194,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-A776CA8EA109",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能排插/插头/插座",
+        "related_product": "风扇/吊扇",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.09466712921857834,
+            "other_to_focal": 0.09466712176799774,
+            "undirected_strength": 0.09466712921857834
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.004019175190478563,
+            "other_to_focal": 0.004019175190478563,
+            "undirected_strength": 0.004019175190478563
+          }
+        },
+        "overall_relation_strength": 0.09466712921857834,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-76FA2DEDDF1B",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "智能排插/插头/插座",
+        "related_product": "灯带/灯泡/灯具",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.08166994154453278,
+            "other_to_focal": 0.08166994154453278,
+            "undirected_strength": 0.08166994154453278
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.01554437167942524,
+            "other_to_focal": 0.015544370748102665,
+            "undirected_strength": 0.01554437167942524
+          }
+        },
+        "overall_relation_strength": 0.08166994154453278,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      }
+    ],
+    "api_knowledge": [
+      {
+        "knowledge_id": "KB-EDF6E4948D",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.PowerController",
+        "functionality": "Enables devices to be turned on or off by Alexa and to report their current power state.",
+        "device_context": "Smart home devices that can be powered on or off, such as lights, vacuums, or appliances; can include connected vehicles with Alexa user identification.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "used to describe endpoints that support Alexa.PowerController and define retrievable and proactively reported properties during device discovery"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "used to report the device's connectivity and operational health to Alexa, ensuring Alexa can display device health status"
+          },
+          {
+            "api_name": "Alexa.BrightnessController",
+            "relation_type": "complementary",
+            "trigger_condition": "used together when a device supports both on/off and brightness adjustment, such as smart lights"
+          }
+        ],
+        "design_constraints": [
+          "powerState values must be ON or OFF",
+          "All properties must be retrievable in StateReport and proactivelyReported in ChangeReport",
+          "Device must respond to user requests in less than 2 seconds; over 5 seconds is a latency failure",
+          "User verification supported only for ja-JP locale at this time"
+        ],
+        "common_root_causes": [
+          "Directive not handled successfully",
+          "Property value not retrievable or not proactivelyReported",
+          "Device response latency exceeds limits",
+          "User verification required but not completed"
+        ],
+        "diagnostic_keywords": [
+          "TurnOn",
+          "TurnOff",
+          "powerState",
+          "StateReport",
+          "ChangeReport",
+          "Discovery",
+          "proactivelyReported",
+          "retrievable"
+        ],
+        "notes_for_root_cause_mapping": "If a TurnOn or TurnOff directive cannot be handled, respond with Alexa.ErrorResponse; ensure properties are retrievable and proactivelyReported; user verification may be required for certain directives.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 63.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "智能排插/插头/插座"
+      }
+    ],
+    "retrieval_config": {
+      "max_observed_cards": 6,
+      "statements_per_card": 3,
+      "max_relations": 5,
+      "max_api_cards": 5,
+      "max_chains": 4,
+      "max_standalone_chains": 1,
+      "chain_selection_mode": "dimension_diverse"
+    },
+    "source_notes": [
+      "OBS: observed dimension catalog plus detailed aggregated review evidence.",
+      "REL: static ecosystem associations; not causal propagation.",
+      "KB: candidate mechanism knowledge; not proof of implementation failure.",
+      "MF/CHN, when supplied, are model-inferred and not causal proof."
+    ],
+    "model_facts": [
+      {
+        "fact_id": "MF-2A64952DB9",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Reliability and Stability",
+        "predicted_next_risk": 0.8526845794604008,
+        "max_predicted_next_risk": 0.8526845794604008,
+        "spillover_output": 0.2165560489272727,
+        "spillover_exposure": 0.21655604555333585,
+        "rho": 0.1952284425497055,
+        "beta_api": 0.18365482985973358,
+        "beta_coo": 0.17571651935577393,
+        "beta_user": 0.19341765344142914,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-8EAAC4C412",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Connectivity and Coverage",
+        "predicted_next_risk": 0.854700092647396,
+        "max_predicted_next_risk": 0.854700092647396,
+        "spillover_output": 0.20976628089745572,
+        "spillover_exposure": 0.20976627629729178,
+        "rho": 0.18983574211597443,
+        "beta_api": 0.1775221824645996,
+        "beta_coo": 0.1720176339149475,
+        "beta_user": 0.18812839686870575,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-6A1DEFD8C5",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Setup and Onboarding",
+        "predicted_next_risk": 0.7896328518075568,
+        "max_predicted_next_risk": 0.7896328518075568,
+        "spillover_output": 0.1947744009123622,
+        "spillover_exposure": 0.19477439779851774,
+        "rho": 0.18600499629974365,
+        "beta_api": 0.1613244116306305,
+        "beta_coo": 0.1695835441350937,
+        "beta_user": 0.1832714080810547,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-73CA92A1B4",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Compatibility",
+        "predicted_next_risk": 0.7499374510239372,
+        "max_predicted_next_risk": 0.7499374510239372,
+        "spillover_output": 0.2030964300661782,
+        "spillover_exposure": 0.20309642624570434,
+        "rho": 0.18568237125873566,
+        "beta_api": 0.17161725461483002,
+        "beta_coo": 0.1683548241853714,
+        "beta_user": 0.1825834959745407,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-9E21832021",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Automation and Routine",
+        "predicted_next_risk": 0.7506270020668862,
+        "max_predicted_next_risk": 0.7506270020668862,
+        "spillover_output": 0.2277080386853702,
+        "spillover_exposure": 0.22770803378222687,
+        "rho": 0.1810510754585266,
+        "beta_api": 0.20124635100364685,
+        "beta_coo": 0.16998198628425598,
+        "beta_user": 0.1819787323474884,
+        "dominant_driver": "api",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-BB166028FD",
+        "fact_type": "anchored_product_dynamic_context",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "persistence_score": 0.18938939928229276,
+        "persistence": "low",
+        "beta_api": 0.18633057850780643,
+        "beta_coo": 0.16854469987186393,
+        "beta_user": 0.18242836726453002,
+        "dominant_driver": "api",
+        "spillover_output_score": 0.21552174196047744,
+        "spillover_exposure_score": 0.21552173807073313,
+        "scope_note": "Product-level context; not a new risk dimension.",
+        "epistemic_status": "model_inferred_product_context"
+      }
+    ],
+    "risk_chains": [
+      {
+        "node_path": [
+          123
+        ],
+        "path_length": 0,
+        "log_score": 0.28097048652146556,
+        "chain_score": 1.3244145152790716,
+        "source_node": 123,
+        "target_node": 123,
+        "source_category": "智能排插/插头/插座",
+        "target_category": "智能排插/插头/插座",
+        "dimension": "Connectivity and Coverage",
+        "source_risk_raw": 0.854700092647396,
+        "source_risk_score": 0.9101908361609875,
+        "target_risk_raw": 0.854700092647396,
+        "target_risk_score": 0.9101908361609875,
+        "edge_product": 1.0,
+        "edge_weights": [],
+        "path_text": "智能排插/插头/插座::Connectivity and Coverage",
+        "chain_id": "L0008",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": false,
+        "chain_kind": "standalone",
+        "matched_dimensions": [
+          "Connectivity and Coverage"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 1,
+          "selection_order": 1,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_when_selected": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Connectivity and Coverage"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage"
+          ],
+          "max_standalone_cap": 1
+        }
+      }
+    ],
+    "dimension_anchor": {
+      "case_id": "CASE-6B37B6A6B8",
+      "product_category": "智能排插/插头/插座",
+      "source": "A_core_hard_anchor",
+      "core_risk_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Setup and Onboarding",
+        "Compatibility",
+        "Automation and Routine"
+      ],
+      "promoted_risk_dimensions": [],
+      "risk_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Setup and Onboarding",
+        "Compatibility",
+        "Automation and Routine"
+      ],
+      "promotion_rule": {
+        "max_promotions": 0,
+        "max_dynamic_rank": 3,
+        "must_be_observed_dimension": true
+      }
+    },
+    "hybrid_routing": {
+      "core_anchor_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Setup and Onboarding",
+        "Compatibility",
+        "Automation and Routine"
+      ],
+      "eligible_observed_dimensions": [
+        "App and Configuration UX",
+        "Automation and Routine",
+        "Capability and Feature Gaps",
+        "Compatibility",
+        "Connectivity and Coverage",
+        "Control and Interaction",
+        "Cost and Value",
+        "Delivery & Packaging",
+        "Ease of use",
+        "Hardware",
+        "Media",
+        "Reliability and Stability",
+        "Responsiveness",
+        "Security and Privacy",
+        "Sensors",
+        "Setup and Onboarding"
+      ],
+      "promoted_dimensions": [],
+      "final_anchor_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Setup and Onboarding",
+        "Compatibility",
+        "Automation and Routine"
+      ],
+      "promotion_candidates": [],
+      "dynamic_matched_dimensions": [
+        "Automation and Routine",
+        "Compatibility",
+        "Connectivity and Coverage",
+        "Reliability and Stability",
+        "Setup and Onboarding"
+      ],
+      "dynamic_missing_dimensions": [],
+      "chain_matched_dimensions": [
+        "Connectivity and Coverage"
+      ],
+      "n_anchor_dimensions": 5,
+      "n_anchor_dynamic_matched": 5,
+      "n_anchor_chains": 1,
+      "n_unique_chain_dimensions": 1,
+      "anchor_chain_dimension_coverage": 0.2,
+      "chain_selection_mode": "dimension_diverse",
+      "general_excluded": true,
+      "promotion_mode": "none",
+      "max_promotions": 0,
+      "max_dynamic_rank": 3
+    }
+  },
+  "diagnosis": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Setup and Onboarding",
+      "Compatibility",
+      "Automation and Routine"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "connectivity_failure",
+      "setup_failure",
+      "compatibility_failure",
+      "automation_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.",
+        "source_refs": [
+          "OBS-72C888DB6B"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.",
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.",
+        "source_refs": [
+          "OBS-66FB54F4E1"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.",
+        "source_refs": [
+          "OBS-A33FFCBC19"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.",
+        "supporting_claim_ids": [
+          "CL1",
+          "CL2",
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.78,
+        "main_uncertainty": "Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "api_or_interface",
+        "mechanism_scope": "interface",
+        "statement": "Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.",
+        "supporting_claim_ids": [
+          "CL3",
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-66FB54F4E1",
+          "OBS-A33FFCBC19",
+          "KB-EDF6E4948D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.72,
+        "main_uncertainty": "Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "setup_or_configuration",
+        "mechanism_scope": "local",
+        "statement": "Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.",
+        "supporting_claim_ids": [
+          "CL2"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.69,
+        "main_uncertainty": "Insufficient data on user network environments and setup error codes to confirm root configuration failure modes."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.",
+        "required_data": [
+          "device connectivity logs",
+          "firmware heartbeat timestamps",
+          "network environment metadata"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.",
+        "required_data": [
+          "Alexa interaction logs",
+          "device-side API handler timestamps",
+          "directive success/failure codes"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).",
+        "required_data": [
+          "setup session recordings",
+          "error code mappings",
+          "user-reported network types"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling."
+      }
+    ]
+  },
+  "llm_trace": {
+    "dimension_anchor": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Setup and Onboarding\",\n    \"Compatibility\",\n    \"Automation and Routine\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-72C888DB6B\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\"],\n      \"confidence\": 0.94\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-BCCB5B1877\"],\n      \"confidence\": 0.92\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"],\n      \"confidence\": 0.90\n    },\n    {\n      \"dimension\": \"Automation and Routine\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"],\n      \"confidence\": 0.89\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-6B37B6A6B8",
+            "product_category": "智能排插/插头/插座",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Connectivity and Coverage",
+              "Setup and Onboarding",
+              "Compatibility",
+              "Automation and Routine"
+            ],
+            "dimension_support": [
+              {
+                "dimension": "Reliability and Stability",
+                "source_refs": [
+                  "OBS-72C888DB6B"
+                ],
+                "confidence": 0.95
+              },
+              {
+                "dimension": "Connectivity and Coverage",
+                "source_refs": [
+                  "OBS-AF5CEF5D6B"
+                ],
+                "confidence": 0.94
+              },
+              {
+                "dimension": "Setup and Onboarding",
+                "source_refs": [
+                  "OBS-BCCB5B1877"
+                ],
+                "confidence": 0.92
+              },
+              {
+                "dimension": "Compatibility",
+                "source_refs": [
+                  "OBS-66FB54F4E1"
+                ],
+                "confidence": 0.9
+              },
+              {
+                "dimension": "Automation and Routine",
+                "source_refs": [
+                  "OBS-A33FFCBC19"
+                ],
+                "confidence": 0.89
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 2091,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 288,
+            "total_tokens": 2379,
+            "system_prompt_chars": 1177,
+            "user_payload_chars": 5674
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "diagnosis": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Setup and Onboarding\", \"Compatibility\", \"Automation and Routine\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"setup_failure\", \"compatibility_failure\", \"automation_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.\",\n      \"source_refs\": [\"OBS-72C888DB6B\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.\",\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.\",\n      \"source_refs\": [\"OBS-66FB54F4E1\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.\",\n      \"source_refs\": [\"OBS-A33FFCBC19\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.\",\n      \"supporting_claim_ids\": [\"CL1\", \"CL2\", \"CL4\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.78,\n      \"main_uncertainty\": \"Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"api_or_interface\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.\",\n      \"supporting_claim_ids\": [\"CL3\", \"CL4\"],\n      \"source_refs\": [\"OBS-66FB54F4E1\", \"OBS-A33FFCBC19\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.\",\n      \"supporting_claim_ids\": [\"CL2\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.69,\n      \"main_uncertainty\": \"Insufficient data on user network environments and setup error codes to confirm root configuration failure modes.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.\",\n      \"required_data\": [\"device connectivity logs\", \"firmware heartbeat timestamps\", \"network environment metadata\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.\",\n      \"required_data\": [\"Alexa interaction logs\", \"device-side API handler timestamps\", \"directive success/failure codes\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).\",\n      \"required_data\": [\"setup session recordings\", \"error code mappings\", \"user-reported network types\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-6B37B6A6B8",
+            "product_category": "智能排插/插头/插座",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Connectivity and Coverage",
+              "Setup and Onboarding",
+              "Compatibility",
+              "Automation and Routine"
+            ],
+            "symptom_families": [
+              "unresponsive_or_outage",
+              "connectivity_failure",
+              "setup_failure",
+              "compatibility_failure",
+              "automation_failure"
+            ],
+            "claims": [
+              {
+                "claim_id": "CL1",
+                "claim_type": "observed",
+                "statement": "Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.",
+                "source_refs": [
+                  "OBS-72C888DB6B"
+                ]
+              },
+              {
+                "claim_id": "CL2",
+                "claim_type": "observed",
+                "statement": "Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.",
+                "source_refs": [
+                  "OBS-AF5CEF5D6B",
+                  "OBS-BCCB5B1877"
+                ]
+              },
+              {
+                "claim_id": "CL3",
+                "claim_type": "observed",
+                "statement": "Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.",
+                "source_refs": [
+                  "OBS-66FB54F4E1"
+                ]
+              },
+              {
+                "claim_id": "CL4",
+                "claim_type": "observed",
+                "statement": "Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.",
+                "source_refs": [
+                  "OBS-A33FFCBC19"
+                ]
+              }
+            ],
+            "mechanisms": [
+              {
+                "mechanism_id": "M1",
+                "mechanism_family": "connectivity_or_state_sync",
+                "mechanism_scope": "local",
+                "statement": "WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.",
+                "supporting_claim_ids": [
+                  "CL1",
+                  "CL2",
+                  "CL4"
+                ],
+                "source_refs": [
+                  "OBS-AF5CEF5D6B",
+                  "OBS-BCCB5B1877",
+                  "OBS-72C888DB6B"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.78,
+                "main_uncertainty": "Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference."
+              },
+              {
+                "mechanism_id": "M2",
+                "mechanism_family": "api_or_interface",
+                "mechanism_scope": "interface",
+                "statement": "Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.",
+                "supporting_claim_ids": [
+                  "CL3",
+                  "CL4"
+                ],
+                "source_refs": [
+                  "OBS-66FB54F4E1",
+                  "OBS-A33FFCBC19",
+                  "KB-EDF6E4948D"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.72,
+                "main_uncertainty": "Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds."
+              },
+              {
+                "mechanism_id": "M3",
+                "mechanism_family": "setup_or_configuration",
+                "mechanism_scope": "local",
+                "statement": "Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.",
+                "supporting_claim_ids": [
+                  "CL2"
+                ],
+                "source_refs": [
+                  "OBS-BCCB5B1877",
+                  "OBS-AF5CEF5D6B"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.69,
+                "main_uncertainty": "Insufficient data on user network environments and setup error codes to confirm root configuration failure modes."
+              }
+            ],
+            "validation_tasks": [
+              {
+                "validation_id": "V1",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "task": "Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.",
+                "required_data": [
+                  "device connectivity logs",
+                  "firmware heartbeat timestamps",
+                  "network environment metadata"
+                ]
+              },
+              {
+                "validation_id": "V2",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "task": "Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.",
+                "required_data": [
+                  "Alexa interaction logs",
+                  "device-side API handler timestamps",
+                  "directive success/failure codes"
+                ]
+              },
+              {
+                "validation_id": "V3",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "task": "Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).",
+                "required_data": [
+                  "setup session recordings",
+                  "error code mappings",
+                  "user-reported network types"
+                ]
+              }
+            ],
+            "abstentions": [
+              {
+                "scope": "exact_root_cause",
+                "reason": "Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs."
+              },
+              {
+                "scope": "implementation_defect",
+                "reason": "While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 3005,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1257,
+            "total_tokens": 4262,
+            "system_prompt_chars": 3811,
+            "user_payload_chars": 7064
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "action": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.\",\n      \"action\": \"Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.\",\n      \"intervention_logic\": \"Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"interface_or_dependency_resilience\",\n      \"action_level\": \"interface\",\n      \"improvement_direction\": \"Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.\",\n      \"action\": \"Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.\",\n      \"intervention_logic\": \"Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"KB-EDF6E4948D\", \"OBS-66FB54F4E1\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.\",\n      \"action\": \"Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.\",\n      \"intervention_logic\": \"Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"app_or_configuration\"],\n      \"validation_metric\": \"≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.\"\n    },\n    {\n      \"action_id\": \"A4\",\n      \"priority_rank\": 4,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.\",\n      \"action\": \"Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).\",\n      \"intervention_logic\": \"Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.\",\n      \"linked_mechanism_ids\": [\"M1\", \"M2\"],\n      \"source_refs\": [\"OBS-72C888DB6B\", \"OBS-66FB54F4E1\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-6B37B6A6B8",
+            "product_category": "智能排插/插头/插座",
+            "actions": [
+              {
+                "action_id": "A1",
+                "priority_rank": 1,
+                "action_subfamily": "software_or_firmware_remediation",
+                "action_level": "product",
+                "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+                "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+                "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "source_refs": [
+                  "OBS-AF5CEF5D6B",
+                  "OBS-BCCB5B1877",
+                  "OBS-72C888DB6B"
+                ],
+                "target_products": [
+                  "智能排插/插头/插座"
+                ],
+                "target_layers": [
+                  "firmware"
+                ],
+                "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+              },
+              {
+                "action_id": "A2",
+                "priority_rank": 2,
+                "action_subfamily": "interface_or_dependency_resilience",
+                "action_level": "interface",
+                "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+                "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+                "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "source_refs": [
+                  "KB-EDF6E4948D",
+                  "OBS-66FB54F4E1"
+                ],
+                "target_products": [
+                  "智能排插/插头/插座"
+                ],
+                "target_layers": [
+                  "alexa_skill_or_api_implementation"
+                ],
+                "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+              },
+              {
+                "action_id": "A3",
+                "priority_rank": 3,
+                "action_subfamily": "user_guidance_or_notification",
+                "action_level": "product",
+                "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+                "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+                "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "source_refs": [
+                  "OBS-BCCB5B1877",
+                  "OBS-AF5CEF5D6B"
+                ],
+                "target_products": [
+                  "智能排插/插头/插座"
+                ],
+                "target_layers": [
+                  "app_or_configuration"
+                ],
+                "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+              },
+              {
+                "action_id": "A4",
+                "priority_rank": 4,
+                "action_subfamily": "observability_or_validation",
+                "action_level": "product",
+                "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+                "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+                "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+                "linked_mechanism_ids": [
+                  "M1",
+                  "M2"
+                ],
+                "source_refs": [
+                  "OBS-72C888DB6B",
+                  "OBS-66FB54F4E1",
+                  "KB-EDF6E4948D"
+                ],
+                "target_products": [
+                  "智能排插/插头/插座"
+                ],
+                "target_layers": [
+                  "firmware",
+                  "cloud_service"
+                ],
+                "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 11265,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1101,
+            "total_tokens": 12366,
+            "system_prompt_chars": 4075,
+            "user_payload_chars": 31149
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "dimension_anchor": {
+      "prompt_tokens": 2091,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 288,
+      "total_tokens": 2379,
+      "system_prompt_chars": 1177,
+      "user_payload_chars": 5674
+    },
+    "diagnosis": {
+      "prompt_tokens": 3005,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 1257,
+      "total_tokens": 4262,
+      "system_prompt_chars": 3811,
+      "user_payload_chars": 7064
+    },
+    "action": {
+      "prompt_tokens": 11265,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 1101,
+      "total_tokens": 12366,
+      "system_prompt_chars": 4075,
+      "user_payload_chars": 31149
+    }
+  },
+  "updated_at": "2026-09-03T09:09:41.530179+00:00",
+  "mechanism_feedback": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "respondent_profile": {
+      "respondent_role": "researcher",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "prospective_human_review"
+    },
+    "mechanism_feedback": [
+      {
+        "mechanism_id": "M1",
+        "assessment_status": "plausible",
+        "revision": "",
+        "validation_note": "Examine device connectivity logs, Wi-Fi signal strength, reconnection attempts, heartbeat gaps, reboot events, and timestamps of unresponsiveness or routine failures; determine whether these failures cluster around connectivity losses; compare failure cases in which the device remains online to distinguish network-related issues from firmware or hardware instability."
+      },
+      {
+        "mechanism_id": "M2",
+        "assessment_status": "plausible",
+        "revision": "Inadequate Alexa interface integration—such as failed PowerController directive handling, incorrect state reporting, or excessive response latency—may contribute to Alexa compatibility failures and, where routines depend on device state, some automation failures.",
+        "validation_note": "Examine Alexa discovery and account-linking status, PowerController directive handling, response latency, StateReport/ChangeReport behavior, EndpointHealth, permissions, and error logs; reproduce Alexa voice-control and routine failures; determine whether failures occur during directive delivery, device execution, or state synchronization, and compare routines that do and do not depend on reported device state."
+      },
+      {
+        "mechanism_id": "M3",
+        "assessment_status": "plausible",
+        "revision": "Onboarding logic may fail to robustly handle some home-network compatibility and provisioning conditions (e.g., 2.4/5 GHz band mismatch, security-mode or SSID configuration), causing repeated setup failures.",
+        "validation_note": "Reproduce onboarding under different home-network conditions, including 2.4-GHz, 5-GHz-only, dual-band/band-steering, WPA2/WPA3, hidden-SSID, and weak-signal configurations; record provisioning steps, error codes, network logs, and BLE-to-Wi-Fi handoff behavior where applicable; compare failure rates across configurations to identify which network conditions are associated with repeated setup failures."
+      }
+    ]
+  },
+  "reviewed_diagnosis": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Setup and Onboarding",
+      "Compatibility",
+      "Automation and Routine"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "connectivity_failure",
+      "setup_failure",
+      "compatibility_failure",
+      "automation_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Users frequently report that the smart plug becomes unresponsive or shuts off unexpectedly, indicating instability in Reliability and Stability.",
+        "source_refs": [
+          "OBS-72C888DB6B"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Connectivity failures are prevalent, with users unable to connect the device to WiFi during both setup and normal operation.",
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Compatibility issues arise primarily with Alexa integration, where the device fails to respond to voice commands or pair correctly.",
+        "source_refs": [
+          "OBS-66FB54F4E1"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Automation routines fail to trigger as scheduled, particularly when used with temperature-based conditions or cross-device triggers.",
+        "source_refs": [
+          "OBS-A33FFCBC19"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "WiFi connection instability causes both initial setup failures and runtime disconnections, leading to unresponsiveness and automation breakdowns.",
+        "supporting_claim_ids": [
+          "CL1",
+          "CL2",
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.78,
+        "main_uncertainty": "Whether connectivity issues stem from hardware radio limitations, firmware state management, or environmental interference.",
+        "human_assessment": "plausible",
+        "human_revision": "",
+        "human_validation_note": "Examine device connectivity logs, Wi-Fi signal strength, reconnection attempts, heartbeat gaps, reboot events, and timestamps of unresponsiveness or routine failures; determine whether these failures cluster around connectivity losses; compare failure cases in which the device remains online to distinguish network-related issues from firmware or hardware instability."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "api_or_interface",
+        "mechanism_scope": "interface",
+        "statement": "Inadequate implementation of Alexa.PowerController API—such as missing StateReport handling or slow response times—leads to compatibility and automation failures.",
+        "supporting_claim_ids": [
+          "CL3",
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-66FB54F4E1",
+          "OBS-A33FFCBC19",
+          "KB-EDF6E4948D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.72,
+        "main_uncertainty": "Lack of diagnostic logs confirming whether Alexa directives are received, processed, or responded to within required latency bounds.",
+        "human_assessment": "plausible",
+        "human_revision": "Inadequate Alexa interface integration—such as failed PowerController directive handling, incorrect state reporting, or excessive response latency—may contribute to Alexa compatibility failures and, where routines depend on device state, some automation failures.",
+        "human_validation_note": "Examine Alexa discovery and account-linking status, PowerController directive handling, response latency, StateReport/ChangeReport behavior, EndpointHealth, permissions, and error logs; reproduce Alexa voice-control and routine failures; determine whether failures occur during directive delivery, device execution, or state synchronization, and compare routines that do and do not depend on reported device state."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "setup_or_configuration",
+        "mechanism_scope": "local",
+        "statement": "Flawed onboarding logic fails to robustly handle common WiFi authentication scenarios (e.g., 5GHz-only networks, captive portals), causing repeated setup failures.",
+        "supporting_claim_ids": [
+          "CL2"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.69,
+        "main_uncertainty": "Insufficient data on user network environments and setup error codes to confirm root configuration failure modes.",
+        "human_assessment": "plausible",
+        "human_revision": "Onboarding logic may fail to robustly handle some home-network compatibility and provisioning conditions (e.g., 2.4/5 GHz band mismatch, security-mode or SSID configuration), causing repeated setup failures.",
+        "human_validation_note": "Reproduce onboarding under different home-network conditions, including 2.4-GHz, 5-GHz-only, dual-band/band-steering, WPA2/WPA3, hidden-SSID, and weak-signal configurations; record provisioning steps, error codes, network logs, and BLE-to-Wi-Fi handoff behavior where applicable; compare failure rates across configurations to identify which network conditions are associated with repeated setup failures."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Analyze field telemetry for correlation between WiFi signal strength, reconnection attempts, and device unresponsiveness events.",
+        "required_data": [
+          "device connectivity logs",
+          "firmware heartbeat timestamps",
+          "network environment metadata"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Audit Alexa directive processing logs to verify compliance with PowerController response timing and StateReport requirements.",
+        "required_data": [
+          "Alexa interaction logs",
+          "device-side API handler timestamps",
+          "directive success/failure codes"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Reproduce setup failures in controlled lab environments mimicking common home WiFi configurations (dual-band, hidden SSID, WPA3).",
+        "required_data": [
+          "setup session recordings",
+          "error code mappings",
+          "user-reported network types"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence identifies symptom patterns but lacks low-level diagnostic data (e.g., firmware crash dumps, network packet captures) to pinpoint exact root causes such as memory leaks or RF driver bugs."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "While API knowledge suggests potential implementation gaps, absence of source code or integration test results prevents confirmation of specific defects in Alexa interface handling."
+      }
+    ],
+    "respondent_profile": {
+      "respondent_role": "researcher",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "prospective_human_review"
+    }
+  },
+  "mechanism_reviewed_at": "2026-09-02T14:42:47.670916+00:00",
+  "decision_context": {
+    "context_source": "product_team_input",
+    "product_category": "智能排插/插头/插座",
+    "objective": "reduce prospective user-experience risk and ecosystem propagation risk",
+    "allowed_layers": [
+      "app_or_configuration",
+      "cloud_service",
+      "firmware",
+      "alexa_skill_or_api_implementation",
+      "support_or_user_guidance",
+      "ecosystem_governance"
+    ],
+    "allow_hardware_change": false,
+    "allow_third_party_change": false
+  },
+  "action_output": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+        "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+        "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "interface_or_dependency_resilience",
+        "action_level": "interface",
+        "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+        "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+        "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "KB-EDF6E4948D",
+          "OBS-66FB54F4E1"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+        "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+        "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "app_or_configuration"
+        ],
+        "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+      },
+      {
+        "action_id": "A4",
+        "priority_rank": 4,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+        "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+        "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+        "linked_mechanism_ids": [
+          "M1",
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-72C888DB6B",
+          "OBS-66FB54F4E1",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+      }
+    ]
+  },
+  "action_raw_output": "{\n  \"case_id\": \"CASE-6B37B6A6B8\",\n  \"product_category\": \"智能排插/插头/插座\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.\",\n      \"action\": \"Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.\",\n      \"intervention_logic\": \"Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-AF5CEF5D6B\", \"OBS-BCCB5B1877\", \"OBS-72C888DB6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"interface_or_dependency_resilience\",\n      \"action_level\": \"interface\",\n      \"improvement_direction\": \"Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.\",\n      \"action\": \"Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.\",\n      \"intervention_logic\": \"Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"KB-EDF6E4948D\", \"OBS-66FB54F4E1\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"alexa_skill_or_api_implementation\"],\n      \"validation_metric\": \"≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.\",\n      \"action\": \"Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.\",\n      \"intervention_logic\": \"Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-BCCB5B1877\", \"OBS-AF5CEF5D6B\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"app_or_configuration\"],\n      \"validation_metric\": \"≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.\"\n    },\n    {\n      \"action_id\": \"A4\",\n      \"priority_rank\": 4,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.\",\n      \"action\": \"Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).\",\n      \"intervention_logic\": \"Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.\",\n      \"linked_mechanism_ids\": [\"M1\", \"M2\"],\n      \"source_refs\": [\"OBS-72C888DB6B\", \"OBS-66FB54F4E1\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"智能排插/插头/插座\"],\n      \"target_layers\": [\"firmware\", \"cloud_service\"],\n      \"validation_metric\": \"Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.\"\n    }\n  ]\n}",
+  "action_original_parsed_output": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+        "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+        "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "interface_or_dependency_resilience",
+        "action_level": "interface",
+        "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+        "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+        "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "KB-EDF6E4948D",
+          "OBS-66FB54F4E1"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+        "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+        "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "app_or_configuration"
+        ],
+        "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data."
+      },
+      {
+        "action_id": "A4",
+        "priority_rank": 4,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+        "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+        "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+        "linked_mechanism_ids": [
+          "M1",
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-72C888DB6B",
+          "OBS-66FB54F4E1",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days."
+      }
+    ]
+  },
+  "action_normalization_notes": [],
+  "action_discarded_actions": [],
+  "action_id_map": [
+    {
+      "original_action_id": "A1",
+      "original_priority_rank": 1,
+      "final_action_id": "A1",
+      "final_priority_rank": 1
+    },
+    {
+      "original_action_id": "A2",
+      "original_priority_rank": 2,
+      "final_action_id": "A2",
+      "final_priority_rank": 2
+    },
+    {
+      "original_action_id": "A3",
+      "original_priority_rank": 3,
+      "final_action_id": "A3",
+      "final_priority_rank": 3
+    },
+    {
+      "original_action_id": "A4",
+      "original_priority_rank": 4,
+      "final_action_id": "A4",
+      "final_priority_rank": 4
+    }
+  ],
+  "action_n_generated": 4,
+  "action_n_valid": 4,
+  "action_n_discarded": 0,
+  "action_generation_status": "generated",
+  "action_context_mode": "h_ab",
+  "action_context_stats": {
+    "n_action_catalog_rows": 16,
+    "n_action_observed_evidence": 6,
+    "n_action_relations": 5,
+    "n_action_api_knowledge": 1,
+    "n_action_model_facts": 6,
+    "n_action_risk_chains": 0,
+    "n_action_unique_reference_ids": 28,
+    "action_context_chars": 25082
+  },
+  "action_generated_at": "2026-09-03T03:26:11.848713+00:00",
+  "action_feedback": {
+    "case_id": "CASE-6B37B6A6B8",
+    "action_feedback": [
+      {
+        "action_id": "A1",
+        "decision": "accept",
+        "management_value": "high",
+        "revision": ""
+      },
+      {
+        "action_id": "A2",
+        "decision": "revise",
+        "management_value": "high",
+        "revision": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable."
+      },
+      {
+        "action_id": "A3",
+        "decision": "revise",
+        "management_value": "medium",
+        "revision": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported."
+      },
+      {
+        "action_id": "A4",
+        "decision": "accept",
+        "management_value": "high",
+        "revision": "Instrument firmware and Alexa/cloud integration with correlated diagnostic telemetry covering WiFi association and reconnection events, device state transitions, account-linking and discovery outcomes, advertised capabilities, directive receipt and execution, state-reporting events, response latency, and error codes, so that connectivity and Alexa compatibility failures can be localized to the relevant processing stage."
+      }
+    ]
+  },
+  "reviewed_action_output": {
+    "case_id": "CASE-6B37B6A6B8",
+    "product_category": "智能排插/插头/插座",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+        "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+        "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "",
+        "human_decision_note": "",
+        "final_action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "interface_or_dependency_resilience",
+        "action_level": "interface",
+        "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+        "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+        "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "KB-EDF6E4948D",
+          "OBS-66FB54F4E1"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable.",
+        "human_decision_note": "",
+        "final_action": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+        "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+        "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "app_or_configuration"
+        ],
+        "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported.",
+        "human_decision_note": "",
+        "final_action": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported."
+      },
+      {
+        "action_id": "A4",
+        "priority_rank": 4,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+        "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+        "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+        "linked_mechanism_ids": [
+          "M1",
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-72C888DB6B",
+          "OBS-66FB54F4E1",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Instrument firmware and Alexa/cloud integration with correlated diagnostic telemetry covering WiFi association and reconnection events, device state transitions, account-linking and discovery outcomes, advertised capabilities, directive receipt and execution, state-reporting events, response latency, and error codes, so that connectivity and Alexa compatibility failures can be localized to the relevant processing stage.",
+        "human_decision_note": "",
+        "final_action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent)."
+      }
+    ],
+    "approved_actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+        "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+        "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-AF5CEF5D6B",
+          "OBS-BCCB5B1877",
+          "OBS-72C888DB6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "",
+        "human_decision_note": "",
+        "final_action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "interface_or_dependency_resilience",
+        "action_level": "interface",
+        "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+        "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+        "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "KB-EDF6E4948D",
+          "OBS-66FB54F4E1"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "alexa_skill_or_api_implementation"
+        ],
+        "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable.",
+        "human_decision_note": "",
+        "final_action": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+        "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+        "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-BCCB5B1877",
+          "OBS-AF5CEF5D6B"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "app_or_configuration"
+        ],
+        "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported.",
+        "human_decision_note": "",
+        "final_action": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported."
+      },
+      {
+        "action_id": "A4",
+        "priority_rank": 4,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+        "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+        "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+        "linked_mechanism_ids": [
+          "M1",
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-72C888DB6B",
+          "OBS-66FB54F4E1",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "智能排插/插头/插座"
+        ],
+        "target_layers": [
+          "firmware",
+          "cloud_service"
+        ],
+        "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Instrument firmware and Alexa/cloud integration with correlated diagnostic telemetry covering WiFi association and reconnection events, device state transitions, account-linking and discovery outcomes, advertised capabilities, directive receipt and execution, state-reporting events, response latency, and error codes, so that connectivity and Alexa compatibility failures can be localized to the relevant processing stage.",
+        "human_decision_note": "",
+        "final_action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent)."
+      }
+    ],
+    "deferred_actions": [],
+    "rejected_actions": [],
+    "respondent_profile": null
+  },
+  "approved_actions": [
+    {
+      "action_id": "A1",
+      "priority_rank": 1,
+      "action_subfamily": "software_or_firmware_remediation",
+      "action_level": "product",
+      "improvement_direction": "Improve WiFi connection stability during setup and runtime to reduce unresponsiveness and automation failures.",
+      "action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback.",
+      "intervention_logic": "Addresses M1 by hardening the local connectivity stack against common environmental and configuration instabilities that lead to disconnections and device unresponsiveness, without requiring hardware changes.",
+      "linked_mechanism_ids": [
+        "M1"
+      ],
+      "source_refs": [
+        "OBS-AF5CEF5D6B",
+        "OBS-BCCB5B1877",
+        "OBS-72C888DB6B"
+      ],
+      "target_products": [
+        "智能排插/插头/插座"
+      ],
+      "target_layers": [
+        "firmware"
+      ],
+      "validation_metric": "Reduction in field-reported WiFi disconnection events and unresponsiveness incidents by ≥25% within 60 days post-deployment, measured via telemetry.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "",
+      "human_decision_note": "",
+      "final_action": "Enhance firmware WiFi state management logic to better handle weak signal conditions, band switching (2.4 GHz vs. 5 GHz), and reconnection retries with exponential backoff and user feedback."
+    },
+    {
+      "action_id": "A2",
+      "priority_rank": 2,
+      "action_subfamily": "interface_or_dependency_resilience",
+      "action_level": "interface",
+      "improvement_direction": "Ensure reliable Alexa PowerController directive handling and timely state reporting to restore voice control and routine compatibility.",
+      "action": "Refactor Alexa skill integration to strictly comply with PowerController API requirements: ensure all properties are retrievable, proactivelyReported, and directive responses complete within 2 seconds.",
+      "intervention_logic": "Directly addresses M2 by aligning the Alexa interface implementation with documented latency and reporting requirements, resolving compatibility and automation failures linked to voice control.",
+      "linked_mechanism_ids": [
+        "M2"
+      ],
+      "source_refs": [
+        "KB-EDF6E4948D",
+        "OBS-66FB54F4E1"
+      ],
+      "target_products": [
+        "智能排插/插头/插座"
+      ],
+      "target_layers": [
+        "alexa_skill_or_api_implementation"
+      ],
+      "validation_metric": "≥95% of Alexa TurnOn/TurnOff directives acknowledged within 2 seconds and followed by correct StateReport in internal test logs; reduction in Alexa-related support tickets by ≥30%.",
+      "human_decision": "revise",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable.",
+      "human_decision_note": "",
+      "final_action": "Audit the Alexa integration across account linking and discovery, advertised capabilities, directive handling, state reporting, response latency, and error handling; remediate any confirmed non-compliance or implementation defects, including PowerController handling where applicable."
+    },
+    {
+      "action_id": "A3",
+      "priority_rank": 3,
+      "action_subfamily": "user_guidance_or_notification",
+      "action_level": "product",
+      "improvement_direction": "Prevent setup failures due to incompatible network configurations by guiding users toward supported WiFi environments.",
+      "action": "Update mobile app onboarding flow to detect and warn users about unsupported network conditions (e.g., 5 GHz-only SSIDs, WPA3-only, hidden SSID) before initiating device provisioning.",
+      "intervention_logic": "Mitigates M3 by intercepting known problematic network setups during onboarding and providing actionable guidance, reducing repeated setup attempts and abandonment.",
+      "linked_mechanism_ids": [
+        "M3"
+      ],
+      "source_refs": [
+        "OBS-BCCB5B1877",
+        "OBS-AF5CEF5D6B"
+      ],
+      "target_products": [
+        "智能排插/插头/插座"
+      ],
+      "target_layers": [
+        "app_or_configuration"
+      ],
+      "validation_metric": "≥40% reduction in setup-failure reports citing WiFi connectivity issues within 45 days post-release, as measured in app session logs and support data.",
+      "human_decision": "revise",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported.",
+      "human_decision_note": "",
+      "final_action": "Review and codify the device’s supported and unsupported WiFi provisioning conditions using existing product specifications and engineering configuration data, then add onboarding preflight checks and contextual guidance for confirmed unsupported or restricted network configurations; where a configuration is supported but associated with elevated setup failure, provide troubleshooting guidance rather than labeling it unsupported."
+    },
+    {
+      "action_id": "A4",
+      "priority_rank": 4,
+      "action_subfamily": "observability_or_validation",
+      "action_level": "product",
+      "improvement_direction": "Enable root-cause diagnosis of connectivity and Alexa integration issues through enhanced telemetry.",
+      "action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent).",
+      "intervention_logic": "Supports validation of M1 and M2 by capturing diagnostic data needed to confirm or refine hypotheses about radio behavior and API latency, enabling future targeted fixes.",
+      "linked_mechanism_ids": [
+        "M1",
+        "M2"
+      ],
+      "source_refs": [
+        "OBS-72C888DB6B",
+        "OBS-66FB54F4E1",
+        "KB-EDF6E4948D"
+      ],
+      "target_products": [
+        "智能排插/插头/插座"
+      ],
+      "target_layers": [
+        "firmware",
+        "cloud_service"
+      ],
+      "validation_metric": "Telemetry pipeline captures ≥90% of connectivity drop events and Alexa directive interactions with sub-second timing resolution in field devices within 30 days.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Instrument firmware and Alexa/cloud integration with correlated diagnostic telemetry covering WiFi association and reconnection events, device state transitions, account-linking and discovery outcomes, advertised capabilities, directive receipt and execution, state-reporting events, response latency, and error codes, so that connectivity and Alexa compatibility failures can be localized to the relevant processing stage.",
+      "human_decision_note": "",
+      "final_action": "Instrument firmware and cloud service to log detailed WiFi event sequences (scan results, association attempts, signal strength) and Alexa directive processing timelines (receipt, handling start/end, response sent)."
+    }
+  ],
+  "deferred_actions": [],
+  "rejected_actions": []
+}

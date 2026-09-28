@@ -1,0 +1,3540 @@
+{
+  "workflow": "H_prospective_v2_audited",
+  "workflow_id": "H-2025-09-2025-10-product-d8ef35e06d",
+  "status": "COMPLETED",
+  "selection_context": {
+    "priority_rank": 3,
+    "selection_method": "risk_chain_coverage_objective",
+    "selection_score": 15.604269044387706,
+    "risk_score": null,
+    "selection_metrics": {
+      "marginal_chain_value": 15.604269044387706,
+      "captured_chain_count": 42,
+      "captured_chain_weight_raw": 16.485707033491035
+    },
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "prospective_config": {
+    "max_observed_cards": 6,
+    "statements_per_card": 3,
+    "max_relations": 5,
+    "max_api_cards": 5,
+    "max_chains": 4,
+    "max_standalone_chains": 1,
+    "chain_selection_mode": "dimension_diverse",
+    "hybrid_max_promotions": 0,
+    "hybrid_max_dynamic_rank": 3
+  },
+  "requested_case": {
+    "product_category": "灯带/灯泡/灯具",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10"
+  },
+  "stage_outputs": {
+    "dimension_anchor": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Compatibility\",\n    \"Setup and Onboarding\",\n    \"Hardware\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-5CED34700D\"],\n      \"confidence\": 0.93\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-3BAC0ABD65\"],\n      \"confidence\": 0.91\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-27973F10BD\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"dimension\": \"Hardware\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"confidence\": 0.88\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-3D83DEA89D",
+        "product_category": "灯带/灯泡/灯具",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Connectivity and Coverage",
+          "Compatibility",
+          "Setup and Onboarding",
+          "Hardware"
+        ],
+        "dimension_support": [
+          {
+            "dimension": "Reliability and Stability",
+            "source_refs": [
+              "OBS-55F12EB3C7"
+            ],
+            "confidence": 0.95
+          },
+          {
+            "dimension": "Connectivity and Coverage",
+            "source_refs": [
+              "OBS-5CED34700D"
+            ],
+            "confidence": 0.93
+          },
+          {
+            "dimension": "Compatibility",
+            "source_refs": [
+              "OBS-3BAC0ABD65"
+            ],
+            "confidence": 0.91
+          },
+          {
+            "dimension": "Setup and Onboarding",
+            "source_refs": [
+              "OBS-27973F10BD"
+            ],
+            "confidence": 0.9
+          },
+          {
+            "dimension": "Hardware",
+            "source_refs": [
+              "OBS-A1CA7D1287"
+            ],
+            "confidence": 0.88
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 2112,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 284,
+        "total_tokens": 2396,
+        "system_prompt_chars": 1177,
+        "user_payload_chars": 5745
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Compatibility\",\n    \"Setup and Onboarding\",\n    \"Hardware\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-5CED34700D\"],\n      \"confidence\": 0.93\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-3BAC0ABD65\"],\n      \"confidence\": 0.91\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-27973F10BD\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"dimension\": \"Hardware\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"confidence\": 0.88\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-3D83DEA89D",
+              "product_category": "灯带/灯泡/灯具",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Connectivity and Coverage",
+                "Compatibility",
+                "Setup and Onboarding",
+                "Hardware"
+              ],
+              "dimension_support": [
+                {
+                  "dimension": "Reliability and Stability",
+                  "source_refs": [
+                    "OBS-55F12EB3C7"
+                  ],
+                  "confidence": 0.95
+                },
+                {
+                  "dimension": "Connectivity and Coverage",
+                  "source_refs": [
+                    "OBS-5CED34700D"
+                  ],
+                  "confidence": 0.93
+                },
+                {
+                  "dimension": "Compatibility",
+                  "source_refs": [
+                    "OBS-3BAC0ABD65"
+                  ],
+                  "confidence": 0.91
+                },
+                {
+                  "dimension": "Setup and Onboarding",
+                  "source_refs": [
+                    "OBS-27973F10BD"
+                  ],
+                  "confidence": 0.9
+                },
+                {
+                  "dimension": "Hardware",
+                  "source_refs": [
+                    "OBS-A1CA7D1287"
+                  ],
+                  "confidence": 0.88
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 2112,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 284,
+              "total_tokens": 2396,
+              "system_prompt_chars": 1177,
+              "user_payload_chars": 5745
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "diagnosis": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Compatibility\", \"Setup and Onboarding\", \"Hardware\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"compatibility_failure\", \"setup_failure\", \"hardware_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.\",\n      \"source_refs\": [\"OBS-5CED34700D\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.\",\n      \"source_refs\": [\"OBS-27973F10BD\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.\",\n      \"supporting_claim_ids\": [\"CL1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.68,\n      \"main_uncertainty\": \"Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"hardware_failure\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\", \"MF-1ACC9A2B41\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.\",\n      \"required_data\": [\"firmware binary analysis\", \"power-cycle test logs\", \"state persistence validation protocol\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).\",\n      \"required_data\": [\"controlled network environment logs\", \"onboarding success/failure telemetry\", \"user interaction recordings\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).\",\n      \"required_data\": [\"physical durability test reports\", \"CAD design files\", \"field return failure photos\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-3D83DEA89D",
+        "product_category": "灯带/灯泡/灯具",
+        "risk_dimensions": [
+          "Reliability and Stability",
+          "Connectivity and Coverage",
+          "Compatibility",
+          "Setup and Onboarding",
+          "Hardware"
+        ],
+        "symptom_families": [
+          "unresponsive_or_outage",
+          "connectivity_failure",
+          "compatibility_failure",
+          "setup_failure",
+          "hardware_failure"
+        ],
+        "claims": [
+          {
+            "claim_id": "CL1",
+            "claim_type": "observed",
+            "statement": "Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.",
+            "source_refs": [
+              "OBS-55F12EB3C7"
+            ]
+          },
+          {
+            "claim_id": "CL2",
+            "claim_type": "observed",
+            "statement": "Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.",
+            "source_refs": [
+              "OBS-5CED34700D"
+            ]
+          },
+          {
+            "claim_id": "CL3",
+            "claim_type": "observed",
+            "statement": "Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.",
+            "source_refs": [
+              "OBS-27973F10BD"
+            ]
+          },
+          {
+            "claim_id": "CL4",
+            "claim_type": "observed",
+            "statement": "Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.",
+            "source_refs": [
+              "OBS-A1CA7D1287"
+            ]
+          }
+        ],
+        "mechanisms": [
+          {
+            "mechanism_id": "M1",
+            "mechanism_family": "connectivity_or_state_sync",
+            "mechanism_scope": "local",
+            "statement": "After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.",
+            "supporting_claim_ids": [
+              "CL1"
+            ],
+            "source_refs": [
+              "OBS-55F12EB3C7",
+              "KB-EDF6E4948D"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.72,
+            "main_uncertainty": "Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs."
+          },
+          {
+            "mechanism_id": "M2",
+            "mechanism_family": "setup_or_configuration",
+            "mechanism_scope": "interface",
+            "statement": "WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.",
+            "supporting_claim_ids": [
+              "CL3"
+            ],
+            "source_refs": [
+              "OBS-27973F10BD",
+              "MF-F6553BA11D"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.68,
+            "main_uncertainty": "Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews."
+          },
+          {
+            "mechanism_id": "M3",
+            "mechanism_family": "hardware_failure",
+            "mechanism_scope": "local",
+            "statement": "Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.",
+            "supporting_claim_ids": [
+              "CL4"
+            ],
+            "source_refs": [
+              "OBS-A1CA7D1287",
+              "MF-1ACC9A2B41"
+            ],
+            "causal_status": "unverified_hypothesis",
+            "confidence": 0.75,
+            "main_uncertainty": "Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis."
+          }
+        ],
+        "validation_tasks": [
+          {
+            "validation_id": "V1",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "task": "Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.",
+            "required_data": [
+              "firmware binary analysis",
+              "power-cycle test logs",
+              "state persistence validation protocol"
+            ]
+          },
+          {
+            "validation_id": "V2",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "task": "Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).",
+            "required_data": [
+              "controlled network environment logs",
+              "onboarding success/failure telemetry",
+              "user interaction recordings"
+            ]
+          },
+          {
+            "validation_id": "V3",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "task": "Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).",
+            "required_data": [
+              "physical durability test reports",
+              "CAD design files",
+              "field return failure photos"
+            ]
+          }
+        ],
+        "abstentions": [
+          {
+            "scope": "exact_root_cause",
+            "reason": "Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances."
+          },
+          {
+            "scope": "implementation_defect",
+            "reason": "Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 3965,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 1208,
+        "total_tokens": 5173,
+        "system_prompt_chars": 3811,
+        "user_payload_chars": 11336
+      },
+      "request_meta": {
+        "model": "qwen3-max",
+        "json_mode": true,
+        "sdk_max_retries": 0
+      },
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Compatibility\", \"Setup and Onboarding\", \"Hardware\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"compatibility_failure\", \"setup_failure\", \"hardware_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.\",\n      \"source_refs\": [\"OBS-5CED34700D\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.\",\n      \"source_refs\": [\"OBS-27973F10BD\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.\",\n      \"supporting_claim_ids\": [\"CL1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.68,\n      \"main_uncertainty\": \"Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"hardware_failure\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\", \"MF-1ACC9A2B41\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.\",\n      \"required_data\": [\"firmware binary analysis\", \"power-cycle test logs\", \"state persistence validation protocol\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).\",\n      \"required_data\": [\"controlled network environment logs\", \"onboarding success/failure telemetry\", \"user interaction recordings\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).\",\n      \"required_data\": [\"physical durability test reports\", \"CAD design files\", \"field return failure photos\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-3D83DEA89D",
+              "product_category": "灯带/灯泡/灯具",
+              "risk_dimensions": [
+                "Reliability and Stability",
+                "Connectivity and Coverage",
+                "Compatibility",
+                "Setup and Onboarding",
+                "Hardware"
+              ],
+              "symptom_families": [
+                "unresponsive_or_outage",
+                "connectivity_failure",
+                "compatibility_failure",
+                "setup_failure",
+                "hardware_failure"
+              ],
+              "claims": [
+                {
+                  "claim_id": "CL1",
+                  "claim_type": "observed",
+                  "statement": "Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.",
+                  "source_refs": [
+                    "OBS-55F12EB3C7"
+                  ]
+                },
+                {
+                  "claim_id": "CL2",
+                  "claim_type": "observed",
+                  "statement": "Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.",
+                  "source_refs": [
+                    "OBS-5CED34700D"
+                  ]
+                },
+                {
+                  "claim_id": "CL3",
+                  "claim_type": "observed",
+                  "statement": "Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.",
+                  "source_refs": [
+                    "OBS-27973F10BD"
+                  ]
+                },
+                {
+                  "claim_id": "CL4",
+                  "claim_type": "observed",
+                  "statement": "Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.",
+                  "source_refs": [
+                    "OBS-A1CA7D1287"
+                  ]
+                }
+              ],
+              "mechanisms": [
+                {
+                  "mechanism_id": "M1",
+                  "mechanism_family": "connectivity_or_state_sync",
+                  "mechanism_scope": "local",
+                  "statement": "After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.",
+                  "supporting_claim_ids": [
+                    "CL1"
+                  ],
+                  "source_refs": [
+                    "OBS-55F12EB3C7",
+                    "KB-EDF6E4948D"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.72,
+                  "main_uncertainty": "Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs."
+                },
+                {
+                  "mechanism_id": "M2",
+                  "mechanism_family": "setup_or_configuration",
+                  "mechanism_scope": "interface",
+                  "statement": "WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.",
+                  "supporting_claim_ids": [
+                    "CL3"
+                  ],
+                  "source_refs": [
+                    "OBS-27973F10BD",
+                    "MF-F6553BA11D"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.68,
+                  "main_uncertainty": "Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews."
+                },
+                {
+                  "mechanism_id": "M3",
+                  "mechanism_family": "hardware_failure",
+                  "mechanism_scope": "local",
+                  "statement": "Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.",
+                  "supporting_claim_ids": [
+                    "CL4"
+                  ],
+                  "source_refs": [
+                    "OBS-A1CA7D1287",
+                    "MF-1ACC9A2B41"
+                  ],
+                  "causal_status": "unverified_hypothesis",
+                  "confidence": 0.75,
+                  "main_uncertainty": "Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis."
+                }
+              ],
+              "validation_tasks": [
+                {
+                  "validation_id": "V1",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "task": "Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.",
+                  "required_data": [
+                    "firmware binary analysis",
+                    "power-cycle test logs",
+                    "state persistence validation protocol"
+                  ]
+                },
+                {
+                  "validation_id": "V2",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "task": "Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).",
+                  "required_data": [
+                    "controlled network environment logs",
+                    "onboarding success/failure telemetry",
+                    "user interaction recordings"
+                  ]
+                },
+                {
+                  "validation_id": "V3",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "task": "Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).",
+                  "required_data": [
+                    "physical durability test reports",
+                    "CAD design files",
+                    "field return failure photos"
+                  ]
+                }
+              ],
+              "abstentions": [
+                {
+                  "scope": "exact_root_cause",
+                  "reason": "Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances."
+                },
+                {
+                  "scope": "implementation_defect",
+                  "reason": "Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 3965,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 1208,
+              "total_tokens": 5173,
+              "system_prompt_chars": 3811,
+              "user_payload_chars": 11336
+            },
+            "request_meta": {
+              "model": "qwen3-max",
+              "json_mode": true,
+              "sdk_max_retries": 0
+            }
+          }
+        ]
+      }
+    },
+    "action": {
+      "status": "GENERATED",
+      "input_payload": null,
+      "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.\",\n      \"action\": \"Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.\",\n      \"intervention_logic\": \"This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.\",\n      \"action\": \"Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.\",\n      \"intervention_logic\": \"M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.\",\n      \"action\": \"Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.\",\n      \"intervention_logic\": \"While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"support_or_user_guidance\"],\n      \"validation_metric\": \"Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.\"\n    }\n  ]\n}",
+      "parsed_output": {
+        "case_id": "CASE-3D83DEA89D",
+        "product_category": "灯带/灯泡/灯具",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+            "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+            "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-55F12EB3C7",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+            "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+            "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-27973F10BD",
+              "MF-F6553BA11D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+            "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+            "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-A1CA7D1287"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+          }
+        ]
+      },
+      "parse_error": null,
+      "validation_error": null,
+      "usage": {
+        "prompt_tokens": 12909,
+        "cached_prompt_tokens": 0,
+        "completion_tokens": 760,
+        "total_tokens": 13669,
+        "system_prompt_chars": 4075,
+        "user_payload_chars": 39829
+      },
+      "request_meta": {},
+      "llm_trace": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.\",\n      \"action\": \"Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.\",\n      \"intervention_logic\": \"This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.\",\n      \"action\": \"Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.\",\n      \"intervention_logic\": \"M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.\",\n      \"action\": \"Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.\",\n      \"intervention_logic\": \"While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"support_or_user_guidance\"],\n      \"validation_metric\": \"Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.\"\n    }\n  ]\n}",
+            "parsed_output": {
+              "case_id": "CASE-3D83DEA89D",
+              "product_category": "灯带/灯泡/灯具",
+              "actions": [
+                {
+                  "action_id": "A1",
+                  "priority_rank": 1,
+                  "action_subfamily": "observability_or_validation",
+                  "action_level": "product",
+                  "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+                  "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+                  "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+                  "linked_mechanism_ids": [
+                    "M1"
+                  ],
+                  "source_refs": [
+                    "OBS-55F12EB3C7",
+                    "KB-EDF6E4948D"
+                  ],
+                  "target_products": [
+                    "灯带/灯泡/灯具"
+                  ],
+                  "target_layers": [
+                    "firmware"
+                  ],
+                  "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+                },
+                {
+                  "action_id": "A2",
+                  "priority_rank": 2,
+                  "action_subfamily": "software_or_firmware_remediation",
+                  "action_level": "product",
+                  "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+                  "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+                  "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+                  "linked_mechanism_ids": [
+                    "M2"
+                  ],
+                  "source_refs": [
+                    "OBS-27973F10BD",
+                    "MF-F6553BA11D"
+                  ],
+                  "target_products": [
+                    "灯带/灯泡/灯具"
+                  ],
+                  "target_layers": [
+                    "firmware"
+                  ],
+                  "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+                },
+                {
+                  "action_id": "A3",
+                  "priority_rank": 3,
+                  "action_subfamily": "user_guidance_or_notification",
+                  "action_level": "product",
+                  "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+                  "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+                  "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+                  "linked_mechanism_ids": [
+                    "M3"
+                  ],
+                  "source_refs": [
+                    "OBS-A1CA7D1287"
+                  ],
+                  "target_products": [
+                    "灯带/灯泡/灯具"
+                  ],
+                  "target_layers": [
+                    "support_or_user_guidance"
+                  ],
+                  "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+                }
+              ]
+            },
+            "parse_error": null,
+            "validation_error": null,
+            "usage": {
+              "prompt_tokens": 12909,
+              "cached_prompt_tokens": 0,
+              "completion_tokens": 760,
+              "total_tokens": 13669,
+              "system_prompt_chars": 4075,
+              "user_payload_chars": 39829
+            }
+          }
+        ]
+      },
+      "generation_status": "generated",
+      "original_parsed_output": {
+        "case_id": "CASE-3D83DEA89D",
+        "product_category": "灯带/灯泡/灯具",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+            "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+            "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-55F12EB3C7",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+            "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+            "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-27973F10BD",
+              "MF-F6553BA11D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+            "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+            "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-A1CA7D1287"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+          }
+        ]
+      },
+      "accepted_output": {
+        "case_id": "CASE-3D83DEA89D",
+        "product_category": "灯带/灯泡/灯具",
+        "actions": [
+          {
+            "action_id": "A1",
+            "priority_rank": 1,
+            "action_subfamily": "observability_or_validation",
+            "action_level": "product",
+            "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+            "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+            "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+            "linked_mechanism_ids": [
+              "M1"
+            ],
+            "source_refs": [
+              "OBS-55F12EB3C7",
+              "KB-EDF6E4948D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+          },
+          {
+            "action_id": "A2",
+            "priority_rank": 2,
+            "action_subfamily": "software_or_firmware_remediation",
+            "action_level": "product",
+            "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+            "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+            "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+            "linked_mechanism_ids": [
+              "M2"
+            ],
+            "source_refs": [
+              "OBS-27973F10BD",
+              "MF-F6553BA11D"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "firmware"
+            ],
+            "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+          },
+          {
+            "action_id": "A3",
+            "priority_rank": 3,
+            "action_subfamily": "user_guidance_or_notification",
+            "action_level": "product",
+            "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+            "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+            "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+            "linked_mechanism_ids": [
+              "M3"
+            ],
+            "source_refs": [
+              "OBS-A1CA7D1287"
+            ],
+            "target_products": [
+              "灯带/灯泡/灯具"
+            ],
+            "target_layers": [
+              "support_or_user_guidance"
+            ],
+            "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+          }
+        ]
+      },
+      "discarded_actions": [],
+      "action_id_map": [
+        {
+          "original_action_id": "A1",
+          "original_priority_rank": 1,
+          "final_action_id": "A1",
+          "final_priority_rank": 1
+        },
+        {
+          "original_action_id": "A2",
+          "original_priority_rank": 2,
+          "final_action_id": "A2",
+          "final_priority_rank": 2
+        },
+        {
+          "original_action_id": "A3",
+          "original_priority_rank": 3,
+          "final_action_id": "A3",
+          "final_priority_rank": 3
+        }
+      ],
+      "normalization_notes": [],
+      "n_generated": 3,
+      "n_valid": 3,
+      "n_discarded": 0
+    }
+  },
+  "created_at": "2026-09-02T03:11:16.252897+00:00",
+  "core_dimension_anchor": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Compatibility",
+      "Setup and Onboarding",
+      "Hardware"
+    ],
+    "dimension_support": [
+      {
+        "dimension": "Reliability and Stability",
+        "source_refs": [
+          "OBS-55F12EB3C7"
+        ],
+        "confidence": 0.95
+      },
+      {
+        "dimension": "Connectivity and Coverage",
+        "source_refs": [
+          "OBS-5CED34700D"
+        ],
+        "confidence": 0.93
+      },
+      {
+        "dimension": "Compatibility",
+        "source_refs": [
+          "OBS-3BAC0ABD65"
+        ],
+        "confidence": 0.91
+      },
+      {
+        "dimension": "Setup and Onboarding",
+        "source_refs": [
+          "OBS-27973F10BD"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "dimension": "Hardware",
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ],
+        "confidence": 0.88
+      }
+    ]
+  },
+  "case_meta": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "analysis_cutoff": "2025-09",
+    "target_month": "2025-10",
+    "case_version": "abc_information_ablation_v1",
+    "condition": "H_hierarchical",
+    "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+  },
+  "final_dimension_anchor": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "source": "A_core_hard_anchor",
+    "core_risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Compatibility",
+      "Setup and Onboarding",
+      "Hardware"
+    ],
+    "promoted_risk_dimensions": [],
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Compatibility",
+      "Setup and Onboarding",
+      "Hardware"
+    ],
+    "promotion_rule": {
+      "max_promotions": 0,
+      "max_dynamic_rank": 3,
+      "must_be_observed_dimension": true
+    }
+  },
+  "case_package": {
+    "case_meta": {
+      "case_id": "CASE-3D83DEA89D",
+      "product_category": "灯带/灯泡/灯具",
+      "analysis_cutoff": "2025-09",
+      "target_month": "2025-10",
+      "case_version": "abc_information_ablation_v1",
+      "condition": "H_hierarchical",
+      "pipeline_mode": "A_core_hard_anchor_BC_conditioned"
+    },
+    "observed_dimension_catalog": [
+      {
+        "evidence_id": "OBS-FF66FEB011",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "App and Configuration UX",
+        "n_review": 1139,
+        "mean_sentiment": -0.6848055372445617,
+        "recent_review_count": 207,
+        "review_share_in_product": 0.10758477377916313,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-D95A92E668",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Automation and Routine",
+        "n_review": 607,
+        "mean_sentiment": -0.7201068883610452,
+        "recent_review_count": 82,
+        "review_share_in_product": 0.05733446679890432,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-6997635969",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Capability and Feature Gaps",
+        "n_review": 4722,
+        "mean_sentiment": -0.6592935296501419,
+        "recent_review_count": 561,
+        "review_share_in_product": 0.44601870218192124,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-3BAC0ABD65",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Compatibility",
+        "n_review": 2356,
+        "mean_sentiment": -0.7291021182421752,
+        "recent_review_count": 391,
+        "review_share_in_product": 0.22253707376971757,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-5CED34700D",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Connectivity and Coverage",
+        "n_review": 2210,
+        "mean_sentiment": -0.7796939118735283,
+        "recent_review_count": 379,
+        "review_share_in_product": 0.20874657598942098,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-DFB9E402A0",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Control and Interaction",
+        "n_review": 1125,
+        "mean_sentiment": -0.6749033977348434,
+        "recent_review_count": 155,
+        "review_share_in_product": 0.10626239727968263,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-3B7D716D06",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Cost and Value",
+        "n_review": 915,
+        "mean_sentiment": -0.6816512059369202,
+        "recent_review_count": 102,
+        "review_share_in_product": 0.08642674978747521,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-3C24159D1A",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Delivery & Packaging",
+        "n_review": 742,
+        "mean_sentiment": -0.7492290748898678,
+        "recent_review_count": 85,
+        "review_share_in_product": 0.07008595447246624,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-B386DE0088",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Ease of use",
+        "n_review": 187,
+        "mean_sentiment": -0.5982894736842106,
+        "recent_review_count": 19,
+        "review_share_in_product": 0.017663171814489467,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-A1CA7D1287",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Hardware",
+        "n_review": 1672,
+        "mean_sentiment": -0.7018933224755701,
+        "recent_review_count": 180,
+        "review_share_in_product": 0.15792953622367054,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-065D2685DB",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Media",
+        "n_review": 297,
+        "mean_sentiment": -0.6217553191489362,
+        "recent_review_count": 18,
+        "review_share_in_product": 0.028053272881836216,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-55F12EB3C7",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Reliability and Stability",
+        "n_review": 2451,
+        "mean_sentiment": -0.7839951937518774,
+        "recent_review_count": 384,
+        "review_share_in_product": 0.23151034287333522,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-576965849C",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Responsiveness",
+        "n_review": 210,
+        "mean_sentiment": -0.6130268199233716,
+        "recent_review_count": 26,
+        "review_share_in_product": 0.019835647492207426,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-504D7239BE",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Security and Privacy",
+        "n_review": 437,
+        "mean_sentiment": -0.7526015037593985,
+        "recent_review_count": 99,
+        "review_share_in_product": 0.041277037876641165,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-EBFB38C09D",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Sensors",
+        "n_review": 321,
+        "mean_sentiment": -0.6968337129840546,
+        "recent_review_count": 28,
+        "review_share_in_product": 0.030320204023802776,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-27973F10BD",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Setup and Onboarding",
+        "n_review": 2116,
+        "mean_sentiment": -0.715273356401384,
+        "recent_review_count": 270,
+        "review_share_in_product": 0.19986776235005196,
+        "evidence_utility": null,
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "observed_evidence": [
+      {
+        "evidence_id": "OBS-6997635969",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Capability and Feature Gaps",
+        "evidence_selection": {
+          "rank": 1,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.870146,
+          "severity_component": 1.0,
+          "recency_component": 0.350729,
+          "prevalence_component": 1.0,
+          "breadth_component": 1.0
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "capability_gap",
+            "count": 4796,
+            "share": 0.6478454680534919
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 864,
+            "share": 0.11670944211806025
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 423,
+            "share": 0.05713899770363366
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 5832,
+            "share": 0.7507723995880535
+          },
+          {
+            "scenario": "kitchen",
+            "count": 394,
+            "share": 0.050720906282183315
+          },
+          {
+            "scenario": "outdoor",
+            "count": 240,
+            "share": 0.030895983522142123
+          }
+        ],
+        "severity": {
+          "n_stmt": 7403,
+          "n_review": 4722,
+          "mean_sentiment": -0.6592935296501419,
+          "recent_count": 771,
+          "recent_review_count": 561,
+          "share_in_product": 0.24652835592260813,
+          "review_share_in_product": 0.44601870218192124
+        },
+        "representative_statements": [
+          "green light option is missing for migraine relief",
+          "bulb color tuning is hard to balance between blue and yellow",
+          "hard to balance high lumen output with lighting needs"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-55F12EB3C7",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Reliability and Stability",
+        "evidence_selection": {
+          "rank": 2,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.542568,
+          "severity_component": 0.52136,
+          "recency_component": 0.578917,
+          "prevalence_component": 0.432195,
+          "breadth_component": 0.796653
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "device_unresponsive",
+            "count": 2302,
+            "share": 0.6914989486332231
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 486,
+            "share": 0.14598978672273957
+          },
+          {
+            "failure_type": "connection_failure",
+            "count": 243,
+            "share": 0.07299489336136979
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2765,
+            "share": 0.7879737817041892
+          },
+          {
+            "scenario": "kitchen",
+            "count": 127,
+            "share": 0.03619264747791394
+          },
+          {
+            "scenario": "bedroom",
+            "count": 108,
+            "share": 0.030777999430037048
+          }
+        ],
+        "severity": {
+          "n_stmt": 3329,
+          "n_review": 2451,
+          "mean_sentiment": -0.7839951937518774,
+          "recent_count": 468,
+          "recent_review_count": 384,
+          "share_in_product": 0.1108595024809351,
+          "review_share_in_product": 0.23151034287333522
+        },
+        "representative_statements": [
+          "bulbs fail to rejoin app after power interruption",
+          "bulbs fail to retain settings after power interruption",
+          "connectivity issues cause lights to stop functioning after setup"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-5CED34700D",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Connectivity and Coverage",
+        "evidence_selection": {
+          "rank": 3,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.516538,
+          "severity_component": 0.459836,
+          "recency_component": 0.668242,
+          "prevalence_component": 0.382578,
+          "breadth_component": 0.764561
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "connection_failure",
+            "count": 2541,
+            "share": 0.8546922300706358
+          },
+          {
+            "failure_type": "setup_failure",
+            "count": 321,
+            "share": 0.10797174571140263
+          },
+          {
+            "failure_type": "device_unresponsive",
+            "count": 54,
+            "share": 0.018163471241170535
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2585,
+            "share": 0.8333333333333334
+          },
+          {
+            "scenario": "bedroom",
+            "count": 86,
+            "share": 0.027724049000644745
+          },
+          {
+            "scenario": "kitchen",
+            "count": 82,
+            "share": 0.026434558349451968
+          }
+        ],
+        "severity": {
+          "n_stmt": 2973,
+          "n_review": 2210,
+          "mean_sentiment": -0.7796939118735283,
+          "recent_count": 478,
+          "recent_review_count": 379,
+          "share_in_product": 0.09900429584734756,
+          "review_share_in_product": 0.20874657598942098
+        },
+        "representative_statements": [
+          "connection requires home internet and location data",
+          "app fails to connect to light hub despite proximity",
+          "bulbs fail to connect to WiFi"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-3BAC0ABD65",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Compatibility",
+        "evidence_selection": {
+          "rank": 4,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.515896,
+          "severity_component": 0.457332,
+          "recency_component": 0.634893,
+          "prevalence_component": 0.409059,
+          "breadth_component": 0.784396
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "setup_failure",
+            "count": 988,
+            "share": 0.3123616819475182
+          },
+          {
+            "failure_type": "compatibility",
+            "count": 883,
+            "share": 0.27916534935188114
+          },
+          {
+            "failure_type": "connection_failure",
+            "count": 348,
+            "share": 0.11002213088839709
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2715,
+            "share": 0.8302752293577982
+          },
+          {
+            "scenario": "kitchen",
+            "count": 160,
+            "share": 0.04892966360856269
+          },
+          {
+            "scenario": "outdoor",
+            "count": 85,
+            "share": 0.02599388379204893
+          }
+        ],
+        "severity": {
+          "n_stmt": 3163,
+          "n_review": 2356,
+          "mean_sentiment": -0.7291021182421752,
+          "recent_count": 467,
+          "recent_review_count": 391,
+          "share_in_product": 0.10533151287089147,
+          "review_share_in_product": 0.22253707376971757
+        },
+        "representative_statements": [
+          "fails to work with Alexa",
+          "app shows two bulbs but misses one during connection",
+          "bulbs fail to work with Alexa"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-27973F10BD",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Setup and Onboarding",
+        "evidence_selection": {
+          "rank": 5,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.433532,
+          "severity_component": 0.406954,
+          "recency_component": 0.403723,
+          "prevalence_component": 0.37101,
+          "breadth_component": 0.751084
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "setup_failure",
+            "count": 2810,
+            "share": 0.972318339100346
+          },
+          {
+            "failure_type": "hardware_defect",
+            "count": 16,
+            "share": 0.005536332179930796
+          },
+          {
+            "failure_type": "capability_gap",
+            "count": 13,
+            "share": 0.004498269896193772
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 2422,
+            "share": 0.8105756358768407
+          },
+          {
+            "scenario": "kitchen",
+            "count": 188,
+            "share": 0.06291834002677377
+          },
+          {
+            "scenario": "outdoor",
+            "count": 79,
+            "share": 0.02643908969210174
+          }
+        ],
+        "severity": {
+          "n_stmt": 2890,
+          "n_review": 2116,
+          "mean_sentiment": -0.715273356401384,
+          "recent_count": 342,
+          "recent_review_count": 270,
+          "share_in_product": 0.09624030104232575,
+          "review_share_in_product": 0.19986776235005196
+        },
+        "representative_statements": [
+          "setup fails to connect to WiFi",
+          "retrofitting required to achieve desired smart functionality",
+          "installation felt slippery and risked dropping the light"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      },
+      {
+        "evidence_id": "OBS-A1CA7D1287",
+        "source_type": "aggregated_review_evidence",
+        "product_category": "灯带/灯泡/灯具",
+        "dimension": "Hardware",
+        "evidence_selection": {
+          "rank": 6,
+          "selection_rule": "dimension_level_static_evidence_utility",
+          "evidence_utility": 0.353917,
+          "severity_component": 0.334597,
+          "recency_component": 0.283535,
+          "prevalence_component": 0.310523,
+          "breadth_component": 0.67807
+        },
+        "top_failure_types": [
+          {
+            "failure_type": "hardware_defect",
+            "count": 2284,
+            "share": 0.9299674267100977
+          },
+          {
+            "failure_type": "unspecified",
+            "count": 83,
+            "share": 0.033794788273615636
+          },
+          {
+            "failure_type": "delivery_or_packaging",
+            "count": 26,
+            "share": 0.010586319218241042
+          }
+        ],
+        "top_scenarios": [
+          {
+            "scenario": "unspecified",
+            "count": 1952,
+            "share": 0.7589424572317263
+          },
+          {
+            "scenario": "kitchen",
+            "count": 158,
+            "share": 0.061430793157076204
+          },
+          {
+            "scenario": "indoor_monitoring",
+            "count": 136,
+            "share": 0.05287713841368585
+          }
+        ],
+        "severity": {
+          "n_stmt": 2456,
+          "n_review": 1672,
+          "mean_sentiment": -0.7018933224755701,
+          "recent_count": 243,
+          "recent_review_count": 180,
+          "share_in_product": 0.0817876053148623,
+          "review_share_in_product": 0.15792953622367054
+        },
+        "representative_statements": [
+          "pole-base connection feels weak and can break under leverage",
+          "lights come faulty with damaged connection",
+          "bulb appearance is unsatisfactory with both available bulb types"
+        ],
+        "epistemic_status": "observed_review_evidence"
+      }
+    ],
+    "ecosystem_relations": [
+      {
+        "relation_id": "REL-718767879E04",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "灯带/灯泡/灯具",
+        "related_product": "HDMI同步盒",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.02827279083430767,
+            "other_to_focal": 0.02827279269695282,
+            "undirected_strength": 0.02827279269695282
+          },
+          "coo": {
+            "focal_to_other": 0.23509009182453156,
+            "other_to_focal": 0.23509007692337036,
+            "undirected_strength": 0.23509009182453156
+          },
+          "user": {
+            "focal_to_other": 0.07541912794113159,
+            "other_to_focal": 0.07541913539171219,
+            "undirected_strength": 0.07541913539171219
+          }
+        },
+        "overall_relation_strength": 0.23509009182453156,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-281882491CA9",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "灯带/灯泡/灯具",
+        "related_product": "智能开关/运动传感器/墙插",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.1607743799686432,
+            "other_to_focal": 0.1607743799686432,
+            "undirected_strength": 0.1607743799686432
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.018377631902694702,
+            "other_to_focal": 0.018377631902694702,
+            "undirected_strength": 0.018377631902694702
+          }
+        },
+        "overall_relation_strength": 0.1607743799686432,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-8C4C47C363DA",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "灯带/灯泡/灯具",
+        "related_product": "集线器/桥接器",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "coo": {
+            "focal_to_other": 0.13955596089363098,
+            "other_to_focal": 0.13955596089363098,
+            "undirected_strength": 0.13955596089363098
+          },
+          "user": {
+            "focal_to_other": 0.0907631516456604,
+            "other_to_focal": 0.0907631441950798,
+            "undirected_strength": 0.0907631516456604
+          }
+        },
+        "overall_relation_strength": 0.13955596089363098,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-2B181A381217",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "灯带/灯泡/灯具",
+        "related_product": "智能排插/插头/插座",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.08166994154453278,
+            "other_to_focal": 0.08166994154453278,
+            "undirected_strength": 0.08166994154453278
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.015544370748102665,
+            "other_to_focal": 0.01554437167942524,
+            "undirected_strength": 0.01554437167942524
+          }
+        },
+        "overall_relation_strength": 0.08166994154453278,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      },
+      {
+        "relation_id": "REL-2D52E088BC06",
+        "relation_type": "static_multi_channel_ecosystem_association",
+        "product_category": "灯带/灯泡/灯具",
+        "related_product": "打印机",
+        "channel_strengths": {
+          "api": {
+            "focal_to_other": 0.043024566024541855,
+            "other_to_focal": 0.043024566024541855,
+            "undirected_strength": 0.043024566024541855
+          },
+          "coo": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          },
+          "user": {
+            "focal_to_other": 0.0,
+            "other_to_focal": 0.0,
+            "undirected_strength": 0.0
+          }
+        },
+        "overall_relation_strength": 0.043024566024541855,
+        "direction_note": "Raw A[j,i] is stored as i->j; relation is associative/topological, not causal propagation.",
+        "epistemic_status": "observed_or_constructed_static_relation_not_causal"
+      }
+    ],
+    "api_knowledge": [
+      {
+        "knowledge_id": "KB-54D9E60418",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.ColorController",
+        "functionality": "The Alexa.ColorController interface enables users to control the color of lighting or other color-capable devices by voice commands. It defines a SetColor directive using the hue, saturation, and brightness (HSB) color model, supports state and change reporting, and integrates with Alexa discovery and endpoint health reporting.",
+        "device_context": "Applies to color-changing devices such as smart light bulbs or lighting fixtures that can represent colors in the hue, saturation, brightness (HSB) format and support Alexa Smart Home integration.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "used to describe endpoints that support Alexa.ColorController during device discovery"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "required when reporting the health or connectivity status of the device to Alexa"
+          },
+          {
+            "api_name": "Alexa.PowerController",
+            "relation_type": "complementary",
+            "trigger_condition": "often included in Discover.Response with Alexa.ColorController to report power state of the device"
+          },
+          {
+            "api_name": "Alexa.ErrorResponse",
+            "relation_type": "optional",
+            "trigger_condition": "used for general error handling if a SetColor directive cannot be handled successfully"
+          },
+          {
+            "api_name": "Alexa.ColorTemperatureController",
+            "relation_type": "optional",
+            "trigger_condition": "used for lighting endpoints to report colorTemperatureInKelvin when endpoint is set to a shade of white instead of a color"
+          },
+          {
+            "api_name": "Alexa",
+            "relation_type": "required",
+            "trigger_condition": "used to respond with generic Alexa.Response events after successfully handling SetColor directives"
+          }
+        ],
+        "design_constraints": [
+          "Colors must be represented using the hue, saturation, brightness (HSB) model.",
+          "The color property is required in the SetColor directive payload.",
+          "For best experience, maintain existing brightness when setting a new color.",
+          "Discovery responses must include retrievable and proactivelyReported flags for the color property.",
+          "Responses must include timeOfSample and uncertaintyInMilliseconds for each property."
+        ],
+        "common_root_causes": [
+          "Skill fails to respond to SetColor directive with Alexa.Response or Alexa.ErrorResponse.",
+          "Brightness incorrectly overwritten instead of maintaining prior brightness value.",
+          "Retrievable or proactivelyReported flags not properly configured in discovery response.",
+          "Missing or malformed color property in context object during state report.",
+          "Invalid HSB color values outside supported numeric range."
+        ],
+        "diagnostic_keywords": [
+          "ColorController",
+          "SetColor",
+          "color",
+          "hue",
+          "saturation",
+          "brightness",
+          "StateReport",
+          "ChangeReport"
+        ],
+        "notes_for_root_cause_mapping": "If a SetColor directive cannot be processed, the skill must return an Alexa.ErrorResponse event. When handling color changes, maintain the device's existing brightness level to ensure consistent user experience. Ensure retrievable and proactivelyReported properties are correctly declared in discovery; missing configuration may prevent state synchronization.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 78.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "灯带/灯泡/灯具"
+      },
+      {
+        "knowledge_id": "KB-9123B88BA4",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.ColorTemperatureController",
+        "functionality": "Enables Alexa skills to control and report the color temperature of tunable white light devices, allowing users to adjust lighting warmth or coolness through voice commands or automation.",
+        "device_context": "Applies to tunable white lighting devices, such as smart bulbs or light fixtures, that support control of color temperature between 1,000 and 10,000 Kelvin.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "used to describe endpoints that support Alexa.ColorTemperatureController during device discovery"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "required when reporting the health or connectivity status of the device to Alexa"
+          },
+          {
+            "api_name": "Alexa.PowerController",
+            "relation_type": "complementary",
+            "trigger_condition": "often included in Discover.Response with Alexa.ColorTemperatureController to report power state of the device"
+          },
+          {
+            "api_name": "Alexa.ErrorResponse",
+            "relation_type": "optional",
+            "trigger_condition": "used for error handling if a color temperature directive cannot be handled successfully or is not supported in the current device mode"
+          },
+          {
+            "api_name": "Alexa.ColorController",
+            "relation_type": "optional",
+            "trigger_condition": "for lighting endpoints that support both ColorController and ColorTemperatureController, report color state when endpoint is set to a color and colorTemperatureInKelvin when set to a shade of white"
+          },
+          {
+            "api_name": "Alexa",
+            "relation_type": "required",
+            "trigger_condition": "used to respond with generic Alexa.Response events after handling SetColorTemperature, IncreaseColorTemperature, or DecreaseColorTemperature directives"
+          }
+        ],
+        "design_constraints": [
+          "Valid colorTemperatureInKelvin range: 1,000 to 10,000 Kelvin.",
+          "If the requested color temperature is unsupported, the device must set to the nearest valid value.",
+          "State reporting must include all retrievable properties in context.",
+          "Change reports must distinguish between color and color temperature states for devices that support both interfaces."
+        ],
+        "common_root_causes": [
+          "Device in unsupported mode (e.g., HSB color mode) when color temperature control is requested.",
+          "Device unable to reach requested color temperature; must set to nearest possible value.",
+          "Missing or incorrect proactivelyReported/retrievable settings in discovery response."
+        ],
+        "diagnostic_keywords": [
+          "ColorTemperatureController",
+          "colorTemperatureInKelvin",
+          "SetColorTemperature",
+          "IncreaseColorTemperature",
+          "DecreaseColorTemperature",
+          "ReportState",
+          "ChangeReport",
+          "EndpointHealth"
+        ],
+        "notes_for_root_cause_mapping": "If the device is in a mode that does not support color temperature adjustment (for example, HSB color mode), Alexa responds with 'That only works when your light is set to a shade of white.'",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 71.5,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "灯带/灯泡/灯具"
+      },
+      {
+        "knowledge_id": "KB-EDF6E4948D",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.PowerController",
+        "functionality": "Enables devices to be turned on or off by Alexa and to report their current power state.",
+        "device_context": "Smart home devices that can be powered on or off, such as lights, vacuums, or appliances; can include connected vehicles with Alexa user identification.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "used to describe endpoints that support Alexa.PowerController and define retrievable and proactively reported properties during device discovery"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "used to report the device's connectivity and operational health to Alexa, ensuring Alexa can display device health status"
+          },
+          {
+            "api_name": "Alexa.BrightnessController",
+            "relation_type": "complementary",
+            "trigger_condition": "used together when a device supports both on/off and brightness adjustment, such as smart lights"
+          }
+        ],
+        "design_constraints": [
+          "powerState values must be ON or OFF",
+          "All properties must be retrievable in StateReport and proactivelyReported in ChangeReport",
+          "Device must respond to user requests in less than 2 seconds; over 5 seconds is a latency failure",
+          "User verification supported only for ja-JP locale at this time"
+        ],
+        "common_root_causes": [
+          "Directive not handled successfully",
+          "Property value not retrievable or not proactivelyReported",
+          "Device response latency exceeds limits",
+          "User verification required but not completed"
+        ],
+        "diagnostic_keywords": [
+          "TurnOn",
+          "TurnOff",
+          "powerState",
+          "StateReport",
+          "ChangeReport",
+          "Discovery",
+          "proactivelyReported",
+          "retrievable"
+        ],
+        "notes_for_root_cause_mapping": "If a TurnOn or TurnOff directive cannot be handled, respond with Alexa.ErrorResponse; ensure properties are retrievable and proactivelyReported; user verification may be required for certain directives.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 70.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "灯带/灯泡/灯具"
+      },
+      {
+        "knowledge_id": "KB-55B1FE7F89",
+        "knowledge_type": "api_documentation_card",
+        "api_name": "Alexa.BrightnessController",
+        "functionality": "Enables devices to control and adjust their brightness levels via Alexa directives and report state changes back to Alexa.",
+        "device_context": "Smart home devices that support brightness control, such as light bulbs and dimmers.",
+        "dependencies": [
+          {
+            "api_name": "Alexa.PercentageController",
+            "relation_type": "alternative",
+            "trigger_condition": "use Alexa.BrightnessController when device supports brightness control instead of the more general percentage control"
+          },
+          {
+            "api_name": "Alexa.PowerLevelController",
+            "relation_type": "alternative",
+            "trigger_condition": "use Alexa.PowerLevelController if controlling the power level of an endpoint such as a dimmer switch"
+          },
+          {
+            "api_name": "Alexa.EndpointHealth",
+            "relation_type": "recommended",
+            "trigger_condition": "implement to let Alexa know the health of your device"
+          },
+          {
+            "api_name": "Alexa.Discovery",
+            "relation_type": "required",
+            "trigger_condition": "use standard discovery mechanism to describe endpoints that support Alexa.BrightnessController"
+          },
+          {
+            "api_name": "Alexa.ColorController",
+            "relation_type": "complementary",
+            "trigger_condition": "can be reported together with brightness in the same endpoint discovery response"
+          }
+        ],
+        "design_constraints": [
+          "brightness property: integer, 0-100 inclusive",
+          "brightness change: integer, -100 to 100 inclusive",
+          "SetBrightness and AdjustBrightness payload must include required properties",
+          "Discovery must include retrievable and proactivelyReported flags for reported properties"
+        ],
+        "common_root_causes": [
+          "Directive not handled successfully",
+          "Incorrect property values outside 0-100 range",
+          "Brightness change value outside -100 to 100",
+          "Missing or incorrect endpointId",
+          "OAuth2 token invalid or missing"
+        ],
+        "diagnostic_keywords": [
+          "brightness",
+          "SetBrightness",
+          "AdjustBrightness",
+          "StateReport",
+          "ChangeReport",
+          "endpoint",
+          "directive",
+          "property"
+        ],
+        "notes_for_root_cause_mapping": "If a directive cannot be handled successfully, respond with Alexa.ErrorResponse. Ensure retrievable properties are correctly reported and proactivelyReported properties are updated.",
+        "epistemic_status": "candidate_mechanism_knowledge_not_implementation_proof",
+        "retrieval_score": 59.0,
+        "retrieval_basis": "category_capability_filter+static_issue_relevance",
+        "category_match": "灯带/灯泡/灯具"
+      }
+    ],
+    "retrieval_config": {
+      "max_observed_cards": 6,
+      "statements_per_card": 3,
+      "max_relations": 5,
+      "max_api_cards": 5,
+      "max_chains": 4,
+      "max_standalone_chains": 1,
+      "chain_selection_mode": "dimension_diverse"
+    },
+    "source_notes": [
+      "OBS: observed dimension catalog plus detailed aggregated review evidence.",
+      "REL: static ecosystem associations; not causal propagation.",
+      "KB: candidate mechanism knowledge; not proof of implementation failure.",
+      "MF/CHN, when supplied, are model-inferred and not causal proof."
+    ],
+    "model_facts": [
+      {
+        "fact_id": "MF-71BBF1F54E",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Reliability and Stability",
+        "predicted_next_risk": 0.8481200070298722,
+        "max_predicted_next_risk": 0.8481200070298722,
+        "spillover_output": 0.22179855414470692,
+        "spillover_exposure": 0.22179855332681275,
+        "rho": 0.1952284425497055,
+        "beta_api": 0.18365482985973358,
+        "beta_coo": 0.17571651935577393,
+        "beta_user": 0.19341765344142914,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-50BE86B9B7",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Connectivity and Coverage",
+        "predicted_next_risk": 0.7847290062088723,
+        "max_predicted_next_risk": 0.7847290062088723,
+        "spillover_output": 0.2156245359446423,
+        "spillover_exposure": 0.21562453448072202,
+        "rho": 0.18983574211597443,
+        "beta_api": 0.1775221824645996,
+        "beta_coo": 0.1720176339149475,
+        "beta_user": 0.18812839686870575,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-F308C41462",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Compatibility",
+        "predicted_next_risk": 0.7326693448293216,
+        "max_predicted_next_risk": 0.7326693448293216,
+        "spillover_output": 0.20947953520502613,
+        "spillover_exposure": 0.20947953360094718,
+        "rho": 0.18568237125873566,
+        "beta_api": 0.17161725461483002,
+        "beta_coo": 0.1683548241853714,
+        "beta_user": 0.1825834959745407,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-F6553BA11D",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Setup and Onboarding",
+        "predicted_next_risk": 0.7734191156440378,
+        "max_predicted_next_risk": 0.7734191156440378,
+        "spillover_output": 0.20533760492260117,
+        "spillover_exposure": 0.2053376039834025,
+        "rho": 0.18600499629974365,
+        "beta_api": 0.1613244116306305,
+        "beta_coo": 0.1695835441350937,
+        "beta_user": 0.1832714080810547,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-1ACC9A2B41",
+        "fact_type": "anchored_dimension_forecast",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "dimension": "Hardware",
+        "predicted_next_risk": 0.7497406947080203,
+        "max_predicted_next_risk": 0.7497406947080203,
+        "spillover_output": 0.20814771867484366,
+        "spillover_exposure": 0.2081477179729485,
+        "rho": 0.18653158843517303,
+        "beta_api": 0.17555835843086243,
+        "beta_coo": 0.15968285501003265,
+        "beta_user": 0.18275156617164612,
+        "dominant_driver": "user",
+        "epistemic_status": "model_inferred_dimension_conditioned"
+      },
+      {
+        "fact_id": "MF-B9EDEEE5ED",
+        "fact_type": "anchored_product_dynamic_context",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "persistence_score": 0.18934888747099876,
+        "persistence": "low",
+        "beta_api": 0.1864827486724071,
+        "beta_coo": 0.16847219005439906,
+        "beta_user": 0.18241029644736884,
+        "dominant_driver": "api",
+        "spillover_output_score": 0.21617658502209958,
+        "spillover_exposure_score": 0.21617658374743245,
+        "scope_note": "Product-level context; not a new risk dimension.",
+        "epistemic_status": "model_inferred_product_context"
+      }
+    ],
+    "risk_chains": [
+      {
+        "node_path": [
+          233,
+          12
+        ],
+        "path_length": 1,
+        "log_score": -0.940437788224666,
+        "chain_score": 0.3904568605200906,
+        "source_node": 233,
+        "target_node": 12,
+        "source_category": "灯带/灯泡/灯具",
+        "target_category": "HDMI同步盒",
+        "dimension": "Reliability and Stability",
+        "source_risk_raw": 0.8481200070298722,
+        "source_risk_score": 0.9013632525545268,
+        "target_risk_raw": 0.5052395770499449,
+        "target_risk_score": 0.441368377319745,
+        "edge_product": 0.47902506100242737,
+        "edge_weights": [
+          0.47902506100242737
+        ],
+        "path_text": "灯带/灯泡/灯具::Reliability and Stability -> HDMI同步盒::Reliability and Stability",
+        "chain_id": "L0124",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Reliability and Stability"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 1,
+          "selection_order": 1,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Reliability and Stability"
+          ],
+          "new_dimensions_when_selected": [
+            "Reliability and Stability"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Reliability and Stability"
+          ],
+          "cumulative_dimension_coverage": [
+            "Reliability and Stability"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          225,
+          4
+        ],
+        "path_length": 1,
+        "log_score": -1.0520926612121289,
+        "chain_score": 0.3492062136518348,
+        "source_node": 225,
+        "target_node": 4,
+        "source_category": "灯带/灯泡/灯具",
+        "target_category": "HDMI同步盒",
+        "dimension": "Connectivity and Coverage",
+        "source_risk_raw": 0.7847290062088723,
+        "source_risk_score": 0.8163203834838981,
+        "target_risk_raw": 0.5259794048374836,
+        "target_risk_score": 0.4691921131219843,
+        "edge_product": 0.4677187506658793,
+        "edge_weights": [
+          0.4677187506658793
+        ],
+        "path_text": "灯带/灯泡/灯具::Connectivity and Coverage -> HDMI同步盒::Connectivity and Coverage",
+        "chain_id": "L0136",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Connectivity and Coverage"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 2,
+          "selection_order": 2,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_when_selected": [
+            "Connectivity and Coverage"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Connectivity and Coverage"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Reliability and Stability"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          237,
+          16
+        ],
+        "path_length": 1,
+        "log_score": -1.0863945224376392,
+        "chain_score": 0.3374309026774807,
+        "source_node": 237,
+        "target_node": 16,
+        "source_category": "灯带/灯泡/灯具",
+        "target_category": "HDMI同步盒",
+        "dimension": "Setup and Onboarding",
+        "source_risk_raw": 0.7734191156440378,
+        "source_risk_score": 0.8011474799163347,
+        "target_risk_raw": 0.5410430099680476,
+        "target_risk_score": 0.4894008522530727,
+        "edge_product": 0.45676822972244063,
+        "edge_weights": [
+          0.45676822972244063
+        ],
+        "path_text": "灯带/灯泡/灯具::Setup and Onboarding -> HDMI同步盒::Setup and Onboarding",
+        "chain_id": "L0141",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Setup and Onboarding"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 3,
+          "selection_order": 3,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Setup and Onboarding"
+          ],
+          "new_dimensions_when_selected": [
+            "Setup and Onboarding"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Setup and Onboarding"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Reliability and Stability",
+            "Setup and Onboarding"
+          ],
+          "max_standalone_cap": 1
+        }
+      },
+      {
+        "node_path": [
+          231,
+          10
+        ],
+        "path_length": 1,
+        "log_score": -1.2644597709347134,
+        "chain_score": 0.2823918112044904,
+        "source_node": 231,
+        "target_node": 10,
+        "source_category": "灯带/灯泡/灯具",
+        "target_category": "HDMI同步盒",
+        "dimension": "Hardware",
+        "source_risk_raw": 0.7497406947080203,
+        "source_risk_score": 0.7693814433278434,
+        "target_risk_raw": 0.3589219121280809,
+        "target_risk_score": 0.2450743630351805,
+        "edge_product": 0.4413651120682352,
+        "edge_weights": [
+          0.4413651120682352
+        ],
+        "path_text": "灯带/灯泡/灯具::Hardware -> HDMI同步盒::Hardware",
+        "chain_id": "L0165",
+        "analysis_cutoff": "2025-09",
+        "target_month": "2025-10",
+        "epistemic_status": "model_inferred_risk_chain_not_causal",
+        "is_propagation_chain": true,
+        "chain_kind": "propagation",
+        "matched_dimensions": [
+          "Hardware"
+        ],
+        "retrieval_selection": {
+          "selection_mode": "dimension_diverse",
+          "retrieval_rank": 4,
+          "selection_order": 4,
+          "selection_stage": "dimension_coverage",
+          "matched_dimensions": [
+            "Hardware"
+          ],
+          "new_dimensions_when_selected": [
+            "Hardware"
+          ],
+          "new_dimensions_in_prompt_order": [
+            "Hardware"
+          ],
+          "cumulative_dimension_coverage": [
+            "Connectivity and Coverage",
+            "Hardware",
+            "Reliability and Stability",
+            "Setup and Onboarding"
+          ],
+          "max_standalone_cap": 1
+        }
+      }
+    ],
+    "dimension_anchor": {
+      "case_id": "CASE-3D83DEA89D",
+      "product_category": "灯带/灯泡/灯具",
+      "source": "A_core_hard_anchor",
+      "core_risk_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Compatibility",
+        "Setup and Onboarding",
+        "Hardware"
+      ],
+      "promoted_risk_dimensions": [],
+      "risk_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Compatibility",
+        "Setup and Onboarding",
+        "Hardware"
+      ],
+      "promotion_rule": {
+        "max_promotions": 0,
+        "max_dynamic_rank": 3,
+        "must_be_observed_dimension": true
+      }
+    },
+    "hybrid_routing": {
+      "core_anchor_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Compatibility",
+        "Setup and Onboarding",
+        "Hardware"
+      ],
+      "eligible_observed_dimensions": [
+        "App and Configuration UX",
+        "Automation and Routine",
+        "Capability and Feature Gaps",
+        "Compatibility",
+        "Connectivity and Coverage",
+        "Control and Interaction",
+        "Cost and Value",
+        "Delivery & Packaging",
+        "Ease of use",
+        "Hardware",
+        "Media",
+        "Reliability and Stability",
+        "Responsiveness",
+        "Security and Privacy",
+        "Sensors",
+        "Setup and Onboarding"
+      ],
+      "promoted_dimensions": [],
+      "final_anchor_dimensions": [
+        "Reliability and Stability",
+        "Connectivity and Coverage",
+        "Compatibility",
+        "Setup and Onboarding",
+        "Hardware"
+      ],
+      "promotion_candidates": [],
+      "dynamic_matched_dimensions": [
+        "Compatibility",
+        "Connectivity and Coverage",
+        "Hardware",
+        "Reliability and Stability",
+        "Setup and Onboarding"
+      ],
+      "dynamic_missing_dimensions": [],
+      "chain_matched_dimensions": [
+        "Connectivity and Coverage",
+        "Hardware",
+        "Reliability and Stability",
+        "Setup and Onboarding"
+      ],
+      "n_anchor_dimensions": 5,
+      "n_anchor_dynamic_matched": 5,
+      "n_anchor_chains": 4,
+      "n_unique_chain_dimensions": 4,
+      "anchor_chain_dimension_coverage": 0.8,
+      "chain_selection_mode": "dimension_diverse",
+      "general_excluded": true,
+      "promotion_mode": "none",
+      "max_promotions": 0,
+      "max_dynamic_rank": 3
+    }
+  },
+  "diagnosis": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Compatibility",
+      "Setup and Onboarding",
+      "Hardware"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "connectivity_failure",
+      "compatibility_failure",
+      "setup_failure",
+      "hardware_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.",
+        "source_refs": [
+          "OBS-55F12EB3C7"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.",
+        "source_refs": [
+          "OBS-5CED34700D"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.",
+        "source_refs": [
+          "OBS-27973F10BD"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.",
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.",
+        "supporting_claim_ids": [
+          "CL1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.72,
+        "main_uncertainty": "Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "setup_or_configuration",
+        "mechanism_scope": "interface",
+        "statement": "WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.",
+        "supporting_claim_ids": [
+          "CL3"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.68,
+        "main_uncertainty": "Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "hardware_failure",
+        "mechanism_scope": "local",
+        "statement": "Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.",
+        "supporting_claim_ids": [
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287",
+          "MF-1ACC9A2B41"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.75,
+        "main_uncertainty": "Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.",
+        "required_data": [
+          "firmware binary analysis",
+          "power-cycle test logs",
+          "state persistence validation protocol"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).",
+        "required_data": [
+          "controlled network environment logs",
+          "onboarding success/failure telemetry",
+          "user interaction recordings"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).",
+        "required_data": [
+          "physical durability test reports",
+          "CAD design files",
+          "field return failure photos"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers."
+      }
+    ]
+  },
+  "llm_trace": {
+    "dimension_anchor": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\n    \"Reliability and Stability\",\n    \"Connectivity and Coverage\",\n    \"Compatibility\",\n    \"Setup and Onboarding\",\n    \"Hardware\"\n  ],\n  \"dimension_support\": [\n    {\n      \"dimension\": \"Reliability and Stability\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"],\n      \"confidence\": 0.95\n    },\n    {\n      \"dimension\": \"Connectivity and Coverage\",\n      \"source_refs\": [\"OBS-5CED34700D\"],\n      \"confidence\": 0.93\n    },\n    {\n      \"dimension\": \"Compatibility\",\n      \"source_refs\": [\"OBS-3BAC0ABD65\"],\n      \"confidence\": 0.91\n    },\n    {\n      \"dimension\": \"Setup and Onboarding\",\n      \"source_refs\": [\"OBS-27973F10BD\"],\n      \"confidence\": 0.9\n    },\n    {\n      \"dimension\": \"Hardware\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"confidence\": 0.88\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-3D83DEA89D",
+            "product_category": "灯带/灯泡/灯具",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Connectivity and Coverage",
+              "Compatibility",
+              "Setup and Onboarding",
+              "Hardware"
+            ],
+            "dimension_support": [
+              {
+                "dimension": "Reliability and Stability",
+                "source_refs": [
+                  "OBS-55F12EB3C7"
+                ],
+                "confidence": 0.95
+              },
+              {
+                "dimension": "Connectivity and Coverage",
+                "source_refs": [
+                  "OBS-5CED34700D"
+                ],
+                "confidence": 0.93
+              },
+              {
+                "dimension": "Compatibility",
+                "source_refs": [
+                  "OBS-3BAC0ABD65"
+                ],
+                "confidence": 0.91
+              },
+              {
+                "dimension": "Setup and Onboarding",
+                "source_refs": [
+                  "OBS-27973F10BD"
+                ],
+                "confidence": 0.9
+              },
+              {
+                "dimension": "Hardware",
+                "source_refs": [
+                  "OBS-A1CA7D1287"
+                ],
+                "confidence": 0.88
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 2112,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 284,
+            "total_tokens": 2396,
+            "system_prompt_chars": 1177,
+            "user_payload_chars": 5745
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "diagnosis": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"risk_dimensions\": [\"Reliability and Stability\", \"Connectivity and Coverage\", \"Compatibility\", \"Setup and Onboarding\", \"Hardware\"],\n  \"symptom_families\": [\"unresponsive_or_outage\", \"connectivity_failure\", \"compatibility_failure\", \"setup_failure\", \"hardware_failure\"],\n  \"claims\": [\n    {\n      \"claim_id\": \"CL1\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.\",\n      \"source_refs\": [\"OBS-55F12EB3C7\"]\n    },\n    {\n      \"claim_id\": \"CL2\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.\",\n      \"source_refs\": [\"OBS-5CED34700D\"]\n    },\n    {\n      \"claim_id\": \"CL3\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.\",\n      \"source_refs\": [\"OBS-27973F10BD\"]\n    },\n    {\n      \"claim_id\": \"CL4\",\n      \"claim_type\": \"observed\",\n      \"statement\": \"Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.\",\n      \"source_refs\": [\"OBS-A1CA7D1287\"]\n    }\n  ],\n  \"mechanisms\": [\n    {\n      \"mechanism_id\": \"M1\",\n      \"mechanism_family\": \"connectivity_or_state_sync\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.\",\n      \"supporting_claim_ids\": [\"CL1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.72,\n      \"main_uncertainty\": \"Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs.\"\n    },\n    {\n      \"mechanism_id\": \"M2\",\n      \"mechanism_family\": \"setup_or_configuration\",\n      \"mechanism_scope\": \"interface\",\n      \"statement\": \"WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.\",\n      \"supporting_claim_ids\": [\"CL3\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.68,\n      \"main_uncertainty\": \"Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews.\"\n    },\n    {\n      \"mechanism_id\": \"M3\",\n      \"mechanism_family\": \"hardware_failure\",\n      \"mechanism_scope\": \"local\",\n      \"statement\": \"Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.\",\n      \"supporting_claim_ids\": [\"CL4\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\", \"MF-1ACC9A2B41\"],\n      \"causal_status\": \"unverified_hypothesis\",\n      \"confidence\": 0.75,\n      \"main_uncertainty\": \"Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis.\"\n    }\n  ],\n  \"validation_tasks\": [\n    {\n      \"validation_id\": \"V1\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"task\": \"Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.\",\n      \"required_data\": [\"firmware binary analysis\", \"power-cycle test logs\", \"state persistence validation protocol\"]\n    },\n    {\n      \"validation_id\": \"V2\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"task\": \"Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).\",\n      \"required_data\": [\"controlled network environment logs\", \"onboarding success/failure telemetry\", \"user interaction recordings\"]\n    },\n    {\n      \"validation_id\": \"V3\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"task\": \"Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).\",\n      \"required_data\": [\"physical durability test reports\", \"CAD design files\", \"field return failure photos\"]\n    }\n  ],\n  \"abstentions\": [\n    {\n      \"scope\": \"exact_root_cause\",\n      \"reason\": \"Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances.\"\n    },\n    {\n      \"scope\": \"implementation_defect\",\n      \"reason\": \"Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-3D83DEA89D",
+            "product_category": "灯带/灯泡/灯具",
+            "risk_dimensions": [
+              "Reliability and Stability",
+              "Connectivity and Coverage",
+              "Compatibility",
+              "Setup and Onboarding",
+              "Hardware"
+            ],
+            "symptom_families": [
+              "unresponsive_or_outage",
+              "connectivity_failure",
+              "compatibility_failure",
+              "setup_failure",
+              "hardware_failure"
+            ],
+            "claims": [
+              {
+                "claim_id": "CL1",
+                "claim_type": "observed",
+                "statement": "Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.",
+                "source_refs": [
+                  "OBS-55F12EB3C7"
+                ]
+              },
+              {
+                "claim_id": "CL2",
+                "claim_type": "observed",
+                "statement": "Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.",
+                "source_refs": [
+                  "OBS-5CED34700D"
+                ]
+              },
+              {
+                "claim_id": "CL3",
+                "claim_type": "observed",
+                "statement": "Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.",
+                "source_refs": [
+                  "OBS-27973F10BD"
+                ]
+              },
+              {
+                "claim_id": "CL4",
+                "claim_type": "observed",
+                "statement": "Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.",
+                "source_refs": [
+                  "OBS-A1CA7D1287"
+                ]
+              }
+            ],
+            "mechanisms": [
+              {
+                "mechanism_id": "M1",
+                "mechanism_family": "connectivity_or_state_sync",
+                "mechanism_scope": "local",
+                "statement": "After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.",
+                "supporting_claim_ids": [
+                  "CL1"
+                ],
+                "source_refs": [
+                  "OBS-55F12EB3C7",
+                  "KB-EDF6E4948D"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.72,
+                "main_uncertainty": "Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs."
+              },
+              {
+                "mechanism_id": "M2",
+                "mechanism_family": "setup_or_configuration",
+                "mechanism_scope": "interface",
+                "statement": "WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.",
+                "supporting_claim_ids": [
+                  "CL3"
+                ],
+                "source_refs": [
+                  "OBS-27973F10BD",
+                  "MF-F6553BA11D"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.68,
+                "main_uncertainty": "Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews."
+              },
+              {
+                "mechanism_id": "M3",
+                "mechanism_family": "hardware_failure",
+                "mechanism_scope": "local",
+                "statement": "Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.",
+                "supporting_claim_ids": [
+                  "CL4"
+                ],
+                "source_refs": [
+                  "OBS-A1CA7D1287",
+                  "MF-1ACC9A2B41"
+                ],
+                "causal_status": "unverified_hypothesis",
+                "confidence": 0.75,
+                "main_uncertainty": "Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis."
+              }
+            ],
+            "validation_tasks": [
+              {
+                "validation_id": "V1",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "task": "Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.",
+                "required_data": [
+                  "firmware binary analysis",
+                  "power-cycle test logs",
+                  "state persistence validation protocol"
+                ]
+              },
+              {
+                "validation_id": "V2",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "task": "Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).",
+                "required_data": [
+                  "controlled network environment logs",
+                  "onboarding success/failure telemetry",
+                  "user interaction recordings"
+                ]
+              },
+              {
+                "validation_id": "V3",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "task": "Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).",
+                "required_data": [
+                  "physical durability test reports",
+                  "CAD design files",
+                  "field return failure photos"
+                ]
+              }
+            ],
+            "abstentions": [
+              {
+                "scope": "exact_root_cause",
+                "reason": "Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances."
+              },
+              {
+                "scope": "implementation_defect",
+                "reason": "Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 3965,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1208,
+            "total_tokens": 5173,
+            "system_prompt_chars": 3811,
+            "user_payload_chars": 11336
+          },
+          "request_meta": {
+            "model": "qwen3-max",
+            "json_mode": true,
+            "sdk_max_retries": 0
+          }
+        }
+      ]
+    },
+    "action": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.\",\n      \"action\": \"Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.\",\n      \"intervention_logic\": \"This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.\",\n      \"action\": \"Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.\",\n      \"intervention_logic\": \"M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.\",\n      \"action\": \"Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.\",\n      \"intervention_logic\": \"While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"support_or_user_guidance\"],\n      \"validation_metric\": \"Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.\"\n    }\n  ]\n}",
+          "parsed_output": {
+            "case_id": "CASE-3D83DEA89D",
+            "product_category": "灯带/灯泡/灯具",
+            "actions": [
+              {
+                "action_id": "A1",
+                "priority_rank": 1,
+                "action_subfamily": "observability_or_validation",
+                "action_level": "product",
+                "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+                "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+                "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+                "linked_mechanism_ids": [
+                  "M1"
+                ],
+                "source_refs": [
+                  "OBS-55F12EB3C7",
+                  "KB-EDF6E4948D"
+                ],
+                "target_products": [
+                  "灯带/灯泡/灯具"
+                ],
+                "target_layers": [
+                  "firmware"
+                ],
+                "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+              },
+              {
+                "action_id": "A2",
+                "priority_rank": 2,
+                "action_subfamily": "software_or_firmware_remediation",
+                "action_level": "product",
+                "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+                "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+                "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+                "linked_mechanism_ids": [
+                  "M2"
+                ],
+                "source_refs": [
+                  "OBS-27973F10BD",
+                  "MF-F6553BA11D"
+                ],
+                "target_products": [
+                  "灯带/灯泡/灯具"
+                ],
+                "target_layers": [
+                  "firmware"
+                ],
+                "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+              },
+              {
+                "action_id": "A3",
+                "priority_rank": 3,
+                "action_subfamily": "user_guidance_or_notification",
+                "action_level": "product",
+                "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+                "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+                "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+                "linked_mechanism_ids": [
+                  "M3"
+                ],
+                "source_refs": [
+                  "OBS-A1CA7D1287"
+                ],
+                "target_products": [
+                  "灯带/灯泡/灯具"
+                ],
+                "target_layers": [
+                  "support_or_user_guidance"
+                ],
+                "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+              }
+            ]
+          },
+          "parse_error": null,
+          "validation_error": null,
+          "usage": {
+            "prompt_tokens": 12909,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 760,
+            "total_tokens": 13669,
+            "system_prompt_chars": 4075,
+            "user_payload_chars": 39829
+          }
+        }
+      ]
+    }
+  },
+  "usage": {
+    "dimension_anchor": {
+      "prompt_tokens": 2112,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 284,
+      "total_tokens": 2396,
+      "system_prompt_chars": 1177,
+      "user_payload_chars": 5745
+    },
+    "diagnosis": {
+      "prompt_tokens": 3965,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 1208,
+      "total_tokens": 5173,
+      "system_prompt_chars": 3811,
+      "user_payload_chars": 11336
+    },
+    "action": {
+      "prompt_tokens": 12909,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 760,
+      "total_tokens": 13669,
+      "system_prompt_chars": 4075,
+      "user_payload_chars": 39829
+    }
+  },
+  "updated_at": "2026-09-03T11:10:00.485506+00:00",
+  "mechanism_feedback": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "respondent_profile": {
+      "respondent_role": "product_practitioner",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "researcher"
+    },
+    "mechanism_feedback": [
+      {
+        "mechanism_id": "M1",
+        "assessment_status": "uncertain",
+        "revision": "After a power interruption, bulbs may fail to restore or re-establish stored connectivity and operational state, causing them to fail to rejoin the app or recover prior settings.",
+        "validation_note": "Power-cycle affected and unaffected bulbs while recording persistent configuration, network credentials or pairing state, reconnect attempts, app membership, and restored operational settings; compare whether credentials and settings remain stored but reconnection fails versus whether configuration is actually lost; inspect boot and reconnect logs to distinguish storage-persistence failure from network, hub, cloud, or session-restoration failure."
+      },
+      {
+        "mechanism_id": "M2",
+        "assessment_status": "plausible",
+        "revision": "WiFi setup failures may result from onboarding logic that does not robustly handle some home-network compatibility or provisioning conditions, preventing successful network configuration.",
+        "validation_note": "Reproduce onboarding across 2.4-GHz-only, 5-GHz-only, dual-band or band-steering, mesh, different authentication modes, and captive-portal or otherwise restricted networks where relevant; capture association, authentication, provisioning, discovery, and app-side error logs; compare failure rates and failure stages across configurations to identify which network conditions actually explain the observed WiFi setup failures."
+      },
+      {
+        "mechanism_id": "M3",
+        "assessment_status": "supported",
+        "revision": "Mechanical stress at the weak pole-base interface can cause the connection to break or physically disconnect under leverage.",
+        "validation_note": "Apply controlled bending and leverage loads to the pole-base interface and record displacement, load-to-failure, fracture or separation location, and electrical continuity; inspect failed samples and field returns to determine whether the observed breakage results from connector separation, structural material failure, fastening geometry, solder-joint failure, or internal wiring damage, and compare failure thresholds with expected installation and adjustment loads."
+      }
+    ]
+  },
+  "reviewed_diagnosis": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "risk_dimensions": [
+      "Reliability and Stability",
+      "Connectivity and Coverage",
+      "Compatibility",
+      "Setup and Onboarding",
+      "Hardware"
+    ],
+    "symptom_families": [
+      "unresponsive_or_outage",
+      "connectivity_failure",
+      "compatibility_failure",
+      "setup_failure",
+      "hardware_failure"
+    ],
+    "claims": [
+      {
+        "claim_id": "CL1",
+        "claim_type": "observed",
+        "statement": "Bulbs frequently fail to rejoin the app or retain settings after a power interruption, indicating instability in state persistence.",
+        "source_refs": [
+          "OBS-55F12EB3C7"
+        ]
+      },
+      {
+        "claim_id": "CL2",
+        "claim_type": "observed",
+        "statement": "Users report connection failures even when the light hub is in close proximity, suggesting issues with local network or protocol handshake.",
+        "source_refs": [
+          "OBS-5CED34700D"
+        ]
+      },
+      {
+        "claim_id": "CL3",
+        "claim_type": "observed",
+        "statement": "Setup often fails to connect to WiFi, and retrofitting is sometimes required to enable smart functionality, pointing to onboarding friction.",
+        "source_refs": [
+          "OBS-27973F10BD"
+        ]
+      },
+      {
+        "claim_id": "CL4",
+        "claim_type": "observed",
+        "statement": "Physical pole-base connections are reported as weak and prone to breakage under leverage, indicating hardware fragility.",
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "mechanism_id": "M1",
+        "mechanism_family": "connectivity_or_state_sync",
+        "mechanism_scope": "local",
+        "statement": "After a power cycle, bulbs lose stored network credentials or state due to volatile memory handling or missing persistent storage logic, causing them to become unresponsive until manually re-paired.",
+        "supporting_claim_ids": [
+          "CL1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.72,
+        "main_uncertainty": "Whether firmware persists network credentials across power cycles is not confirmed by teardown or logs.",
+        "human_assessment": "uncertain",
+        "human_revision": "After a power interruption, bulbs may fail to restore or re-establish stored connectivity and operational state, causing them to fail to rejoin the app or recover prior settings.",
+        "human_validation_note": "Power-cycle affected and unaffected bulbs while recording persistent configuration, network credentials or pairing state, reconnect attempts, app membership, and restored operational settings; compare whether credentials and settings remain stored but reconnection fails versus whether configuration is actually lost; inspect boot and reconnect logs to distinguish storage-persistence failure from network, hub, cloud, or session-restoration failure."
+      },
+      {
+        "mechanism_id": "M2",
+        "mechanism_family": "setup_or_configuration",
+        "mechanism_scope": "interface",
+        "statement": "WiFi setup fails due to inadequate handling of 2.4GHz-only requirements or captive portal interference, exacerbated by lack of clear user guidance during onboarding.",
+        "supporting_claim_ids": [
+          "CL3"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.68,
+        "main_uncertainty": "Specific network environment conditions (e.g., dual-band SSID merging) are not captured in reviews.",
+        "human_assessment": "plausible",
+        "human_revision": "WiFi setup failures may result from onboarding logic that does not robustly handle some home-network compatibility or provisioning conditions, preventing successful network configuration.",
+        "human_validation_note": "Reproduce onboarding across 2.4-GHz-only, 5-GHz-only, dual-band or band-steering, mesh, different authentication modes, and captive-portal or otherwise restricted networks where relevant; capture association, authentication, provisioning, discovery, and app-side error logs; compare failure rates and failure stages across configurations to identify which network conditions actually explain the observed WiFi setup failures."
+      },
+      {
+        "mechanism_id": "M3",
+        "mechanism_family": "hardware_failure",
+        "mechanism_scope": "local",
+        "statement": "Mechanical stress at the pole-base interface leads to physical disconnection or internal wire damage, especially during installation or adjustment.",
+        "supporting_claim_ids": [
+          "CL4"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287",
+          "MF-1ACC9A2B41"
+        ],
+        "causal_status": "unverified_hypothesis",
+        "confidence": 0.75,
+        "main_uncertainty": "Failure mode distribution between manufacturing defect vs. design flaw is unclear without failure analysis.",
+        "human_assessment": "supported",
+        "human_revision": "Mechanical stress at the weak pole-base interface can cause the connection to break or physically disconnect under leverage.",
+        "human_validation_note": "Apply controlled bending and leverage loads to the pole-base interface and record displacement, load-to-failure, fracture or separation location, and electrical continuity; inspect failed samples and field returns to determine whether the observed breakage results from connector separation, structural material failure, fastening geometry, solder-joint failure, or internal wiring damage, and compare failure thresholds with expected installation and adjustment loads."
+      }
+    ],
+    "validation_tasks": [
+      {
+        "validation_id": "V1",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "task": "Verify whether device firmware stores WiFi credentials and operational state in non-volatile memory across power cycles.",
+        "required_data": [
+          "firmware binary analysis",
+          "power-cycle test logs",
+          "state persistence validation protocol"
+        ]
+      },
+      {
+        "validation_id": "V2",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "task": "Test setup success rate across common home WiFi configurations (e.g., merged 2.4/5GHz SSIDs, enterprise auth, mesh networks).",
+        "required_data": [
+          "controlled network environment logs",
+          "onboarding success/failure telemetry",
+          "user interaction recordings"
+        ]
+      },
+      {
+        "validation_id": "V3",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "task": "Conduct mechanical stress testing on pole-base connection to determine failure threshold and root cause (material vs. geometry).",
+        "required_data": [
+          "physical durability test reports",
+          "CAD design files",
+          "field return failure photos"
+        ]
+      }
+    ],
+    "abstentions": [
+      {
+        "scope": "exact_root_cause",
+        "reason": "Observed evidence identifies symptoms but does not isolate whether reliability issues stem from firmware logic, cloud dependency, or hardware tolerances."
+      },
+      {
+        "scope": "implementation_defect",
+        "reason": "Compatibility failures with Alexa could arise from skill implementation, discovery payload errors, or runtime directive handling—reviews do not distinguish these layers."
+      }
+    ],
+    "respondent_profile": {
+      "respondent_role": "product_practitioner",
+      "self_reported_expertise": {
+        "smart_product_ecosystem": 3,
+        "technical": 3
+      },
+      "feedback_source": "researcher"
+    }
+  },
+  "mechanism_reviewed_at": "2026-09-03T03:24:58.307670+00:00",
+  "decision_context": {
+    "context_source": "product_team_input",
+    "product_category": "灯带/灯泡/灯具",
+    "objective": "reduce prospective user-experience risk and ecosystem propagation risk",
+    "allowed_layers": [
+      "app_or_configuration",
+      "cloud_service",
+      "firmware",
+      "alexa_skill_or_api_implementation",
+      "support_or_user_guidance",
+      "ecosystem_governance"
+    ],
+    "allow_hardware_change": false,
+    "allow_third_party_change": false
+  },
+  "action_output": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+        "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+        "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+        "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+        "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+        "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+        "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+      }
+    ]
+  },
+  "action_raw_output": "{\n  \"case_id\": \"CASE-3D83DEA89D\",\n  \"product_category\": \"灯带/灯泡/灯具\",\n  \"actions\": [\n    {\n      \"action_id\": \"A1\",\n      \"priority_rank\": 1,\n      \"action_subfamily\": \"observability_or_validation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.\",\n      \"action\": \"Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.\",\n      \"intervention_logic\": \"This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.\",\n      \"linked_mechanism_ids\": [\"M1\"],\n      \"source_refs\": [\"OBS-55F12EB3C7\", \"KB-EDF6E4948D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.\"\n    },\n    {\n      \"action_id\": \"A2\",\n      \"priority_rank\": 2,\n      \"action_subfamily\": \"software_or_firmware_remediation\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.\",\n      \"action\": \"Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.\",\n      \"intervention_logic\": \"M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.\",\n      \"linked_mechanism_ids\": [\"M2\"],\n      \"source_refs\": [\"OBS-27973F10BD\", \"MF-F6553BA11D\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"firmware\"],\n      \"validation_metric\": \"Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.\"\n    },\n    {\n      \"action_id\": \"A3\",\n      \"priority_rank\": 3,\n      \"action_subfamily\": \"user_guidance_or_notification\",\n      \"action_level\": \"product\",\n      \"improvement_direction\": \"Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.\",\n      \"action\": \"Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.\",\n      \"intervention_logic\": \"While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.\",\n      \"linked_mechanism_ids\": [\"M3\"],\n      \"source_refs\": [\"OBS-A1CA7D1287\"],\n      \"target_products\": [\"灯带/灯泡/灯具\"],\n      \"target_layers\": [\"support_or_user_guidance\"],\n      \"validation_metric\": \"Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.\"\n    }\n  ]\n}",
+  "action_original_parsed_output": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+        "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+        "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+        "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+        "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+        "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+        "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months."
+      }
+    ]
+  },
+  "action_normalization_notes": [],
+  "action_discarded_actions": [],
+  "action_id_map": [
+    {
+      "original_action_id": "A1",
+      "original_priority_rank": 1,
+      "final_action_id": "A1",
+      "final_priority_rank": 1
+    },
+    {
+      "original_action_id": "A2",
+      "original_priority_rank": 2,
+      "final_action_id": "A2",
+      "final_priority_rank": 2
+    },
+    {
+      "original_action_id": "A3",
+      "original_priority_rank": 3,
+      "final_action_id": "A3",
+      "final_priority_rank": 3
+    }
+  ],
+  "action_n_generated": 3,
+  "action_n_valid": 3,
+  "action_n_discarded": 0,
+  "action_generation_status": "generated",
+  "action_context_mode": "h_ab",
+  "action_context_stats": {
+    "n_action_catalog_rows": 16,
+    "n_action_observed_evidence": 6,
+    "n_action_relations": 5,
+    "n_action_api_knowledge": 4,
+    "n_action_model_facts": 6,
+    "n_action_risk_chains": 0,
+    "n_action_unique_reference_ids": 31,
+    "action_context_chars": 34153
+  },
+  "action_generated_at": "2026-09-03T10:59:14.064773+00:00",
+  "action_feedback": {
+    "case_id": "CASE-3D83DEA89D",
+    "action_feedback": [
+      {
+        "action_id": "A1",
+        "decision": "accept",
+        "management_value": "high",
+        "revision": "Implement firmware-level logging and telemetry for WiFi credentials, pairing/configuration state, operational-state persistence, and subsequent reconnect/state-restoration outcomes during power-cycle events, and conduct controlled lab validation across repeated power cycles."
+      },
+      {
+        "action_id": "A2",
+        "decision": "revise",
+        "management_value": "high",
+        "revision": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations."
+      },
+      {
+        "action_id": "A3",
+        "decision": "accept",
+        "management_value": "medium",
+        "revision": ""
+      }
+    ]
+  },
+  "reviewed_action_output": {
+    "case_id": "CASE-3D83DEA89D",
+    "product_category": "灯带/灯泡/灯具",
+    "actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+        "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+        "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Implement firmware-level logging and telemetry for WiFi credentials, pairing/configuration state, operational-state persistence, and subsequent reconnect/state-restoration outcomes during power-cycle events, and conduct controlled lab validation across repeated power cycles.",
+        "human_decision_note": "",
+        "final_action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+        "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+        "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations.",
+        "human_decision_note": "",
+        "final_action": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+        "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+        "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "",
+        "human_decision_note": "",
+        "final_action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques."
+      }
+    ],
+    "approved_actions": [
+      {
+        "action_id": "A1",
+        "priority_rank": 1,
+        "action_subfamily": "observability_or_validation",
+        "action_level": "product",
+        "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+        "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+        "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+        "linked_mechanism_ids": [
+          "M1"
+        ],
+        "source_refs": [
+          "OBS-55F12EB3C7",
+          "KB-EDF6E4948D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Implement firmware-level logging and telemetry for WiFi credentials, pairing/configuration state, operational-state persistence, and subsequent reconnect/state-restoration outcomes during power-cycle events, and conduct controlled lab validation across repeated power cycles.",
+        "human_decision_note": "",
+        "final_action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol."
+      },
+      {
+        "action_id": "A2",
+        "priority_rank": 2,
+        "action_subfamily": "software_or_firmware_remediation",
+        "action_level": "product",
+        "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+        "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+        "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+        "linked_mechanism_ids": [
+          "M2"
+        ],
+        "source_refs": [
+          "OBS-27973F10BD",
+          "MF-F6553BA11D"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "firmware"
+        ],
+        "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.",
+        "human_decision": "revise",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations.",
+        "human_decision_note": "",
+        "final_action": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations."
+      },
+      {
+        "action_id": "A3",
+        "priority_rank": 3,
+        "action_subfamily": "user_guidance_or_notification",
+        "action_level": "product",
+        "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+        "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+        "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+        "linked_mechanism_ids": [
+          "M3"
+        ],
+        "source_refs": [
+          "OBS-A1CA7D1287"
+        ],
+        "target_products": [
+          "灯带/灯泡/灯具"
+        ],
+        "target_layers": [
+          "support_or_user_guidance"
+        ],
+        "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.",
+        "human_decision": "accept",
+        "expected_value": "not_assessed",
+        "feasibility": "not_assessed",
+        "human_revision": "",
+        "human_decision_note": "",
+        "final_action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques."
+      }
+    ],
+    "deferred_actions": [],
+    "rejected_actions": [],
+    "respondent_profile": null
+  },
+  "approved_actions": [
+    {
+      "action_id": "A1",
+      "priority_rank": 1,
+      "action_subfamily": "observability_or_validation",
+      "action_level": "product",
+      "improvement_direction": "Enable verification of state persistence across power cycles to resolve uncertainty about connectivity recovery failures.",
+      "action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol.",
+      "intervention_logic": "This action directly addresses the uncertainty in M1 by generating evidence on whether credentials and settings are stored in non-volatile memory. It supports future corrective decisions without assuming the mechanism is true.",
+      "linked_mechanism_ids": [
+        "M1"
+      ],
+      "source_refs": [
+        "OBS-55F12EB3C7",
+        "KB-EDF6E4948D"
+      ],
+      "target_products": [
+        "灯带/灯泡/灯具"
+      ],
+      "target_layers": [
+        "firmware"
+      ],
+      "validation_metric": "≥95% of test units retain WiFi credentials and prior settings after 10 consecutive power cycles under controlled conditions.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Implement firmware-level logging and telemetry for WiFi credentials, pairing/configuration state, operational-state persistence, and subsequent reconnect/state-restoration outcomes during power-cycle events, and conduct controlled lab validation across repeated power cycles.",
+      "human_decision_note": "",
+      "final_action": "Implement firmware-level logging and telemetry for WiFi credential and operational state persistence during power-cycle events, and conduct controlled lab validation using the state persistence validation protocol."
+    },
+    {
+      "action_id": "A2",
+      "priority_rank": 2,
+      "action_subfamily": "software_or_firmware_remediation",
+      "action_level": "product",
+      "improvement_direction": "Improve robustness of WiFi setup logic to handle common home network configurations that currently cause onboarding failures.",
+      "action": "Enhance onboarding firmware to detect and adapt to merged 2.4/5GHz SSIDs, captive portals, and mesh network conditions, with fallback guidance for unsupported configurations.",
+      "intervention_logic": "M2 is assessed as plausible; this change conservatively hardens the setup process against known environmental variability without requiring hardware or third-party changes.",
+      "linked_mechanism_ids": [
+        "M2"
+      ],
+      "source_refs": [
+        "OBS-27973F10BD",
+        "MF-F6553BA11D"
+      ],
+      "target_products": [
+        "灯带/灯泡/灯具"
+      ],
+      "target_layers": [
+        "firmware"
+      ],
+      "validation_metric": "Onboarding success rate increases from baseline to ≥90% across 15 representative home WiFi configurations, including dual-band merged SSIDs and mesh networks.",
+      "human_decision": "revise",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations.",
+      "human_decision_note": "",
+      "final_action": "Enhance onboarding firmware to detect and adapt to home-network conditions confirmed by setup telemetry or controlled testing to contribute to provisioning failures, including merged 2.4/5-GHz SSIDs, captive portals, or mesh-network behavior where applicable, with fallback guidance for unsupported configurations."
+    },
+    {
+      "action_id": "A3",
+      "priority_rank": 3,
+      "action_subfamily": "user_guidance_or_notification",
+      "action_level": "product",
+      "improvement_direction": "Reduce user-induced stress on fragile pole-base connections during installation through clearer handling instructions.",
+      "action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques.",
+      "intervention_logic": "While M3 identifies a hardware fragility (supported), hardware changes are disallowed. This low-regret action mitigates exacerbating user behaviors and aligns with the supported mechanism’s scope.",
+      "linked_mechanism_ids": [
+        "M3"
+      ],
+      "source_refs": [
+        "OBS-A1CA7D1287"
+      ],
+      "target_products": [
+        "灯带/灯泡/灯具"
+      ],
+      "target_layers": [
+        "support_or_user_guidance"
+      ],
+      "validation_metric": "Post-update field reports show ≥20% reduction in 'broken connection during install' complaints within 3 months.",
+      "human_decision": "accept",
+      "expected_value": "not_assessed",
+      "feasibility": "not_assessed",
+      "human_revision": "",
+      "human_decision_note": "",
+      "final_action": "Update in-app and printed installation guides to include explicit warnings against applying leverage at the pole-base joint and demonstrate safe handling techniques."
+    }
+  ],
+  "deferred_actions": [],
+  "rejected_actions": []
+}
