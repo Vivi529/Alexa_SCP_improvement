@@ -1,0 +1,130 @@
+{
+  "灯带/灯泡/灯具": [
+    "Alexa.BrightnessController",
+    "Alexa.ColorController",
+    "Alexa.ColorTemperatureController",
+    "Alexa.PowerController"
+  ],
+  "智能音箱": [
+    "Alexa.EqualizerController",
+    "Alexa.InputController",
+    "Alexa.ModeController",
+    "Alexa.PlaybackController",
+    "Alexa.PlaybackStateReporter",
+    "Alexa.PowerController",
+    "Alexa.RangeController",
+    "Alexa.Speaker",
+    "Alexa.ToggleController"
+  ],
+  "风扇/吊扇": [
+    "Alexa.PowerController",
+    "Alexa.RangeController",
+    "Alexa.ToggleController"
+  ],
+  "流媒体播放器/电视棒": [
+    "Alexa.ChannelController",
+    "Alexa.InputController",
+    "Alexa.Launcher",
+    "Alexa.PlaybackController",
+    "Alexa.PlaybackStateReporter",
+    "Alexa.PowerController",
+    "Alexa.RemoteVideoPlayer",
+    "Alexa.Speaker",
+    "Alexa.VideoRecorder"
+  ],
+  "智能温控器": [
+    "Alexa.TemperatureSensor",
+    "Alexa.ThermostatController"
+  ],
+  "智能屏/家庭中控": [
+    "Alexa.CameraStreamController",
+    "Alexa.Discovery",
+    "Alexa.EqualizerController",
+    "Alexa.InputController",
+    "Alexa.ModeController",
+    "Alexa.PlaybackController",
+    "Alexa.PlaybackStateReporter",
+    "Alexa.PowerController",
+    "Alexa.RTCSessionController",
+    "Alexa.RangeController",
+    "Alexa.SnapshotProvider",
+    "Alexa.Speaker",
+    "Alexa.ToggleController"
+  ],
+  "窗帘/遮阳帘/百叶": [
+    "Alexa.ModeController",
+    "Alexa.RangeController",
+    "Alexa.ToggleController"
+  ],
+  "智能排插/插头/插座": [
+    "Alexa.PowerController"
+  ],
+  "遥控器": [
+    "Alexa.SimpleEventSource"
+  ],
+  "空气质量监测器": [
+    "Alexa.RangeController",
+    "Alexa.TemperatureSensor"
+  ],
+  "智能开关/运动传感器/墙插": [
+    "Alexa.BrightnessController",
+    "Alexa.MotionSensor",
+    "Alexa.PowerController"
+  ],
+  "吸尘器": [
+    "Alexa.InventoryLevelUsageSensor",
+    "Alexa.ModeController",
+    "Alexa.ModeController (settings)",
+    "Alexa.ModeController or Alexa.RangeController with semantics for announcements",
+    "Alexa.PowerController",
+    "Alexa.ProactiveNotificationSource"
+  ],
+  "空气净化器/香薰机/加湿器": [
+    "Alexa.ConsumableLevelSensor",
+    "Alexa.PowerController"
+  ],
+  "打印机": [
+    "Alexa.InventoryLevelSensor",
+    "Alexa.PowerController"
+  ],
+  "报警系统/传感器": [
+    "Alexa.ContactSensor",
+    "Alexa.MotionSensor",
+    "Alexa.SecurityPanelController",
+    "Alexa.SecurityPanelController.Alert"
+  ],
+  "摄像头/门铃": [
+    "Alexa.CameraStreamController",
+    "Alexa.RTCSessionController",
+    "Alexa.SnapshotProvider"
+  ],
+  "智能门锁": [
+    "Alexa.LockController"
+  ],
+  "HDMI同步盒": [
+    "Alexa.InputController",
+    "Alexa.PlaybackController",
+    "Alexa.PowerController",
+    "Alexa.Speaker"
+  ],
+  "集线器/桥接器": [
+    "Alexa.Discovery",
+    "Alexa.ToggleController"
+  ],
+  "耳机/眼镜": [
+    "Alexa.EqualizerController",
+    "Alexa.InputController",
+    "Alexa.ModeController",
+    "Alexa.PlaybackController",
+    "Alexa.PlaybackStateReporter",
+    "Alexa.PowerController",
+    "Alexa.RangeController",
+    "Alexa.Speaker",
+    "Alexa.ToggleController"
+  ],
+  "汽车智能配件": [
+    "Alexa.PlaybackController",
+    "Alexa.PlaybackStateReporter",
+    "Alexa.Speaker"
+  ]
+}
